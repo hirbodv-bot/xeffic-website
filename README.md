@@ -1,14 +1,12 @@
-# Xeffic Website v9 — Approved Design Direction
+# Xeffic Website v10 — Cleaner Homepage
 
-This is the actual HTML/CSS/JS implementation of the approved homepage direction.
+Homepage changes:
+- removed the long Xeffic description from the hero
+- removed the three small Engineering First / AI with Purpose / Built for Industry blocks
+- kept the hero cleaner: message, image and two CTAs only
+- added a Who We Help section
+- added a How We Work section
+- added a focused call-to-action section
+- kept the four main service cards and sustainability band
 
-Key updates:
-- uses your supplied woman image in the hero
-- uses your supplied Xeffic logo, adapted for a light web header
-- homepage matches the approved visual direction with large hero + four engineering service cards
-- full service cards are clickable
-- order: Manufacturing AI, Industrial Energy, Simulation, Flood AI
-- no invented performance/project claims
-- responsive mobile layout
-
-Upload ALL files from this ZIP to the root of the existing GitHub `xeffic-website` repository and replace previous versions.
+Upload all files in this ZIP to the root of the existing GitHub repository and replace the current files.
