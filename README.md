@@ -1,14 +1,8 @@
-# Xeffic Website v6 — complete fixed package
+# Xeffic Website v8
 
-This package fixes the broken homepage caused by HTML being updated without the matching CSS.
+Updates:
+- added the supplied Xeffic logo image to the header and footer on all pages
+- kept the clickable feature cards and visual layout from v7
+- includes the new asset file: xeffic-logo.jpg
 
-Homepage priority:
-1. Main Xeffic engineering message
-2. Manufacturing AI — prominent top-right card
-3. Industrial Energy
-4. Simulation
-5. Flood AI
-
-IMPORTANT:
-Upload ALL files in this ZIP to the root of the GitHub `xeffic-website` repository.
-Make sure `styles.css` and `main.js` are uploaded/replaced as well.
+Upload all files in this folder (or the zip contents) to your GitHub repo root.

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="250" height="250" viewBox="0 0 250 250" fill="none">
+<defs>
+<linearGradient id="pot" x1="84" y1="178" x2="166" y2="210" gradientUnits="userSpaceOnUse"><stop stop-color="#D08A5C"/><stop offset="1" stop-color="#8D5536"/></linearGradient>
+<linearGradient id="leaf1" x1="76" y1="76" x2="132" y2="150" gradientUnits="userSpaceOnUse"><stop stop-color="#7FD772"/><stop offset="1" stop-color="#348C45"/></linearGradient>
+<linearGradient id="leaf2" x1="120" y1="63" x2="194" y2="156" gradientUnits="userSpaceOnUse"><stop stop-color="#8BE27D"/><stop offset="1" stop-color="#2F8A46"/></linearGradient>
+</defs>
+<ellipse cx="126" cy="224" rx="64" ry="14" fill="#DDECF1"/>
+<path d="M86 184 H166 L156 214 H96 L86 184Z" fill="url(#pot)"/>
+<path d="M85 182 C85 173 92 166 101 166 H150 C159 166 166 173 166 182 V186 H85 Z" fill="#A86745"/>
+<path d="M126 171 C124 149 125 128 128 105" stroke="#4A8E43" stroke-width="4" stroke-linecap="round"/>
+<path d="M123 138 C107 120 92 105 74 98" stroke="#4A8E43" stroke-width="4" stroke-linecap="round"/>
+<path d="M129 132 C148 114 163 101 181 94" stroke="#4A8E43" stroke-width="4" stroke-linecap="round"/>
+<path d="M72 97 C72 74 85 56 111 48 C118 73 111 94 91 106 C84 110 78 110 72 97Z" fill="url(#leaf1)"/>
+<path d="M185 93 C187 69 176 50 149 42 C141 66 148 90 167 101 C174 105 180 104 185 93Z" fill="url(#leaf2)"/>
+<path d="M103 136 C102 117 112 102 136 92 C142 112 137 131 119 142 C112 146 107 145 103 136Z" fill="url(#leaf2)"/>
+<path d="M149 139 C151 121 142 106 121 96 C116 115 120 133 136 145 C142 149 147 148 149 139Z" fill="url(#leaf1)"/>
+</svg>
