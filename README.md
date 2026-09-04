@@ -1,8 +1,14 @@
-# Xeffic Website v8
+# Xeffic Website v9 — Approved Design Direction
 
-Updates:
-- added the supplied Xeffic logo image to the header and footer on all pages
-- kept the clickable feature cards and visual layout from v7
-- includes the new asset file: xeffic-logo.jpg
+This is the actual HTML/CSS/JS implementation of the approved homepage direction.
 
-Upload all files in this folder (or the zip contents) to your GitHub repo root.
+Key updates:
+- uses your supplied woman image in the hero
+- uses your supplied Xeffic logo, adapted for a light web header
+- homepage matches the approved visual direction with large hero + four engineering service cards
+- full service cards are clickable
+- order: Manufacturing AI, Industrial Energy, Simulation, Flood AI
+- no invented performance/project claims
+- responsive mobile layout
+
+Upload ALL files from this ZIP to the root of the existing GitHub `xeffic-website` repository and replace previous versions.
