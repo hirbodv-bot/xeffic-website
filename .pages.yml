@@ -1,0 +1,450 @@
+media:
+  - name: images
+    label: Website images
+    input: media
+    output: /media
+    categories: [image]
+    rename: safe
+
+content:
+  - name: site
+    label: Site settings
+    type: file
+    path: content/site.json
+    format: json
+    operations:
+      delete: false
+    fields:
+      - name: logo
+        label: Website logo
+        type: image
+        options: { media: images }
+      - name: footer_description
+        label: Footer description
+        type: text
+      - name: info_email
+        label: General email
+        type: string
+      - name: direct_email
+        label: Direct email
+        type: string
+      - name: website
+        label: Website URL
+        type: string
+      - name: footer_tagline
+        label: Footer tagline
+        type: string
+      - name: nav_cta_label
+        label: Header button text
+        type: string
+
+  - name: home
+    label: Homepage
+    type: file
+    path: content/home.json
+    format: json
+    operations: { delete: false }
+    fields:
+      - name: seo_title
+        label: SEO title
+        type: string
+      - name: seo_description
+        label: SEO description
+        type: text
+      - name: hero
+        label: Hero section
+        type: object
+        fields:
+          - { name: pill, label: Small heading, type: string }
+          - { name: title, label: Main headline, type: string }
+          - { name: highlight, label: Blue headline text, type: string }
+          - name: image
+            label: Hero image
+            type: image
+            options: { media: images }
+          - { name: image_alt, label: Image description, type: string }
+          - { name: primary_label, label: Primary button text, type: string }
+          - { name: primary_href, label: Primary button link, type: string }
+          - { name: secondary_label, label: Secondary button text, type: string }
+          - { name: secondary_href, label: Secondary button link, type: string }
+      - name: services
+        label: Main service cards
+        type: object
+        fields:
+          - name: manufacturing
+            label: Manufacturing AI
+            type: object
+            fields: &service_fields
+              - { name: number, label: Number, type: string }
+              - { name: kicker, label: Section name, type: string }
+              - { name: title, label: Title, type: string }
+              - { name: description, label: Description, type: text }
+              - name: image
+                label: Section image
+                type: image
+                options: { media: images }
+              - { name: image_alt, label: Image description, type: string }
+              - { name: link, label: Link, type: string }
+              - { name: link_label, label: Link text, type: string }
+          - name: energy
+            label: Industrial Energy
+            type: object
+            fields: *service_fields
+          - name: simulation
+            label: Simulation
+            type: object
+            fields: *service_fields
+          - name: flood
+            label: Flood AI
+            type: object
+            fields: *service_fields
+      - name: audiences
+        label: Who we help
+        type: object
+        fields:
+          - { name: kicker, label: Small heading, type: string }
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Description, type: text }
+          - name: section_image
+            label: Section-wide image (optional)
+            type: image
+            options: { media: images }
+          - name: items
+            label: Audience cards
+            type: object
+            list:
+              max: 8
+              collapsible: { collapsed: true, summary: "{title}" }
+            fields:
+              - { name: title, label: Title, type: string }
+              - { name: description, label: Description, type: text }
+              - name: image
+                label: Image (optional)
+                type: image
+                options: { media: images }
+      - name: approach
+        label: How we work
+        type: object
+        fields:
+          - { name: kicker, label: Small heading, type: string }
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Description, type: text }
+          - name: image
+            label: Section image (optional)
+            type: image
+            options: { media: images }
+          - { name: link_label, label: Link text, type: string }
+          - { name: link_href, label: Link, type: string }
+          - name: steps
+            label: Steps
+            type: object
+            list:
+              max: 8
+              collapsible: { collapsed: true, summary: "{title}" }
+            fields:
+              - { name: title, label: Title, type: string }
+              - { name: description, label: Description, type: text }
+      - name: cta
+        label: Call to action
+        type: object
+        fields:
+          - { name: kicker, label: Small heading, type: string }
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Description, type: text }
+          - name: image
+            label: Background image (optional)
+            type: image
+            options: { media: images }
+          - { name: button_label, label: Button text, type: string }
+          - { name: button_href, label: Button link, type: string }
+      - name: sustain
+        label: Sustainability section
+        type: object
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Description, type: text }
+          - name: image
+            label: Image
+            type: image
+            options: { media: images }
+          - name: tags
+            label: Tags
+            type: string
+            list: true
+      - name: industry
+        label: Industry collaboration section
+        type: object
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Description, type: text }
+          - name: image
+            label: Background image (optional)
+            type: image
+            options: { media: images }
+
+  - name: manufacturing
+    label: Manufacturing AI page
+    type: file
+    path: content/manufacturing-ai.json
+    format: json
+    operations: { delete: false }
+    fields:
+      - { name: seo_title, label: SEO title, type: string }
+      - { name: seo_description, label: SEO description, type: text }
+      - name: hero
+        label: Hero
+        type: object
+        fields:
+          - { name: pill, label: Small heading, type: string }
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Description, type: text }
+          - name: image
+            label: Hero image
+            type: image
+            options: { media: images }
+          - { name: image_alt, label: Image description, type: string }
+          - { name: button_label, label: Button text, type: string }
+          - { name: button_href, label: Button link, type: string }
+      - name: section
+        label: Intro section
+        type: object
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Description, type: text }
+          - name: image
+            label: Section image
+            type: image
+            options: { media: images }
+      - name: features
+        label: Capability cards
+        type: object
+        list:
+          max: 12
+          collapsible: { collapsed: true, summary: "{title}" }
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Description, type: text }
+          - name: image
+            label: Image
+            type: image
+            options: { media: images }
+      - name: gallery
+        label: Image gallery
+        type: image
+        options:
+          media: images
+          multiple: { max: 12 }
+          unique: true
+          rename: safe
+
+  - name: services
+    label: Energy & Simulation page
+    type: file
+    path: content/services.json
+    format: json
+    operations: { delete: false }
+    fields:
+      - { name: seo_title, label: SEO title, type: string }
+      - { name: seo_description, label: SEO description, type: text }
+      - name: hero
+        label: Hero
+        type: object
+        fields:
+          - { name: pill, label: Small heading, type: string }
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Description, type: text }
+          - name: image
+            label: Hero image
+            type: image
+            options: { media: images }
+          - { name: image_alt, label: Image description, type: string }
+      - name: energy
+        label: Industrial Energy
+        type: object
+        fields: &service_page_fields
+          - { name: kicker, label: Small heading, type: string }
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Description, type: text }
+          - name: image
+            label: Image
+            type: image
+            options: { media: images }
+          - { name: image_alt, label: Image description, type: string }
+          - name: bullets
+            label: Bullet points
+            type: string
+            list: true
+      - name: simulation
+        label: Simulation
+        type: object
+        fields: *service_page_fields
+      - name: rd
+        label: R&D support
+        type: object
+        fields:
+          - { name: kicker, label: Small heading, type: string }
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Description, type: text }
+          - name: image
+            label: Image
+            type: image
+            options: { media: images }
+      - name: decision
+        label: Decision support
+        type: object
+        fields:
+          - { name: kicker, label: Small heading, type: string }
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Description, type: text }
+          - name: image
+            label: Image
+            type: image
+            options: { media: images }
+      - name: gallery
+        label: Image gallery
+        type: image
+        options:
+          media: images
+          multiple: { max: 12 }
+          unique: true
+          rename: safe
+
+  - name: flood
+    label: Flood AI page
+    type: file
+    path: content/flood-ai.json
+    format: json
+    operations: { delete: false }
+    fields:
+      - { name: seo_title, label: SEO title, type: string }
+      - { name: seo_description, label: SEO description, type: text }
+      - name: hero
+        label: Hero
+        type: object
+        fields:
+          - { name: pill, label: Small heading, type: string }
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Description, type: text }
+          - name: image
+            label: Hero image
+            type: image
+            options: { media: images }
+          - { name: image_alt, label: Image description, type: string }
+          - { name: button_label, label: Button text, type: string }
+          - { name: button_href, label: Button link, type: string }
+      - name: section
+        label: Intro section
+        type: object
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Description, type: text }
+          - name: image
+            label: Section image
+            type: image
+            options: { media: images }
+      - name: steps
+        label: Flood AI steps
+        type: object
+        list:
+          max: 10
+          collapsible: { collapsed: true, summary: "{title}" }
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Description, type: text }
+          - name: image
+            label: Image
+            type: image
+            options: { media: images }
+      - name: gallery
+        label: Image gallery
+        type: image
+        options:
+          media: images
+          multiple: { max: 12 }
+          unique: true
+          rename: safe
+
+  - name: about
+    label: About page
+    type: file
+    path: content/about.json
+    format: json
+    operations: { delete: false }
+    fields:
+      - { name: seo_title, label: SEO title, type: string }
+      - { name: seo_description, label: SEO description, type: text }
+      - name: hero
+        label: Hero
+        type: object
+        fields:
+          - { name: pill, label: Small heading, type: string }
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Description, type: text }
+          - name: image
+            label: Hero image
+            type: image
+            options: { media: images }
+          - { name: image_alt, label: Image description, type: string }
+      - name: section
+        label: Main section
+        type: object
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Description, type: text }
+          - name: image
+            label: Section image
+            type: image
+            options: { media: images }
+      - name: principles
+        label: Principle cards
+        type: object
+        list:
+          max: 8
+          collapsible: { collapsed: true, summary: "{title}" }
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Description, type: text }
+          - name: image
+            label: Image
+            type: image
+            options: { media: images }
+      - name: gallery
+        label: Image gallery
+        type: image
+        options:
+          media: images
+          multiple: { max: 12 }
+          unique: true
+          rename: safe
+
+  - name: contact
+    label: Contact page
+    type: file
+    path: content/contact.json
+    format: json
+    operations: { delete: false }
+    fields:
+      - { name: seo_title, label: SEO title, type: string }
+      - { name: seo_description, label: SEO description, type: text }
+      - name: hero
+        label: Hero
+        type: object
+        fields:
+          - { name: pill, label: Small heading, type: string }
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Description, type: text }
+          - name: image
+            label: Hero image
+            type: image
+            options: { media: images }
+          - { name: image_alt, label: Image description, type: string }
+      - name: section
+        label: Contact intro
+        type: object
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: description, label: Description, type: text }
+          - name: image
+            label: Section image
+            type: image
+            options: { media: images }
