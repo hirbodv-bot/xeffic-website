@@ -1,0 +1,52 @@
+{
+  "seo_title": "Industrial Energy & Simulation | Xeffic",
+  "seo_description": "Industrial energy efficiency, waste-heat recovery, FEA, CFD and thermal modelling from Xeffic.",
+  "hero": {
+    "pill": "Industrial Engineering",
+    "title": "Energy efficiency and simulation for practical engineering decisions.",
+    "description": "From waste-heat recovery to FEA, CFD and thermal modelling, Xeffic helps industrial teams understand performance, test options and build stronger technical cases.",
+    "image": "",
+    "image_alt": "Industrial engineering"
+  },
+  "energy": {
+    "kicker": "Industrial Energy",
+    "title": "Waste-heat recovery & efficiency",
+    "description": "Assess where thermal energy is being lost and what can realistically be recovered, reused or converted.",
+    "image": "",
+    "image_alt": "Industrial energy",
+    "bullets": [
+      "Waste-heat opportunity assessment",
+      "Heat-exchanger concepts",
+      "Thermal-system modelling",
+      "Passive-loop and thermosyphon concepts",
+      "Techno-economic screening"
+    ]
+  },
+  "simulation": {
+    "kicker": "Simulation",
+    "title": "FEA, CFD & thermal modelling",
+    "description": "Analyse structural, flow and thermal behaviour before committing to expensive physical changes.",
+    "image": "",
+    "image_alt": "Engineering simulation",
+    "bullets": [
+      "Finite element analysis",
+      "Computational fluid dynamics",
+      "Thermal modelling",
+      "Sensitivity studies",
+      "Validation planning"
+    ]
+  },
+  "rd": {
+    "kicker": "R&D support",
+    "title": "Prototype, validate and improve",
+    "description": "Focused engineering studies for products, processes and industrial R&D where technical uncertainty needs to be reduced.",
+    "image": ""
+  },
+  "decision": {
+    "kicker": "Decision support",
+    "title": "Turn analysis into action",
+    "description": "Translate models, test data and operational information into clearer engineering decisions and next steps.",
+    "image": ""
+  },
+  "gallery": []
+}

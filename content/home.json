@@ -1,0 +1,131 @@
+{
+  "seo_title": "Xeffic | Engineering Intelligence for Industry",
+  "seo_description": "Xeffic develops practical engineering solutions across Manufacturing AI, industrial energy efficiency, simulation, data-driven decision support and Flood AI.",
+  "hero": {
+    "pill": "Engineering · AI · Industry",
+    "title": "Engineering intelligence for a",
+    "highlight": "safer, more efficient future.",
+    "image": "/media/hero-woman.png",
+    "image_alt": "Smiling professional woman working with a laptop",
+    "primary_label": "Discuss a Challenge →",
+    "primary_href": "contact.html",
+    "secondary_label": "Explore Services →",
+    "secondary_href": "services.html"
+  },
+  "services": {
+    "manufacturing": {
+      "number": "01",
+      "kicker": "Manufacturing AI",
+      "title": "Smarter Operations. Stronger Performance.",
+      "description": "AI-assisted solutions that streamline engineering workflows, surface insight and reduce repetitive technical work.",
+      "image": "",
+      "image_alt": "Manufacturing AI",
+      "link": "manufacturing-ai.html",
+      "link_label": "Learn More →"
+    },
+    "energy": {
+      "number": "02",
+      "kicker": "Industrial Energy",
+      "title": "Optimize Energy. Reduce Cost. Lower Impact.",
+      "description": "Engineering-led energy efficiency, waste-heat recovery and thermal optimisation for industrial operations.",
+      "image": "",
+      "image_alt": "Industrial energy efficiency",
+      "link": "services.html#energy",
+      "link_label": "Learn More →"
+    },
+    "simulation": {
+      "number": "03",
+      "kicker": "Simulation",
+      "title": "Model Today. Engineer Tomorrow.",
+      "description": "FEA, CFD and thermal modelling to test, validate and improve designs before expensive physical changes.",
+      "image": "",
+      "image_alt": "Engineering simulation",
+      "link": "services.html#simulation",
+      "link_label": "Learn More →"
+    },
+    "flood": {
+      "number": "04",
+      "kicker": "Flood AI",
+      "title": "Anticipate. Prepare. Protect.",
+      "description": "AI-assisted flood intelligence using weather, terrain, satellite, sensor and infrastructure data to support earlier decisions.",
+      "image": "",
+      "image_alt": "Flood AI",
+      "link": "flood-ai.html",
+      "link_label": "Learn More →"
+    }
+  },
+  "audiences": {
+    "kicker": "Who we help",
+    "title": "Engineering and AI for organisations with real operational challenges.",
+    "description": "Focused support for teams that need stronger technical decisions, better efficiency and practical digital tools.",
+    "section_image": "",
+    "items": [
+      {
+        "title": "Manufacturers",
+        "description": "AI-assisted workflows, energy efficiency, process insight and engineering analysis.",
+        "image": ""
+      },
+      {
+        "title": "Engineering Companies",
+        "description": "Simulation, technical decision support and digital tools for complex project delivery.",
+        "image": ""
+      },
+      {
+        "title": "Infrastructure Operators",
+        "description": "Flood intelligence, asset-risk screening and evidence-led operational decisions.",
+        "image": ""
+      },
+      {
+        "title": "Resilience Teams",
+        "description": "Data-driven approaches for flood preparedness, prioritisation and response.",
+        "image": ""
+      }
+    ]
+  },
+  "approach": {
+    "kicker": "How we work",
+    "title": "Start with the engineering problem. Use AI where it adds value.",
+    "description": "Xeffic focuses on targeted problems with a clear technical or operational outcome — not technology for its own sake.",
+    "image": "",
+    "link_label": "Our approach →",
+    "link_href": "about.html",
+    "steps": [
+      {
+        "title": "Define the challenge",
+        "description": "Clarify the decision, bottleneck, risk or efficiency opportunity."
+      },
+      {
+        "title": "Build the evidence",
+        "description": "Use engineering analysis, simulation and data to develop a practical solution."
+      },
+      {
+        "title": "Pilot and validate",
+        "description": "Test on a focused use case, review the output and scale only where value is proven."
+      }
+    ]
+  },
+  "cta": {
+    "kicker": "Start with one challenge",
+    "title": "What is costing your team time, energy or confidence?",
+    "description": "Tell us the problem. We can help identify whether engineering analysis, simulation or AI is the right next step.",
+    "image": "",
+    "button_label": "Discuss a Challenge →",
+    "button_href": "contact.html"
+  },
+  "sustain": {
+    "title": "Engineering a sustainable future.",
+    "description": "We combine engineering analysis with artificial intelligence to solve real industrial and infrastructure challenges and create lasting technical value.",
+    "image": "/media/growth-plant.svg",
+    "tags": [
+      "Manufacturing",
+      "Energy",
+      "Infrastructure",
+      "Resilience"
+    ]
+  },
+  "industry": {
+    "title": "Built for industry collaboration",
+    "description": "Focused pilots, engineering evidence and practical solutions designed around real operational problems.",
+    "image": ""
+  }
+}

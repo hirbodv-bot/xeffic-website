@@ -1,0 +1,51 @@
+{
+  "seo_title": "Manufacturing AI | Xeffic",
+  "seo_description": "AI-assisted engineering workflows and decision support for manufacturers.",
+  "hero": {
+    "pill": "Manufacturing AI",
+    "title": "Use AI where it removes friction from engineering work.",
+    "description": "Xeffic helps manufacturers identify repetitive, data-heavy technical workflows where AI can improve speed and consistency while maintaining engineering oversight.",
+    "image": "",
+    "image_alt": "Manufacturing AI",
+    "button_label": "Discuss a Manufacturing Workflow →",
+    "button_href": "contact.html"
+  },
+  "section": {
+    "title": "Start with high-frequency tasks where value can be measured.",
+    "description": "Good candidates are repetitive, time-consuming, data-rich and capable of being reviewed by an engineer.",
+    "image": ""
+  },
+  "features": [
+    {
+      "title": "Technical data & reporting",
+      "description": "Extract, classify and structure engineering information; accelerate draft reports and evidence packs.",
+      "image": ""
+    },
+    {
+      "title": "Inspection & quality support",
+      "description": "Assist human review of images, measurements and inspection records to surface anomalies and trends.",
+      "image": ""
+    },
+    {
+      "title": "Engineering knowledge assistants",
+      "description": "Make procedures, standards and product knowledge easier to search and apply consistently.",
+      "image": ""
+    },
+    {
+      "title": "Survey-to-design workflows",
+      "description": "Move structured site or product data into repeatable engineering steps more efficiently.",
+      "image": ""
+    },
+    {
+      "title": "Predictive decision support",
+      "description": "Combine operational data with engineering rules to prioritise maintenance or investigation.",
+      "image": ""
+    },
+    {
+      "title": "Energy & process optimisation",
+      "description": "Use data and modelling to identify inefficient states, recoverable heat and improvement opportunities.",
+      "image": ""
+    }
+  ],
+  "gallery": []
+}

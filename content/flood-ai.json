@@ -1,0 +1,41 @@
+{
+  "seo_title": "Flood AI | Xeffic",
+  "seo_description": "AI-assisted flood intelligence and engineering decision support for infrastructure and resilience.",
+  "hero": {
+    "pill": "Flood AI",
+    "title": "Turn flood data into earlier, clearer decisions.",
+    "description": "Xeffic develops AI-assisted flood intelligence concepts for infrastructure and resilience teams using weather, terrain, satellite, sensor and asset data.",
+    "image": "",
+    "image_alt": "Flood AI",
+    "button_label": "Discuss a Flood AI Use Case →",
+    "button_href": "contact.html"
+  },
+  "section": {
+    "title": "Flood risk is a data problem and an engineering problem.",
+    "description": "AI can process changing information quickly, but useful outputs still require engineering context: where the asset is, how it fails, what threshold matters and what action should follow.",
+    "image": ""
+  },
+  "steps": [
+    {
+      "title": "Observe",
+      "description": "Rainfall, water levels, terrain, satellite imagery, sensors and asset context.",
+      "image": ""
+    },
+    {
+      "title": "Detect",
+      "description": "Identify conditions or indicators associated with emerging flood risk.",
+      "image": ""
+    },
+    {
+      "title": "Prioritise",
+      "description": "Rank locations and assets by consequence, confidence and urgency.",
+      "image": ""
+    },
+    {
+      "title": "Support action",
+      "description": "Present clear evidence to operators and decision-makers.",
+      "image": ""
+    }
+  ],
+  "gallery": []
+}

@@ -1,0 +1,34 @@
+{
+  "seo_title": "About Xeffic",
+  "seo_description": "Applied engineering, data and AI for industrial and infrastructure challenges.",
+  "hero": {
+    "pill": "About Xeffic",
+    "title": "Applied engineering with a digital edge.",
+    "description": "Xeffic is an engineering technology company focused on practical industrial and infrastructure problems where engineering analysis, data and AI can create measurable value.",
+    "image": "",
+    "image_alt": "About Xeffic"
+  },
+  "section": {
+    "title": "Engineering first. AI where it adds value.",
+    "description": "We start with the decision, process, failure mode or cost that matters, then use the right combination of engineering analysis, simulation, data and AI.",
+    "image": ""
+  },
+  "principles": [
+    {
+      "title": "Evidence over hype",
+      "description": "Transparent assumptions, reviewable methods and clear limitations.",
+      "image": ""
+    },
+    {
+      "title": "Focused pilots",
+      "description": "Start with one problem, prove value, then scale with confidence.",
+      "image": ""
+    },
+    {
+      "title": "Practical collaboration",
+      "description": "Work with industry teams to frame useful questions and achievable next steps.",
+      "image": ""
+    }
+  ],
+  "gallery": []
+}
