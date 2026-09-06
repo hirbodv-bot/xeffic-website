@@ -9,7 +9,7 @@
   "navigation": [
     {
       "label": "Flood",
-      "is_cta": false
+      "is_cta": true
     }
   ],
   "footer_links_override": false
