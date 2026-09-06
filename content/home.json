@@ -13,7 +13,12 @@
       "image": "/media/hero-woman.webp",
       "image_alt": "Engineering professional working with a laptop and looking toward the Xeffic message",
       "gallery": [
-        "/media/03-design-optimisation-prototypes-1.jpg"
+        "/media/03-design-optimisation-prototypes-1.jpg",
+        "/media/07-urban-infrastructure-risk.png",
+        "/media/01-engineering-knowledge-assistant.png"
+      ],
+      "items": [
+        {}
       ]
     },
     {
