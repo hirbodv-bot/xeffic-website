@@ -8,6 +8,7 @@
     {
       "id": "hero",
       "label": "Engineering intelligence for a safer, more efficient future.",
+      "hide_section": false,
       "title": "Engineering intelligence for a safer, more efficient future.",
       "text": "Xeffic develops practical engineering and AI-driven solutions for industrial efficiency, energy optimisation, advanced simulation, Flood AI, automate documentation and data-driven decision-making.",
       "image": "/media/hero-woman.webp",
@@ -18,35 +19,41 @@
         "/media/01-engineering-knowledge-assistant.png"
       ],
       "items": [
-        {}
+        {
+          "hide_item": false
+        }
       ]
     },
     {
       "id": "what-we-do",
       "label": "Focused engineering capability, built around real-world problems.",
+      "hide_section": false,
       "eyebrow": "WHAT WE DO",
       "title": "Focused engineering capability, built around real-world problems.",
       "text": "We combine first-principles engineering with modern digital tools to help organisations understand risk, improve performance and move from concept to evidence.",
       "cards": [
         {
-          "id": "what-we-do-card-1",
-          "label": "Flood AI",
-          "title": "Flood AI",
-          "text": "AI-assisted flood intelligence combining environmental data, sensor information and engineering context for faster risk screening and decision support.",
-          "link_label": "Learn more →",
-          "link_url": "services.html#flood-ai"
-        },
-        {
           "id": "what-we-do-card-2",
           "label": "Industrial Energy",
+          "hide_card": false,
           "title": "Industrial Energy",
           "text": "Waste-heat recovery, thermal systems, feasibility assessment and performance modelling for energy-intensive industrial processes.",
           "link_label": "Learn more →",
           "link_url": "services.html#energy"
         },
         {
+          "id": "what-we-do-card-1",
+          "label": "Flood AI",
+          "hide_card": false,
+          "title": "Flood AI",
+          "text": "AI-assisted flood intelligence combining environmental data, sensor information and engineering context for faster risk screening and decision support.",
+          "link_label": "Learn more →",
+          "link_url": "services.html#flood-ai"
+        },
+        {
           "id": "what-we-do-card-3",
           "label": "Engineering Simulation",
+          "hide_card": false,
           "title": "Engineering Simulation",
           "text": "FEA, CFD, thermal and multidisciplinary analysis to investigate performance, failure modes and design opportunities.",
           "link_label": "Learn more →",
@@ -57,25 +64,30 @@
     {
       "id": "engineering-depth-without-unnecessary-complexity",
       "label": "Engineering depth without unnecessary complexity.",
+      "hide_section": false,
       "title": "Engineering depth without unnecessary complexity.",
       "items": [
         {
           "id": "engineering-depth-without-unnecessary-complexity-item-1",
+          "hide_item": false,
           "title": "01",
           "text": "Understand the physics before automating the decision."
         },
         {
           "id": "engineering-depth-without-unnecessary-complexity-item-2",
+          "hide_item": false,
           "title": "02",
           "text": "Use AI where it adds speed, insight or scale—not as decoration."
         },
         {
           "id": "engineering-depth-without-unnecessary-complexity-item-3",
+          "hide_item": false,
           "title": "03",
           "text": "Build evidence through modelling, testing and transparent assumptions."
         },
         {
           "id": "engineering-depth-without-unnecessary-complexity-item-4",
+          "hide_item": false,
           "title": "04",
           "text": "Design outputs that can be used by engineers, operators and decision-makers."
         }
@@ -84,26 +96,31 @@
     {
       "id": "from-flood-intelligence-to-industrial-heat-recov",
       "label": "From flood intelligence to industrial heat recovery.",
+      "hide_section": false,
       "title": "From flood intelligence to industrial heat recovery.",
       "text": "Our current focus spans infrastructure risk, sustainable industrial systems and engineering product development.",
       "items": [
         {
           "id": "from-flood-intelligence-to-industrial-heat-recov-item-1",
+          "hide_item": false,
           "title": "Flood detection & forecasting workflows",
           "text": "AI"
         },
         {
           "id": "from-flood-intelligence-to-industrial-heat-recov-item-2",
+          "hide_item": false,
           "title": "Industrial waste-heat recovery concepts",
           "text": "THERMAL"
         },
         {
           "id": "from-flood-intelligence-to-industrial-heat-recov-item-3",
+          "hide_item": false,
           "title": "FEA / CFD / multiphysics analysis",
           "text": "CAE"
         },
         {
           "id": "from-flood-intelligence-to-industrial-heat-recov-item-4",
+          "hide_item": false,
           "title": "Applied research and technical validation",
           "text": "R&D"
         }
@@ -112,6 +129,7 @@
     {
       "id": "cta",
       "label": "Have an engineering challenge that needs a sharper approach?",
+      "hide_section": false,
       "title": "Have an engineering challenge that needs a sharper approach?"
     }
   ]
