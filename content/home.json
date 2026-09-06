@@ -33,7 +33,7 @@
       "text": "We combine first-principles engineering with modern digital tools to help organisations understand risk, improve performance and move from concept to evidence.",
       "cards": [
         {
-          "id": "what-we-do-card-2",
+          "id": "what-we-do-card-1",
           "label": "Industrial Energy",
           "hide_card": false,
           "title": "Industrial Energy",
@@ -42,7 +42,7 @@
           "link_url": "services.html#energy"
         },
         {
-          "id": "what-we-do-card-3",
+          "id": "what-we-do-card-2",
           "label": "Engineering Simulation",
           "hide_card": false,
           "title": "Engineering Simulation",
