@@ -47,5 +47,13 @@
       "is_cta": false
     }
   ],
-  "footer_links_override": false
+  "footer_links_override": true,
+  "footer_columns": [
+    {
+      "title": "Home",
+      "links": [
+        {}
+      ]
+    }
+  ]
 }
