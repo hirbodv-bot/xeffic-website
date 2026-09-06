@@ -2,7 +2,8 @@
   "page_label": "Flood AI page",
   "seo": {
     "title": "Flood AI | Xeffic",
-    "description": "AI-assisted flood intelligence and engineering decision support for infrastructure and resilience."
+    "description": "AI-assisted flood intelligence and engineering decision support for infrastructure and resilience.",
+    "og_image": ""
   },
   "sections": [
     {
@@ -15,7 +16,14 @@
       "image_alt": "",
       "gallery": [],
       "cards": [],
-      "items": []
+      "items": [],
+      "hide_section": false,
+      "background_image": "",
+      "image_position": "center",
+      "button_1_text": "Discuss a Flood AI Use Case →",
+      "button_1_url": "contact.html",
+      "button_2_text": "",
+      "button_2_url": ""
     },
     {
       "id": "flood-risk-is-a-data-problem-and-an-engineering-",
@@ -33,30 +41,45 @@
           "title": "Observe",
           "text": "Rainfall, water levels, terrain, satellite imagery, sensors and asset context.",
           "image": "",
-          "image_alt": ""
+          "image_alt": "",
+          "hide_item": false,
+          "image_position": "center"
         },
         {
           "id": "flood-risk-is-a-data-problem-and-an-engineering--item-2",
           "title": "Detect",
           "text": "Identify conditions or indicators associated with emerging flood risk.",
           "image": "",
-          "image_alt": ""
+          "image_alt": "",
+          "hide_item": false,
+          "image_position": "center"
         },
         {
           "id": "flood-risk-is-a-data-problem-and-an-engineering--item-3",
           "title": "Prioritise",
           "text": "Rank locations and assets by consequence, confidence and urgency.",
           "image": "",
-          "image_alt": ""
+          "image_alt": "",
+          "hide_item": false,
+          "image_position": "center"
         },
         {
           "id": "flood-risk-is-a-data-problem-and-an-engineering--item-4",
           "title": "Support action",
           "text": "Present clear evidence to operators and decision-makers.",
           "image": "",
-          "image_alt": ""
+          "image_alt": "",
+          "hide_item": false,
+          "image_position": "center"
         }
-      ]
+      ],
+      "hide_section": false,
+      "background_image": "",
+      "image_position": "center",
+      "button_1_text": "",
+      "button_1_url": "",
+      "button_2_text": "",
+      "button_2_url": ""
     }
   ]
 }

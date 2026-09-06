@@ -2,7 +2,8 @@
   "page_label": "Privacy page",
   "seo": {
     "title": "Privacy | Xeffic",
-    "description": "Xeffic website privacy information."
+    "description": "Xeffic website privacy information.",
+    "og_image": ""
   },
   "sections": [
     {
@@ -15,7 +16,14 @@
       "image_alt": "",
       "gallery": [],
       "cards": [],
-      "items": []
+      "items": [],
+      "hide_section": false,
+      "background_image": "",
+      "image_position": "center",
+      "button_1_text": "",
+      "button_1_url": "",
+      "button_2_text": "",
+      "button_2_url": ""
     },
     {
       "id": "website-data",
@@ -27,7 +35,14 @@
       "image_alt": "",
       "gallery": [],
       "cards": [],
-      "items": []
+      "items": [],
+      "hide_section": false,
+      "background_image": "",
+      "image_position": "center",
+      "button_1_text": "",
+      "button_1_url": "",
+      "button_2_text": "",
+      "button_2_url": ""
     }
   ]
 }

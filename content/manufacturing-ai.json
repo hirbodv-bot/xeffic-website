@@ -2,7 +2,8 @@
   "page_label": "Manufacturing AI page",
   "seo": {
     "title": "Manufacturing AI | Xeffic",
-    "description": "AI-assisted engineering workflows and decision support for manufacturers."
+    "description": "AI-assisted engineering workflows and decision support for manufacturers.",
+    "og_image": ""
   },
   "sections": [
     {
@@ -15,7 +16,14 @@
       "image_alt": "",
       "gallery": [],
       "cards": [],
-      "items": []
+      "items": [],
+      "hide_section": false,
+      "background_image": "",
+      "image_position": "center",
+      "button_1_text": "Discuss a Manufacturing Workflow →",
+      "button_1_url": "contact.html",
+      "button_2_text": "",
+      "button_2_url": ""
     },
     {
       "id": "start-with-high-frequency-tasks-where-value-can-",
@@ -37,7 +45,10 @@
           "link_url": "",
           "image": "",
           "image_alt": "",
-          "bullets": []
+          "bullets": [],
+          "hide_card": false,
+          "background_image": "",
+          "image_position": "center"
         },
         {
           "id": "start-with-high-frequency-tasks-where-value-can--card-2",
@@ -49,7 +60,10 @@
           "link_url": "",
           "image": "",
           "image_alt": "",
-          "bullets": []
+          "bullets": [],
+          "hide_card": false,
+          "background_image": "",
+          "image_position": "center"
         },
         {
           "id": "start-with-high-frequency-tasks-where-value-can--card-3",
@@ -61,7 +75,10 @@
           "link_url": "",
           "image": "",
           "image_alt": "",
-          "bullets": []
+          "bullets": [],
+          "hide_card": false,
+          "background_image": "",
+          "image_position": "center"
         },
         {
           "id": "start-with-high-frequency-tasks-where-value-can--card-4",
@@ -73,7 +90,10 @@
           "link_url": "",
           "image": "",
           "image_alt": "",
-          "bullets": []
+          "bullets": [],
+          "hide_card": false,
+          "background_image": "",
+          "image_position": "center"
         },
         {
           "id": "start-with-high-frequency-tasks-where-value-can--card-5",
@@ -85,7 +105,10 @@
           "link_url": "",
           "image": "",
           "image_alt": "",
-          "bullets": []
+          "bullets": [],
+          "hide_card": false,
+          "background_image": "",
+          "image_position": "center"
         },
         {
           "id": "start-with-high-frequency-tasks-where-value-can--card-6",
@@ -97,10 +120,20 @@
           "link_url": "",
           "image": "",
           "image_alt": "",
-          "bullets": []
+          "bullets": [],
+          "hide_card": false,
+          "background_image": "",
+          "image_position": "center"
         }
       ],
-      "items": []
+      "items": [],
+      "hide_section": false,
+      "background_image": "",
+      "image_position": "center",
+      "button_1_text": "",
+      "button_1_url": "",
+      "button_2_text": "",
+      "button_2_url": ""
     }
   ]
 }

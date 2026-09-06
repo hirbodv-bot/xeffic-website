@@ -2,7 +2,8 @@
   "page_label": "R&D page",
   "seo": {
     "title": "Research & Development | Xeffic",
-    "description": "Xeffic connects applied research with engineering value across Flood AI, industrial energy, resilient design and low-carbon systems."
+    "description": "Xeffic connects applied research with engineering value across Flood AI, industrial energy, resilient design and low-carbon systems.",
+    "og_image": ""
   },
   "sections": [
     {
@@ -15,7 +16,14 @@
       "image_alt": "",
       "gallery": [],
       "cards": [],
-      "items": []
+      "items": [],
+      "hide_section": false,
+      "background_image": "",
+      "image_position": "center",
+      "button_1_text": "",
+      "button_1_url": "",
+      "button_2_text": "",
+      "button_2_url": ""
     },
     {
       "id": "applied-r-d-themes",
@@ -27,7 +35,14 @@
       "image_alt": "",
       "gallery": [],
       "cards": [],
-      "items": []
+      "items": [],
+      "hide_section": false,
+      "background_image": "",
+      "image_position": "center",
+      "button_1_text": "",
+      "button_1_url": "",
+      "button_2_text": "",
+      "button_2_url": ""
     },
     {
       "id": "built-for-collaboration-with-industry-and-resear",
@@ -49,7 +64,10 @@
           "link_url": "",
           "image": "",
           "image_alt": "",
-          "bullets": []
+          "bullets": [],
+          "hide_card": false,
+          "background_image": "",
+          "image_position": "center"
         },
         {
           "id": "built-for-collaboration-with-industry-and-resear-card-2",
@@ -61,10 +79,20 @@
           "link_url": "",
           "image": "",
           "image_alt": "",
-          "bullets": []
+          "bullets": [],
+          "hide_card": false,
+          "background_image": "",
+          "image_position": "center"
         }
       ],
-      "items": []
+      "items": [],
+      "hide_section": false,
+      "background_image": "",
+      "image_position": "center",
+      "button_1_text": "",
+      "button_1_url": "",
+      "button_2_text": "",
+      "button_2_url": ""
     },
     {
       "id": "publications-knowledge",
@@ -86,7 +114,10 @@
           "link_url": "insights.html",
           "image": "",
           "image_alt": "",
-          "bullets": []
+          "bullets": [],
+          "hide_card": false,
+          "background_image": "",
+          "image_position": "center"
         },
         {
           "id": "publications-knowledge-card-2",
@@ -98,7 +129,10 @@
           "link_url": "insights.html",
           "image": "",
           "image_alt": "",
-          "bullets": []
+          "bullets": [],
+          "hide_card": false,
+          "background_image": "",
+          "image_position": "center"
         },
         {
           "id": "publications-knowledge-card-3",
@@ -110,10 +144,20 @@
           "link_url": "insights.html",
           "image": "",
           "image_alt": "",
-          "bullets": []
+          "bullets": [],
+          "hide_card": false,
+          "background_image": "",
+          "image_position": "center"
         }
       ],
-      "items": []
+      "items": [],
+      "hide_section": false,
+      "background_image": "",
+      "image_position": "center",
+      "button_1_text": "",
+      "button_1_url": "",
+      "button_2_text": "",
+      "button_2_url": ""
     },
     {
       "id": "cta",
@@ -125,7 +169,14 @@
       "image_alt": "",
       "gallery": [],
       "cards": [],
-      "items": []
+      "items": [],
+      "hide_section": false,
+      "background_image": "",
+      "image_position": "center",
+      "button_1_text": "Contact Xeffic",
+      "button_1_url": "contact.html",
+      "button_2_text": "",
+      "button_2_url": ""
     }
   ]
 }

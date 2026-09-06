@@ -2,7 +2,8 @@
   "page_label": "Services page",
   "seo": {
     "title": "Engineering Services | Flood AI, Energy, Simulation & R&D | Xeffic",
-    "description": "Explore Xeffic services in Flood AI, industrial waste-heat recovery, engineering simulation, AI workflows, carbon and applied R&D."
+    "description": "Explore Xeffic services in Flood AI, industrial waste-heat recovery, engineering simulation, AI workflows, carbon and applied R&D.",
+    "og_image": ""
   },
   "sections": [
     {
@@ -15,7 +16,14 @@
       "image_alt": "",
       "gallery": [],
       "cards": [],
-      "items": []
+      "items": [],
+      "hide_section": false,
+      "background_image": "",
+      "image_position": "center",
+      "button_1_text": "",
+      "button_1_url": "",
+      "button_2_text": "",
+      "button_2_url": ""
     },
     {
       "id": "flood-intelligence-and-ai-assisted-risk-workflow",
@@ -43,7 +51,10 @@
             "AI-assisted prioritisation and alerting prototypes",
             "Infrastructure and asset-level risk visualisation",
             "Engineering validation of model assumptions"
-          ]
+          ],
+          "hide_card": false,
+          "background_image": "",
+          "image_position": "center"
         },
         {
           "id": "energy",
@@ -61,7 +72,10 @@
             "Thermodynamic and heat-transfer modelling",
             "Thermosyphon and passive-loop concepts",
             "Techno-economic screening"
-          ]
+          ],
+          "hide_card": false,
+          "background_image": "",
+          "image_position": "center"
         },
         {
           "id": "simulation",
@@ -79,7 +93,10 @@
             "Thermal and coupled-physics modelling",
             "Load-path and serviceability assessment",
             "Sensitivity and design-space studies"
-          ]
+          ],
+          "hide_card": false,
+          "background_image": "",
+          "image_position": "center"
         },
         {
           "id": "ai-engineering",
@@ -97,7 +114,10 @@
             "AI-assisted design and optimisation workflows",
             "Survey-to-engineering automation concepts",
             "Decision-support interfaces"
-          ]
+          ],
+          "hide_card": false,
+          "background_image": "",
+          "image_position": "center"
         },
         {
           "id": "carbon",
@@ -115,7 +135,10 @@
             "Preliminary mass and energy balances",
             "Technology screening",
             "Research and feasibility support"
-          ]
+          ],
+          "hide_card": false,
+          "background_image": "",
+          "image_position": "center"
         },
         {
           "id": "rd",
@@ -133,10 +156,20 @@
             "Failure analysis and root-cause investigation",
             "Technical reports and evidence packs",
             "Research collaboration and funding support"
-          ]
+          ],
+          "hide_card": false,
+          "background_image": "",
+          "image_position": "center"
         }
       ],
-      "items": []
+      "items": [],
+      "hide_section": false,
+      "background_image": "",
+      "image_position": "center",
+      "button_1_text": "",
+      "button_1_url": "",
+      "button_2_text": "",
+      "button_2_url": ""
     },
     {
       "id": "cta",
@@ -148,7 +181,14 @@
       "image_alt": "",
       "gallery": [],
       "cards": [],
-      "items": []
+      "items": [],
+      "hide_section": false,
+      "background_image": "",
+      "image_position": "center",
+      "button_1_text": "Discuss your challenge",
+      "button_1_url": "contact.html",
+      "button_2_text": "",
+      "button_2_url": ""
     }
   ]
 }

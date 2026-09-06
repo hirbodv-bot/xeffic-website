@@ -2,7 +2,8 @@
   "page_label": "Insights page",
   "seo": {
     "title": "Engineering Insights | Xeffic",
-    "description": "Technical insights from Xeffic on Flood AI, industrial heat recovery, simulation, AI engineering and carbon systems."
+    "description": "Technical insights from Xeffic on Flood AI, industrial heat recovery, simulation, AI engineering and carbon systems.",
+    "og_image": ""
   },
   "sections": [
     {
@@ -15,7 +16,14 @@
       "image_alt": "",
       "gallery": [],
       "cards": [],
-      "items": []
+      "items": [],
+      "hide_section": false,
+      "background_image": "",
+      "image_position": "center",
+      "button_1_text": "",
+      "button_1_url": "",
+      "button_2_text": "",
+      "button_2_url": ""
     },
     {
       "id": "what-makes-a-useful-flood-ai-system",
@@ -37,7 +45,10 @@
           "link_url": "",
           "image": "",
           "image_alt": "",
-          "bullets": []
+          "bullets": [],
+          "hide_card": false,
+          "background_image": "",
+          "image_position": "center"
         },
         {
           "id": "what-makes-a-useful-flood-ai-system-card-2",
@@ -49,7 +60,10 @@
           "link_url": "",
           "image": "",
           "image_alt": "",
-          "bullets": []
+          "bullets": [],
+          "hide_card": false,
+          "background_image": "",
+          "image_position": "center"
         },
         {
           "id": "what-makes-a-useful-flood-ai-system-card-3",
@@ -61,7 +75,10 @@
           "link_url": "",
           "image": "",
           "image_alt": "",
-          "bullets": []
+          "bullets": [],
+          "hide_card": false,
+          "background_image": "",
+          "image_position": "center"
         },
         {
           "id": "what-makes-a-useful-flood-ai-system-card-4",
@@ -73,7 +90,10 @@
           "link_url": "",
           "image": "",
           "image_alt": "",
-          "bullets": []
+          "bullets": [],
+          "hide_card": false,
+          "background_image": "",
+          "image_position": "center"
         },
         {
           "id": "what-makes-a-useful-flood-ai-system-card-5",
@@ -85,7 +105,10 @@
           "link_url": "",
           "image": "",
           "image_alt": "",
-          "bullets": []
+          "bullets": [],
+          "hide_card": false,
+          "background_image": "",
+          "image_position": "center"
         },
         {
           "id": "what-makes-a-useful-flood-ai-system-card-6",
@@ -97,10 +120,20 @@
           "link_url": "",
           "image": "",
           "image_alt": "",
-          "bullets": []
+          "bullets": [],
+          "hide_card": false,
+          "background_image": "",
+          "image_position": "center"
         }
       ],
-      "items": []
+      "items": [],
+      "hide_section": false,
+      "background_image": "",
+      "image_position": "center",
+      "button_1_text": "",
+      "button_1_url": "",
+      "button_2_text": "",
+      "button_2_url": ""
     },
     {
       "id": "why-this-page-matters",
@@ -112,7 +145,14 @@
       "image_alt": "",
       "gallery": [],
       "cards": [],
-      "items": []
+      "items": [],
+      "hide_section": false,
+      "background_image": "",
+      "image_position": "center",
+      "button_1_text": "",
+      "button_1_url": "",
+      "button_2_text": "",
+      "button_2_url": ""
     }
   ]
 }

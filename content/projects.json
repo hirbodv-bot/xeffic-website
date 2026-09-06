@@ -2,7 +2,8 @@
   "page_label": "Projects page",
   "seo": {
     "title": "Projects & Applications | Xeffic",
-    "description": "Explore Xeffic application areas including Flood AI, industrial heat recovery, engineering simulation, failure analysis and AI-enabled engineering."
+    "description": "Explore Xeffic application areas including Flood AI, industrial heat recovery, engineering simulation, failure analysis and AI-enabled engineering.",
+    "og_image": ""
   },
   "sections": [
     {
@@ -15,7 +16,14 @@
       "image_alt": "",
       "gallery": [],
       "cards": [],
-      "items": []
+      "items": [],
+      "hide_section": false,
+      "background_image": "",
+      "image_position": "center",
+      "button_1_text": "",
+      "button_1_url": "",
+      "button_2_text": "",
+      "button_2_url": ""
     },
     {
       "id": "ai-assisted-flood-intelligence",
@@ -37,7 +45,10 @@
           "link_url": "",
           "image": "",
           "image_alt": "",
-          "bullets": []
+          "bullets": [],
+          "hide_card": false,
+          "background_image": "",
+          "image_position": "center"
         },
         {
           "id": "ai-assisted-flood-intelligence-card-2",
@@ -49,7 +60,10 @@
           "link_url": "",
           "image": "",
           "image_alt": "",
-          "bullets": []
+          "bullets": [],
+          "hide_card": false,
+          "background_image": "",
+          "image_position": "center"
         },
         {
           "id": "ai-assisted-flood-intelligence-card-3",
@@ -61,7 +75,10 @@
           "link_url": "",
           "image": "",
           "image_alt": "",
-          "bullets": []
+          "bullets": [],
+          "hide_card": false,
+          "background_image": "",
+          "image_position": "center"
         },
         {
           "id": "ai-assisted-flood-intelligence-card-4",
@@ -73,7 +90,10 @@
           "link_url": "",
           "image": "",
           "image_alt": "",
-          "bullets": []
+          "bullets": [],
+          "hide_card": false,
+          "background_image": "",
+          "image_position": "center"
         },
         {
           "id": "ai-assisted-flood-intelligence-card-5",
@@ -85,7 +105,10 @@
           "link_url": "",
           "image": "",
           "image_alt": "",
-          "bullets": []
+          "bullets": [],
+          "hide_card": false,
+          "background_image": "",
+          "image_position": "center"
         },
         {
           "id": "ai-assisted-flood-intelligence-card-6",
@@ -97,10 +120,20 @@
           "link_url": "",
           "image": "",
           "image_alt": "",
-          "bullets": []
+          "bullets": [],
+          "hide_card": false,
+          "background_image": "",
+          "image_position": "center"
         }
       ],
-      "items": []
+      "items": [],
+      "hide_section": false,
+      "background_image": "",
+      "image_position": "center",
+      "button_1_text": "",
+      "button_1_url": "",
+      "button_2_text": "",
+      "button_2_url": ""
     },
     {
       "id": "clear-scope-fast-technical-orientation",
@@ -118,30 +151,45 @@
           "title": "Define",
           "text": "What decision needs to be made?",
           "image": "",
-          "image_alt": ""
+          "image_alt": "",
+          "hide_item": false,
+          "image_position": "center"
         },
         {
           "id": "clear-scope-fast-technical-orientation-item-2",
           "title": "Diagnose",
           "text": "What evidence and physics matter most?",
           "image": "",
-          "image_alt": ""
+          "image_alt": "",
+          "hide_item": false,
+          "image_position": "center"
         },
         {
           "id": "clear-scope-fast-technical-orientation-item-3",
           "title": "Develop",
           "text": "What modelling, data or testing is needed?",
           "image": "",
-          "image_alt": ""
+          "image_alt": "",
+          "hide_item": false,
+          "image_position": "center"
         },
         {
           "id": "clear-scope-fast-technical-orientation-item-4",
           "title": "Deliver",
           "text": "What output will move the project forward?",
           "image": "",
-          "image_alt": ""
+          "image_alt": "",
+          "hide_item": false,
+          "image_position": "center"
         }
-      ]
+      ],
+      "hide_section": false,
+      "background_image": "",
+      "image_position": "center",
+      "button_1_text": "",
+      "button_1_url": "",
+      "button_2_text": "",
+      "button_2_url": ""
     },
     {
       "id": "cta",
@@ -153,7 +201,14 @@
       "image_alt": "",
       "gallery": [],
       "cards": [],
-      "items": []
+      "items": [],
+      "hide_section": false,
+      "background_image": "",
+      "image_position": "center",
+      "button_1_text": "Tell us about it",
+      "button_1_url": "contact.html",
+      "button_2_text": "",
+      "button_2_url": ""
     }
   ]
 }
