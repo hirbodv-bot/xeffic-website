@@ -1,34 +1,118 @@
 {
-  "seo_title": "About Xeffic",
-  "seo_description": "Applied engineering, data and AI for industrial and infrastructure challenges.",
-  "hero": {
-    "pill": "About Xeffic",
-    "title": "Applied engineering with a digital edge.",
-    "description": "Xeffic is an engineering technology company focused on practical industrial and infrastructure problems where engineering analysis, data and AI can create measurable value.",
-    "image": "",
-    "image_alt": "About Xeffic"
+  "page_label": "About page",
+  "seo": {
+    "title": "About Xeffic | Applied Engineering & AI",
+    "description": "Learn about Xeffic's approach to applied engineering, useful AI, simulation and industry-focused R&D."
   },
-  "section": {
-    "title": "Engineering first. AI where it adds value.",
-    "description": "We start with the decision, process, failure mode or cost that matters, then use the right combination of engineering analysis, simulation, data and AI.",
-    "image": ""
-  },
-  "principles": [
+  "sections": [
     {
-      "title": "Evidence over hype",
-      "description": "Transparent assumptions, reviewable methods and clear limitations.",
-      "image": ""
+      "id": "hero",
+      "label": "Applied engineering, intelligent tools, practical outcomes.",
+      "eyebrow": "ABOUT XEFFIC",
+      "title": "Applied engineering, intelligent tools, practical outcomes.",
+      "text": "Xeffic is an engineering and technology venture focused on turning complex technical problems into clear, evidence-based decisions.",
+      "image": "",
+      "image_alt": "",
+      "gallery": [],
+      "cards": [],
+      "items": []
     },
     {
-      "title": "Focused pilots",
-      "description": "Start with one problem, prove value, then scale with confidence.",
-      "image": ""
+      "id": "our-approach",
+      "label": "Our approach",
+      "eyebrow": "",
+      "title": "Our approach",
+      "text": "We start with the engineering fundamentals, then use modelling, data and AI to increase speed, insight and scalability. This creates solutions that are technically defensible and practical to use.",
+      "image": "",
+      "image_alt": "",
+      "gallery": [],
+      "cards": [],
+      "items": []
     },
     {
-      "title": "Practical collaboration",
-      "description": "Work with industry teams to frame useful questions and achievable next steps.",
-      "image": ""
+      "id": "core-principles",
+      "label": "How we work",
+      "eyebrow": "CORE PRINCIPLES",
+      "title": "How we work",
+      "text": "",
+      "image": "",
+      "image_alt": "",
+      "gallery": [],
+      "cards": [
+        {
+          "id": "core-principles-card-1",
+          "label": "Evidence first",
+          "kicker": "",
+          "title": "Evidence first",
+          "text": "Transparent assumptions, traceable calculations and outputs that can be reviewed.",
+          "link_label": "",
+          "link_url": "",
+          "image": "",
+          "image_alt": "",
+          "bullets": []
+        },
+        {
+          "id": "core-principles-card-2",
+          "label": "Useful AI",
+          "kicker": "",
+          "title": "Useful AI",
+          "text": "AI is applied to specific decisions, workflows or data challenges—not added for appearance.",
+          "link_label": "",
+          "link_url": "",
+          "image": "",
+          "image_alt": "",
+          "bullets": []
+        },
+        {
+          "id": "core-principles-card-3",
+          "label": "Cross-disciplinary",
+          "kicker": "",
+          "title": "Cross-disciplinary",
+          "text": "Mechanical, civil, thermal and digital engineering perspectives are combined when the problem requires it.",
+          "link_label": "",
+          "link_url": "",
+          "image": "",
+          "image_alt": "",
+          "bullets": []
+        },
+        {
+          "id": "core-principles-card-4",
+          "label": "Industry minded",
+          "kicker": "",
+          "title": "Industry minded",
+          "text": "Solutions are shaped around implementation, manufacturability, operations and commercial constraints.",
+          "link_label": "",
+          "link_url": "",
+          "image": "",
+          "image_alt": "",
+          "bullets": []
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "where-xeffic-adds-value",
+      "label": "Where Xeffic adds value",
+      "eyebrow": "",
+      "title": "Where Xeffic adds value",
+      "text": "",
+      "image": "",
+      "image_alt": "",
+      "gallery": [],
+      "cards": [],
+      "items": []
+    },
+    {
+      "id": "cta",
+      "label": "Need an engineering partner for an early-stage technical challenge?",
+      "eyebrow": "",
+      "title": "Need an engineering partner for an early-stage technical challenge?",
+      "text": "",
+      "image": "",
+      "image_alt": "",
+      "gallery": [],
+      "cards": [],
+      "items": []
     }
-  ],
-  "gallery": []
+  ]
 }

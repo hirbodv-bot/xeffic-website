@@ -1,0 +1,131 @@
+{
+  "page_label": "R&D page",
+  "seo": {
+    "title": "Research & Development | Xeffic",
+    "description": "Xeffic connects applied research with engineering value across Flood AI, industrial energy, resilient design and low-carbon systems."
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "label": "Research translated into engineering value.",
+      "eyebrow": "RESEARCH & DEVELOPMENT",
+      "title": "Research translated into engineering value.",
+      "text": "Xeffic is designed to connect academic-quality thinking with practical industrial development.",
+      "image": "",
+      "image_alt": "",
+      "gallery": [],
+      "cards": [],
+      "items": []
+    },
+    {
+      "id": "applied-r-d-themes",
+      "label": "Applied R&D themes",
+      "eyebrow": "",
+      "title": "Applied R&D themes",
+      "text": "Our R&D interests focus on technical areas where better modelling, data interpretation and engineering design can reduce risk or improve resource efficiency.",
+      "image": "",
+      "image_alt": "",
+      "gallery": [],
+      "cards": [],
+      "items": []
+    },
+    {
+      "id": "built-for-collaboration-with-industry-and-resear",
+      "label": "Built for collaboration with industry and research partners.",
+      "eyebrow": "",
+      "title": "Built for collaboration with industry and research partners.",
+      "text": "Potential collaboration formats include feasibility studies, applied research projects, demonstrators, technical validation and jointly developed funding proposals.",
+      "image": "",
+      "image_alt": "",
+      "gallery": [],
+      "cards": [
+        {
+          "id": "built-for-collaboration-with-industry-and-resear-card-1",
+          "label": "Industry collaboration",
+          "kicker": "",
+          "title": "Industry collaboration",
+          "text": "Short, focused technical studies through to longer development programmes.",
+          "link_label": "",
+          "link_url": "",
+          "image": "",
+          "image_alt": "",
+          "bullets": []
+        },
+        {
+          "id": "built-for-collaboration-with-industry-and-resear-card-2",
+          "label": "Research collaboration",
+          "kicker": "",
+          "title": "Research collaboration",
+          "text": "Joint R&D, publications, demonstrators and funding opportunities.",
+          "link_label": "",
+          "link_url": "",
+          "image": "",
+          "image_alt": "",
+          "bullets": []
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "publications-knowledge",
+      "label": "Selected research directions",
+      "eyebrow": "PUBLICATIONS & KNOWLEDGE",
+      "title": "Selected research directions",
+      "text": "Publication details can be added here as the Xeffic site grows. The structure below is already SEO-ready for individual technical pages.",
+      "image": "",
+      "image_alt": "",
+      "gallery": [],
+      "cards": [
+        {
+          "id": "publications-knowledge-card-1",
+          "label": "Seal behaviour, structural performance and flood-protection systems",
+          "kicker": "",
+          "title": "Seal behaviour, structural performance and flood-protection systems",
+          "text": "",
+          "link_label": "Explore related insights →",
+          "link_url": "insights.html",
+          "image": "",
+          "image_alt": "",
+          "bullets": []
+        },
+        {
+          "id": "publications-knowledge-card-2",
+          "label": "Hydrogen, thermal recovery and low-carbon power systems",
+          "kicker": "",
+          "title": "Hydrogen, thermal recovery and low-carbon power systems",
+          "text": "",
+          "link_label": "Explore related insights →",
+          "link_url": "insights.html",
+          "image": "",
+          "image_alt": "",
+          "bullets": []
+        },
+        {
+          "id": "publications-knowledge-card-3",
+          "label": "Data-driven workflows for risk, design and technical decision support",
+          "kicker": "",
+          "title": "Data-driven workflows for risk, design and technical decision support",
+          "text": "",
+          "link_label": "Explore related insights →",
+          "link_url": "insights.html",
+          "image": "",
+          "image_alt": "",
+          "bullets": []
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "cta",
+      "label": "Looking for an engineering R&D partner?",
+      "eyebrow": "",
+      "title": "Looking for an engineering R&D partner?",
+      "text": "",
+      "image": "",
+      "image_alt": "",
+      "gallery": [],
+      "cards": [],
+      "items": []
+    }
+  ]
+}

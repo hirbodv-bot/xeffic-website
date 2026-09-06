@@ -1,0 +1,33 @@
+{
+  "page_label": "Privacy page",
+  "seo": {
+    "title": "Privacy | Xeffic",
+    "description": "Xeffic website privacy information."
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "label": "Privacy notice",
+      "eyebrow": "PRIVACY",
+      "title": "Privacy notice",
+      "text": "Starter privacy information for the initial Xeffic website.",
+      "image": "",
+      "image_alt": "",
+      "gallery": [],
+      "cards": [],
+      "items": []
+    },
+    {
+      "id": "website-data",
+      "label": "Website data",
+      "eyebrow": "",
+      "title": "Website data",
+      "text": "This starter website does not use a database, user accounts or embedded advertising. The contact form does not transmit information to Xeffic directly; it opens the visitor's own email application.",
+      "image": "",
+      "image_alt": "",
+      "gallery": [],
+      "cards": [],
+      "items": []
+    }
+  ]
+}

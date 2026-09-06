@@ -69,13 +69,3 @@ footer{margin-top:18px;background:#06142d;color:#dbe7f4;padding:38px 0 20px}.foo
 
 @media(max-width:1050px){.audience-grid{grid-template-columns:1fr 1fr}.approach-section{grid-template-columns:1fr;gap:30px}.home-cta{align-items:flex-start;flex-direction:column}}
 @media(max-width:620px){.audiences-section,.approach-section{padding:30px 22px}.audience-grid{grid-template-columns:1fr}.audience-card{padding:16px 0}.home-cta{padding:30px 24px}.home-cta h2{font-size:2rem}}
-
-/* CMS image support */
-.cms-service-image{position:absolute;right:0;top:0;width:46%;height:100%;object-fit:cover;z-index:1;mask-image:linear-gradient(to left,#000 72%,transparent 100%);-webkit-mask-image:linear-gradient(to left,#000 72%,transparent 100%)}
-.cms-default-visual[hidden]{display:none!important}.service-card>*:not(.cms-service-image):not(.cms-default-visual){position:relative;z-index:3}
-.section-wide-image{width:100%;max-height:340px;object-fit:cover;border-radius:16px;margin:0 0 24px}.section-inline-image{width:100%;max-height:300px;object-fit:cover;border-radius:16px;margin:0 0 20px}
-.audience-image{width:100%;height:120px;object-fit:cover;border-radius:12px;margin-bottom:12px}.page-box-media{display:grid;grid-template-columns:1.25fr .75fr;gap:30px;align-items:center}.page-hero-image{width:100%;height:300px;object-fit:cover;border-radius:17px;box-shadow:var(--shadow)}
-.card-image{width:100%;height:170px;object-fit:cover;border-radius:12px;margin-bottom:16px}.cms-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:30px}.cms-gallery img{width:100%;height:240px;object-fit:cover;border-radius:16px;border:1px solid var(--line)}
-.step-image{grid-column:1/-1;width:100%;max-height:180px;object-fit:cover;border-radius:12px;margin-bottom:10px}.cms-bg-section{background-size:cover;background-position:center}
-@media(max-width:760px){.page-box-media{grid-template-columns:1fr}.page-hero-image{height:240px}.cms-gallery{grid-template-columns:1fr 1fr}.cms-gallery img{height:190px}.cms-service-image{width:100%;height:145px;top:auto;bottom:0;mask-image:linear-gradient(to bottom,transparent,#000 35%);-webkit-mask-image:linear-gradient(to bottom,transparent,#000 35%)}}
-@media(max-width:520px){.cms-gallery{grid-template-columns:1fr}.cms-gallery img{height:220px}}

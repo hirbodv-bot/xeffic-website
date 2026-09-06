@@ -1,52 +1,154 @@
 {
-  "seo_title": "Industrial Energy & Simulation | Xeffic",
-  "seo_description": "Industrial energy efficiency, waste-heat recovery, FEA, CFD and thermal modelling from Xeffic.",
-  "hero": {
-    "pill": "Industrial Engineering",
-    "title": "Energy efficiency and simulation for practical engineering decisions.",
-    "description": "From waste-heat recovery to FEA, CFD and thermal modelling, Xeffic helps industrial teams understand performance, test options and build stronger technical cases.",
-    "image": "",
-    "image_alt": "Industrial engineering"
+  "page_label": "Services page",
+  "seo": {
+    "title": "Engineering Services | Flood AI, Energy, Simulation & R&D | Xeffic",
+    "description": "Explore Xeffic services in Flood AI, industrial waste-heat recovery, engineering simulation, AI workflows, carbon and applied R&D."
   },
-  "energy": {
-    "kicker": "Industrial Energy",
-    "title": "Waste-heat recovery & efficiency",
-    "description": "Assess where thermal energy is being lost and what can realistically be recovered, reused or converted.",
-    "image": "",
-    "image_alt": "Industrial energy",
-    "bullets": [
-      "Waste-heat opportunity assessment",
-      "Heat-exchanger concepts",
-      "Thermal-system modelling",
-      "Passive-loop and thermosyphon concepts",
-      "Techno-economic screening"
-    ]
-  },
-  "simulation": {
-    "kicker": "Simulation",
-    "title": "FEA, CFD & thermal modelling",
-    "description": "Analyse structural, flow and thermal behaviour before committing to expensive physical changes.",
-    "image": "",
-    "image_alt": "Engineering simulation",
-    "bullets": [
-      "Finite element analysis",
-      "Computational fluid dynamics",
-      "Thermal modelling",
-      "Sensitivity studies",
-      "Validation planning"
-    ]
-  },
-  "rd": {
-    "kicker": "R&D support",
-    "title": "Prototype, validate and improve",
-    "description": "Focused engineering studies for products, processes and industrial R&D where technical uncertainty needs to be reduced.",
-    "image": ""
-  },
-  "decision": {
-    "kicker": "Decision support",
-    "title": "Turn analysis into action",
-    "description": "Translate models, test data and operational information into clearer engineering decisions and next steps.",
-    "image": ""
-  },
-  "gallery": []
+  "sections": [
+    {
+      "id": "hero",
+      "label": "Engineering services designed for difficult, high-value problems.",
+      "eyebrow": "SERVICES",
+      "title": "Engineering services designed for difficult, high-value problems.",
+      "text": "From flood intelligence and energy systems to simulation and R&D support, Xeffic helps turn uncertainty into engineering evidence.",
+      "image": "",
+      "image_alt": "",
+      "gallery": [],
+      "cards": [],
+      "items": []
+    },
+    {
+      "id": "flood-intelligence-and-ai-assisted-risk-workflow",
+      "label": "Flood Intelligence And Ai Assisted Risk Workflow",
+      "eyebrow": "",
+      "title": "",
+      "text": "",
+      "image": "",
+      "image_alt": "",
+      "gallery": [],
+      "cards": [
+        {
+          "id": "flood-ai",
+          "label": "Flood intelligence and AI-assisted risk workflows",
+          "kicker": "FLOOD AI",
+          "title": "Flood intelligence and AI-assisted risk workflows",
+          "text": "We develop decision-support concepts that bring together environmental data, engineering knowledge and AI methods to improve the speed and consistency of flood-risk screening.",
+          "link_label": "",
+          "link_url": "",
+          "image": "",
+          "image_alt": "",
+          "bullets": [
+            "Flood detection and event screening workflows",
+            "Satellite, rainfall, terrain and sensor-data integration concepts",
+            "AI-assisted prioritisation and alerting prototypes",
+            "Infrastructure and asset-level risk visualisation",
+            "Engineering validation of model assumptions"
+          ]
+        },
+        {
+          "id": "energy",
+          "label": "Waste-heat recovery and thermal systems",
+          "kicker": "INDUSTRIAL ENERGY",
+          "title": "Waste-heat recovery and thermal systems",
+          "text": "We support industrial organisations in understanding where heat is being lost, how much can realistically be recovered and which system architecture is technically appropriate.",
+          "link_label": "",
+          "link_url": "",
+          "image": "",
+          "image_alt": "",
+          "bullets": [
+            "Waste-heat opportunity assessment",
+            "Heat-exchanger and thermal-system concepts",
+            "Thermodynamic and heat-transfer modelling",
+            "Thermosyphon and passive-loop concepts",
+            "Techno-economic screening"
+          ]
+        },
+        {
+          "id": "simulation",
+          "label": "FEA, CFD and engineering analysis",
+          "kicker": "SIMULATION",
+          "title": "FEA, CFD and engineering analysis",
+          "text": "Simulation is used to explore design limits, failure modes and performance before expensive physical changes are made.",
+          "link_label": "",
+          "link_url": "",
+          "image": "",
+          "image_alt": "",
+          "bullets": [
+            "Finite element analysis",
+            "Computational fluid dynamics",
+            "Thermal and coupled-physics modelling",
+            "Load-path and serviceability assessment",
+            "Sensitivity and design-space studies"
+          ]
+        },
+        {
+          "id": "ai-engineering",
+          "label": "AI-enabled engineering workflows",
+          "kicker": "AI & DIGITAL ENGINEERING",
+          "title": "AI-enabled engineering workflows",
+          "text": "We identify repeatable technical tasks where AI can reduce manual effort, improve consistency or surface better engineering insight.",
+          "link_label": "",
+          "link_url": "",
+          "image": "",
+          "image_alt": "",
+          "bullets": [
+            "Engineering knowledge assistants",
+            "Automated technical-data triage",
+            "AI-assisted design and optimisation workflows",
+            "Survey-to-engineering automation concepts",
+            "Decision-support interfaces"
+          ]
+        },
+        {
+          "id": "carbon",
+          "label": "Carbon capture and low-carbon engineering",
+          "kicker": "CARBON & SUSTAINABILITY",
+          "title": "Carbon capture and low-carbon engineering",
+          "text": "Technical feasibility and process-level analysis for carbon reduction, capture, energy integration and sustainable technology concepts.",
+          "link_label": "",
+          "link_url": "",
+          "image": "",
+          "image_alt": "",
+          "bullets": [
+            "Carbon-capture process concepts",
+            "Energy and process integration",
+            "Preliminary mass and energy balances",
+            "Technology screening",
+            "Research and feasibility support"
+          ]
+        },
+        {
+          "id": "rd",
+          "label": "Research, testing and technical development",
+          "kicker": "APPLIED R&D",
+          "title": "Research, testing and technical development",
+          "text": "For organisations developing new products or technologies, we can support the evidence-building stage between an idea and a defensible engineering proposition.",
+          "link_label": "",
+          "link_url": "",
+          "image": "",
+          "image_alt": "",
+          "bullets": [
+            "Literature and standards review",
+            "Experimental planning and test interpretation",
+            "Failure analysis and root-cause investigation",
+            "Technical reports and evidence packs",
+            "Research collaboration and funding support"
+          ]
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "cta",
+      "label": "Send us the problem, not a predefined solution.",
+      "eyebrow": "",
+      "title": "Send us the problem, not a predefined solution.",
+      "text": "",
+      "image": "",
+      "image_alt": "",
+      "gallery": [],
+      "cards": [],
+      "items": []
+    }
+  ]
 }

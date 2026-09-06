@@ -1,119 +1,164 @@
 {
-  "seo_title": "Xeffic | Engineering Intelligence for Industry",
-  "seo_description": "Xeffic develops practical engineering solutions across Manufacturing AI, industrial energy efficiency, simulation, data-driven decision support and Flood AI.",
-  "hero": {
-    "pill": "Engineering · AI · Industry",
-    "title": "Engineering intelligence for a",
-    "highlight": "safer, more efficient future.",
-    "image": "/media/hero-woman.webp",
-    "image_alt": "Smiling professional woman working with a laptop",
-    "primary_label": "Discuss a Challenge →",
-    "primary_href": "contact.html",
-    "secondary_label": "Explore Services →",
-    "secondary_href": "services.html"
+  "page_label": "Homepage",
+  "seo": {
+    "title": "Xeffic | Engineering Intelligence, Flood AI & Sustainable Technology",
+    "description": "Xeffic develops practical engineering and AI-driven solutions for industrial efficiency, energy optimisation, advanced simulation, Flood AI, automate documentation and data-driven decision-making."
   },
-  "services": {
-    "manufacturing": {
-      "number": "01",
-      "kicker": "Manufacturing AI",
-      "title": "Smarter Operations. Stronger Performance.",
-      "description": "AI-assisted solutions that streamline engineering workflows, surface insight and reduce repetitive technical work.",
-      "image_alt": "Manufacturing AI",
-      "link": "manufacturing-ai.html",
-      "link_label": "Learn More →"
+  "sections": [
+    {
+      "id": "hero",
+      "label": "Engineering intelligence for a safer, more efficient future.",
+      "eyebrow": "",
+      "title": "Engineering intelligence for a safer, more efficient future.",
+      "text": "Xeffic develops practical engineering and AI-driven solutions for industrial efficiency, energy optimisation, advanced simulation, Flood AI, automate documentation and data-driven decision-making.",
+      "image": "/media/hero-woman.webp",
+      "image_alt": "Engineering professional working with a laptop and looking toward the Xeffic message",
+      "gallery": [],
+      "cards": [],
+      "items": []
     },
-    "energy": {
-      "number": "02",
-      "kicker": "Industrial Energy",
-      "title": "Optimize Energy. Reduce Cost. Lower Impact.",
-      "description": "Engineering-led energy efficiency, waste-heat recovery and thermal optimisation for industrial operations.",
-      "image_alt": "Industrial energy efficiency",
-      "link": "services.html#energy",
-      "link_label": "Learn More →"
+    {
+      "id": "what-we-do",
+      "label": "Focused engineering capability, built around real-world problems.",
+      "eyebrow": "WHAT WE DO",
+      "title": "Focused engineering capability, built around real-world problems.",
+      "text": "We combine first-principles engineering with modern digital tools to help organisations understand risk, improve performance and move from concept to evidence.",
+      "image": "",
+      "image_alt": "",
+      "gallery": [],
+      "cards": [
+        {
+          "id": "what-we-do-card-1",
+          "label": "Flood AI",
+          "kicker": "",
+          "title": "Flood AI",
+          "text": "AI-assisted flood intelligence combining environmental data, sensor information and engineering context for faster risk screening and decision support.",
+          "link_label": "Learn more →",
+          "link_url": "services.html#flood-ai",
+          "image": "",
+          "image_alt": "",
+          "bullets": []
+        },
+        {
+          "id": "what-we-do-card-2",
+          "label": "Industrial Energy",
+          "kicker": "",
+          "title": "Industrial Energy",
+          "text": "Waste-heat recovery, thermal systems, feasibility assessment and performance modelling for energy-intensive industrial processes.",
+          "link_label": "Learn more →",
+          "link_url": "services.html#energy",
+          "image": "",
+          "image_alt": "",
+          "bullets": []
+        },
+        {
+          "id": "what-we-do-card-3",
+          "label": "Engineering Simulation",
+          "kicker": "",
+          "title": "Engineering Simulation",
+          "text": "FEA, CFD, thermal and multidisciplinary analysis to investigate performance, failure modes and design opportunities.",
+          "link_label": "Learn more →",
+          "link_url": "services.html#simulation",
+          "image": "",
+          "image_alt": "",
+          "bullets": []
+        }
+      ],
+      "items": []
     },
-    "simulation": {
-      "number": "03",
-      "kicker": "Simulation",
-      "title": "Model Today. Engineer Tomorrow.",
-      "description": "FEA, CFD and thermal modelling to test, validate and improve designs before expensive physical changes.",
-      "image_alt": "Engineering simulation",
-      "link": "services.html#simulation",
-      "link_label": "Learn More →"
+    {
+      "id": "engineering-depth-without-unnecessary-complexity",
+      "label": "Engineering depth without unnecessary complexity.",
+      "eyebrow": "",
+      "title": "Engineering depth without unnecessary complexity.",
+      "text": "",
+      "image": "",
+      "image_alt": "",
+      "gallery": [],
+      "cards": [],
+      "items": [
+        {
+          "id": "engineering-depth-without-unnecessary-complexity-item-1",
+          "title": "01",
+          "text": "Understand the physics before automating the decision.",
+          "image": "",
+          "image_alt": ""
+        },
+        {
+          "id": "engineering-depth-without-unnecessary-complexity-item-2",
+          "title": "02",
+          "text": "Use AI where it adds speed, insight or scale—not as decoration.",
+          "image": "",
+          "image_alt": ""
+        },
+        {
+          "id": "engineering-depth-without-unnecessary-complexity-item-3",
+          "title": "03",
+          "text": "Build evidence through modelling, testing and transparent assumptions.",
+          "image": "",
+          "image_alt": ""
+        },
+        {
+          "id": "engineering-depth-without-unnecessary-complexity-item-4",
+          "title": "04",
+          "text": "Design outputs that can be used by engineers, operators and decision-makers.",
+          "image": "",
+          "image_alt": ""
+        }
+      ]
     },
-    "flood": {
-      "number": "04",
-      "kicker": "Flood AI",
-      "title": "Anticipate. Prepare. Protect.",
-      "description": "AI-assisted flood intelligence using weather, terrain, satellite, sensor and infrastructure data to support earlier decisions.",
-      "image_alt": "Flood AI",
-      "link": "flood-ai.html",
-      "link_label": "Learn More →"
+    {
+      "id": "from-flood-intelligence-to-industrial-heat-recov",
+      "label": "From flood intelligence to industrial heat recovery.",
+      "eyebrow": "",
+      "title": "From flood intelligence to industrial heat recovery.",
+      "text": "Our current focus spans infrastructure risk, sustainable industrial systems and engineering product development.",
+      "image": "",
+      "image_alt": "",
+      "gallery": [],
+      "cards": [],
+      "items": [
+        {
+          "id": "from-flood-intelligence-to-industrial-heat-recov-item-1",
+          "title": "Flood detection & forecasting workflows",
+          "text": "AI",
+          "image": "",
+          "image_alt": ""
+        },
+        {
+          "id": "from-flood-intelligence-to-industrial-heat-recov-item-2",
+          "title": "Industrial waste-heat recovery concepts",
+          "text": "THERMAL",
+          "image": "",
+          "image_alt": ""
+        },
+        {
+          "id": "from-flood-intelligence-to-industrial-heat-recov-item-3",
+          "title": "FEA / CFD / multiphysics analysis",
+          "text": "CAE",
+          "image": "",
+          "image_alt": ""
+        },
+        {
+          "id": "from-flood-intelligence-to-industrial-heat-recov-item-4",
+          "title": "Applied research and technical validation",
+          "text": "R&D",
+          "image": "",
+          "image_alt": ""
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "label": "Have an engineering challenge that needs a sharper approach?",
+      "eyebrow": "",
+      "title": "Have an engineering challenge that needs a sharper approach?",
+      "text": "",
+      "image": "",
+      "image_alt": "",
+      "gallery": [],
+      "cards": [],
+      "items": []
     }
-  },
-  "audiences": {
-    "kicker": "Who we help",
-    "title": "Engineering and AI for organisations with real operational challenges.",
-    "description": "Focused support for teams that need stronger technical decisions, better efficiency and practical digital tools.",
-    "items": [
-      {
-        "title": "Manufacturers",
-        "description": "AI-assisted workflows, energy efficiency, process insight and engineering analysis."
-      },
-      {
-        "title": "Engineering Companies",
-        "description": "Simulation, technical decision support and digital tools for complex project delivery."
-      },
-      {
-        "title": "Infrastructure Operators",
-        "description": "Flood intelligence, asset-risk screening and evidence-led operational decisions."
-      },
-      {
-        "title": "Resilience Teams",
-        "description": "Data-driven approaches for flood preparedness, prioritisation and response."
-      }
-    ]
-  },
-  "approach": {
-    "kicker": "How we work",
-    "title": "Start with the engineering problem. Use AI where it adds value.",
-    "description": "Xeffic focuses on targeted problems with a clear technical or operational outcome — not technology for its own sake.",
-    "link_label": "Our approach →",
-    "link_href": "about.html",
-    "steps": [
-      {
-        "title": "Define the challenge",
-        "description": "Clarify the decision, bottleneck, risk or efficiency opportunity."
-      },
-      {
-        "title": "Build the evidence",
-        "description": "Use engineering analysis, simulation and data to develop a practical solution."
-      },
-      {
-        "title": "Pilot and validate",
-        "description": "Test on a focused use case, review the output and scale only where value is proven."
-      }
-    ]
-  },
-  "cta": {
-    "kicker": "Start with one challenge",
-    "title": "What is costing your team time, energy or confidence?",
-    "description": "Tell us the problem. We can help identify whether engineering analysis, simulation or AI is the right next step.",
-    "button_label": "Discuss a Challenge →",
-    "button_href": "contact.html"
-  },
-  "sustain": {
-    "title": "Engineering a sustainable future.",
-    "description": "We combine engineering analysis with artificial intelligence to solve real industrial and infrastructure challenges and create lasting technical value.",
-    "image": "/media/growth-plant.svg",
-    "tags": [
-      "Manufacturing",
-      "Energy",
-      "Infrastructure",
-      "Resilience"
-    ]
-  },
-  "industry": {
-    "title": "Built for industry collaboration",
-    "description": "Focused pilots, engineering evidence and practical solutions designed around real operational problems."
-  }
+  ]
 }

@@ -1,0 +1,118 @@
+{
+  "page_label": "Insights page",
+  "seo": {
+    "title": "Engineering Insights | Xeffic",
+    "description": "Technical insights from Xeffic on Flood AI, industrial heat recovery, simulation, AI engineering and carbon systems."
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "label": "Technical thinking for engineering decisions.",
+      "eyebrow": "INSIGHTS",
+      "title": "Technical thinking for engineering decisions.",
+      "text": "This section is ready to become Xeffic's search-engine growth engine: useful, specific technical content written for real engineering questions.",
+      "image": "",
+      "image_alt": "",
+      "gallery": [],
+      "cards": [],
+      "items": []
+    },
+    {
+      "id": "what-makes-a-useful-flood-ai-system",
+      "label": "What Makes A Useful Flood Ai System",
+      "eyebrow": "",
+      "title": "",
+      "text": "",
+      "image": "",
+      "image_alt": "",
+      "gallery": [],
+      "cards": [
+        {
+          "id": "what-makes-a-useful-flood-ai-system-card-1",
+          "label": "What makes a useful flood-AI system?",
+          "kicker": "FLOOD AI",
+          "title": "What makes a useful flood-AI system?",
+          "text": "A practical framework for combining environmental data, engineering context and human decision-making.",
+          "link_label": "",
+          "link_url": "",
+          "image": "",
+          "image_alt": "",
+          "bullets": []
+        },
+        {
+          "id": "what-makes-a-useful-flood-ai-system-card-2",
+          "label": "Where industrial waste heat becomes worth recovering",
+          "kicker": "ENERGY",
+          "title": "Where industrial waste heat becomes worth recovering",
+          "text": "Temperature, availability, duty cycle and end use all matter more than a headline heat quantity.",
+          "link_label": "",
+          "link_url": "",
+          "image": "",
+          "image_alt": "",
+          "bullets": []
+        },
+        {
+          "id": "what-makes-a-useful-flood-ai-system-card-3",
+          "label": "When an FEA model is useful—and when it is not",
+          "kicker": "SIMULATION",
+          "title": "When an FEA model is useful—and when it is not",
+          "text": "Good simulation depends on load definition, material behaviour, boundary conditions and verification.",
+          "link_label": "",
+          "link_url": "",
+          "image": "",
+          "image_alt": "",
+          "bullets": []
+        },
+        {
+          "id": "what-makes-a-useful-flood-ai-system-card-4",
+          "label": "Five engineering tasks that can benefit from AI-assisted workflows",
+          "kicker": "AI ENGINEERING",
+          "title": "Five engineering tasks that can benefit from AI-assisted workflows",
+          "text": "Where automation can remove repetitive effort without hiding the engineering logic.",
+          "link_label": "",
+          "link_url": "",
+          "image": "",
+          "image_alt": "",
+          "bullets": []
+        },
+        {
+          "id": "what-makes-a-useful-flood-ai-system-card-5",
+          "label": "Why failure analysis should change the geometry, not just the report",
+          "kicker": "FAILURE ANALYSIS",
+          "title": "Why failure analysis should change the geometry, not just the report",
+          "text": "Root-cause work creates value when the diagnosis informs a better design decision.",
+          "link_label": "",
+          "link_url": "",
+          "image": "",
+          "image_alt": "",
+          "bullets": []
+        },
+        {
+          "id": "what-makes-a-useful-flood-ai-system-card-6",
+          "label": "Carbon capture feasibility: the questions to answer first",
+          "kicker": "CARBON",
+          "title": "Carbon capture feasibility: the questions to answer first",
+          "text": "A screening approach for energy penalty, integration, transport and practical deployment.",
+          "link_label": "",
+          "link_url": "",
+          "image": "",
+          "image_alt": "",
+          "bullets": []
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "why-this-page-matters",
+      "label": "Why this page matters",
+      "eyebrow": "",
+      "title": "Why this page matters",
+      "text": "Publishing detailed, original engineering articles under focused URLs can help Xeffic build topical authority over time. Each future article should answer a real question, include useful diagrams or calculations where appropriate, and link naturally to relevant services.",
+      "image": "",
+      "image_alt": "",
+      "gallery": [],
+      "cards": [],
+      "items": []
+    }
+  ]
+}

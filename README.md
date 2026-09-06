@@ -1,33 +1,51 @@
-# Xeffic self-editing website (Pages CMS enabled)
+# Xeffic Website
 
-This version keeps the current design but moves the editable text and images into `content/*.json`.
+Static, responsive website starter for **xeffic.com**.
 
-## What you can edit yourself
-- Homepage hero text and hero image
-- Manufacturing AI, Industrial Energy, Simulation and Flood AI card text + image
-- Who We Help cards + optional images
-- How We Work text + image + steps
-- Homepage CTA + optional background image
-- Sustainability and industry sections
-- Manufacturing AI page text, every capability card image, and a gallery
-- Energy & Simulation page text/images and gallery
-- Flood AI page text/images, step images and gallery
-- About page text/images and gallery
-- Contact page text/images
-- Logo and email addresses
+## Pages
+- Home
+- About
+- Services
+- Projects
+- R&D
+- Insights
+- Contact
+- Privacy
 
-## First-time Pages CMS setup
-1. Upload ALL files and folders in this package to the root of your GitHub `xeffic-website` repository.
-2. Make sure `.pages.yml`, `content/`, and `media/` are uploaded.
-3. Go to https://app.pagescms.org and sign in with GitHub.
-4. Install/authorize the Pages CMS GitHub App for the repository.
-5. Open `xeffic-website`. Pages CMS reads `.pages.yml` automatically.
-6. Choose `Homepage`, `Manufacturing AI page`, `Energy & Simulation page`, etc.
-7. Edit text or click an Image field to upload/replace an image.
-8. Save. Pages CMS commits the change to GitHub.
-9. Cloudflare redeploys automatically from GitHub.
+## Main focus areas
+- Flood AI
+- Industrial waste-heat recovery
+- Engineering simulation
+- AI & digital engineering
+- Carbon & sustainability
+- Applied R&D
 
-## Images
-Uploaded images are stored in `media/`. Pages CMS writes public paths such as `/media/your-image.webp`.
+## Deploy to Cloudflare Pages
+1. Upload all files in this folder to the root of your GitHub repository `xeffic-website`.
+2. In Cloudflare, open **Workers & Pages**.
+3. Create a Pages project from your GitHub repository.
+4. Production branch: `main`.
+5. Framework preset: `None`.
+6. Build command: leave blank if allowed.
+7. Output directory: `/` or the repository root.
+8. Deploy.
+9. Add `xeffic.com` and `www.xeffic.com` as custom domains after your Cloudflare domain becomes active.
 
-For best speed, use JPG/WebP images around 1200-1800 px wide rather than huge camera originals.
+## Before commercial launch
+Search the files for these placeholders and update them:
+- `hello@xeffic.com`
+- `https://www.linkedin.com/`
+
+The contact form is intentionally static and opens the visitor's email client.
+No analytics or cookie code is included in this starter package.
+
+## SEO
+The package includes:
+- page-specific titles and descriptions
+- canonical URLs
+- basic Organization structured data
+- `robots.txt`
+- `sitemap.xml`
+
+After deployment, add the site to Google Search Console and submit:
+`https://xeffic.com/sitemap.xml`

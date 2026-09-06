@@ -1,16 +1,33 @@
 {
-  "seo_title": "Contact Xeffic",
-  "seo_description": "Contact Xeffic about Manufacturing AI, industrial energy, simulation, Flood AI or engineering R&D.",
-  "hero": {
-    "pill": "Contact",
-    "title": "Tell us the problem you want to solve.",
-    "description": "For Manufacturing AI, industrial energy, engineering simulation or Flood AI, a short description of the challenge is enough to start.",
-    "image": "",
-    "image_alt": "Contact Xeffic"
+  "page_label": "Contact page",
+  "seo": {
+    "title": "Contact Xeffic | Engineering Consultancy & R&D",
+    "description": "Contact Xeffic about Flood AI, industrial energy, engineering simulation, AI workflows, carbon or applied R&D."
   },
-  "section": {
-    "title": "Start a conversation with Xeffic.",
-    "description": "A short description of the problem, process or opportunity is enough for an initial discussion.",
-    "image": ""
-  }
+  "sections": [
+    {
+      "id": "hero",
+      "label": "Tell us the engineering problem.",
+      "eyebrow": "CONTACT",
+      "title": "Tell us the engineering problem.",
+      "text": "A short description of the challenge, decision or opportunity is enough to start.",
+      "image": "",
+      "image_alt": "",
+      "gallery": [],
+      "cards": [],
+      "items": []
+    },
+    {
+      "id": "start-a-conversation",
+      "label": "Start a conversation",
+      "eyebrow": "",
+      "title": "Start a conversation",
+      "text": "For consultancy, research collaboration, technical feasibility or partnership enquiries:",
+      "image": "",
+      "image_alt": "",
+      "gallery": [],
+      "cards": [],
+      "items": []
+    }
+  ]
 }

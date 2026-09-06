@@ -1,0 +1,159 @@
+{
+  "page_label": "Projects page",
+  "seo": {
+    "title": "Projects & Applications | Xeffic",
+    "description": "Explore Xeffic application areas including Flood AI, industrial heat recovery, engineering simulation, failure analysis and AI-enabled engineering."
+  },
+  "sections": [
+    {
+      "id": "hero",
+      "label": "Selected areas where Xeffic capability can be applied.",
+      "eyebrow": "PROJECTS & APPLICATIONS",
+      "title": "Selected areas where Xeffic capability can be applied.",
+      "text": "These examples show the types of engineering problems and development pathways Xeffic is built to support.",
+      "image": "",
+      "image_alt": "",
+      "gallery": [],
+      "cards": [],
+      "items": []
+    },
+    {
+      "id": "ai-assisted-flood-intelligence",
+      "label": "Ai Assisted Flood Intelligence",
+      "eyebrow": "",
+      "title": "",
+      "text": "",
+      "image": "",
+      "image_alt": "",
+      "gallery": [],
+      "cards": [
+        {
+          "id": "ai-assisted-flood-intelligence-card-1",
+          "label": "AI-assisted flood intelligence",
+          "kicker": "FLOOD AI",
+          "title": "AI-assisted flood intelligence",
+          "text": "Combining environmental information, asset context and engineering rules to support faster identification of potentially high-risk flood conditions.",
+          "link_label": "",
+          "link_url": "",
+          "image": "",
+          "image_alt": "",
+          "bullets": []
+        },
+        {
+          "id": "ai-assisted-flood-intelligence-card-2",
+          "label": "Industrial waste-heat recovery",
+          "kicker": "ENERGY",
+          "title": "Industrial waste-heat recovery",
+          "text": "Concept development for capturing and reusing industrial thermal energy using passive and actively managed heat-recovery architectures.",
+          "link_label": "",
+          "link_url": "",
+          "image": "",
+          "image_alt": "",
+          "bullets": []
+        },
+        {
+          "id": "ai-assisted-flood-intelligence-card-3",
+          "label": "Engineering design limits",
+          "kicker": "SIMULATION",
+          "title": "Engineering design limits",
+          "text": "Using structural, thermal and fluid simulation to understand critical loads, deformation, performance margins and sensitivity to real-world variability.",
+          "link_label": "",
+          "link_url": "",
+          "image": "",
+          "image_alt": "",
+          "bullets": []
+        },
+        {
+          "id": "ai-assisted-flood-intelligence-card-4",
+          "label": "AI-supported engineering workflows",
+          "kicker": "DIGITAL",
+          "title": "AI-supported engineering workflows",
+          "text": "Transforming technical survey data, engineering rules and repeatable design steps into transparent digital workflows for faster engineering delivery.",
+          "link_label": "",
+          "link_url": "",
+          "image": "",
+          "image_alt": "",
+          "bullets": []
+        },
+        {
+          "id": "ai-assisted-flood-intelligence-card-5",
+          "label": "From failure mechanism to better geometry",
+          "kicker": "FAILURE ANALYSIS",
+          "title": "From failure mechanism to better geometry",
+          "text": "Investigating why components fail in service and translating the diagnosis into design changes, improved material behaviour or better test evidence.",
+          "link_label": "",
+          "link_url": "",
+          "image": "",
+          "image_alt": "",
+          "bullets": []
+        },
+        {
+          "id": "ai-assisted-flood-intelligence-card-6",
+          "label": "Carbon capture feasibility",
+          "kicker": "CARBON",
+          "title": "Carbon capture feasibility",
+          "text": "Screening carbon-capture concepts at system level, including process integration, energy demand and practical implementation constraints.",
+          "link_label": "",
+          "link_url": "",
+          "image": "",
+          "image_alt": "",
+          "bullets": []
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "clear-scope-fast-technical-orientation",
+      "label": "Clear scope. Fast technical orientation.",
+      "eyebrow": "",
+      "title": "Clear scope. Fast technical orientation.",
+      "text": "",
+      "image": "",
+      "image_alt": "",
+      "gallery": [],
+      "cards": [],
+      "items": [
+        {
+          "id": "clear-scope-fast-technical-orientation-item-1",
+          "title": "Define",
+          "text": "What decision needs to be made?",
+          "image": "",
+          "image_alt": ""
+        },
+        {
+          "id": "clear-scope-fast-technical-orientation-item-2",
+          "title": "Diagnose",
+          "text": "What evidence and physics matter most?",
+          "image": "",
+          "image_alt": ""
+        },
+        {
+          "id": "clear-scope-fast-technical-orientation-item-3",
+          "title": "Develop",
+          "text": "What modelling, data or testing is needed?",
+          "image": "",
+          "image_alt": ""
+        },
+        {
+          "id": "clear-scope-fast-technical-orientation-item-4",
+          "title": "Deliver",
+          "text": "What output will move the project forward?",
+          "image": "",
+          "image_alt": ""
+        }
+      ]
+    },
+    {
+      "id": "cta",
+      "label": "Have a problem that does not fit a standard service?",
+      "eyebrow": "",
+      "title": "Have a problem that does not fit a standard service?",
+      "text": "",
+      "image": "",
+      "image_alt": "",
+      "gallery": [],
+      "cards": [],
+      "items": []
+    }
+  ]
+}

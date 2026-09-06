@@ -1,51 +1,106 @@
 {
-  "seo_title": "Manufacturing AI | Xeffic",
-  "seo_description": "AI-assisted engineering workflows and decision support for manufacturers.",
-  "hero": {
-    "pill": "Manufacturing AI",
-    "title": "Use AI where it removes friction from engineering work.",
-    "description": "Xeffic helps manufacturers identify repetitive, data-heavy technical workflows where AI can improve speed and consistency while maintaining engineering oversight.",
-    "image": "",
-    "image_alt": "Manufacturing AI",
-    "button_label": "Discuss a Manufacturing Workflow →",
-    "button_href": "contact.html"
+  "page_label": "Manufacturing AI page",
+  "seo": {
+    "title": "Manufacturing AI | Xeffic",
+    "description": "AI-assisted engineering workflows and decision support for manufacturers."
   },
-  "section": {
-    "title": "Start with high-frequency tasks where value can be measured.",
-    "description": "Good candidates are repetitive, time-consuming, data-rich and capable of being reviewed by an engineer.",
-    "image": ""
-  },
-  "features": [
+  "sections": [
     {
-      "title": "Technical data & reporting",
-      "description": "Extract, classify and structure engineering information; accelerate draft reports and evidence packs.",
-      "image": ""
+      "id": "hero",
+      "label": "Use AI where it removes friction from engineering work.",
+      "eyebrow": "",
+      "title": "Use AI where it removes friction from engineering work.",
+      "text": "Xeffic helps manufacturers identify repetitive, data-heavy technical workflows where AI can improve speed and consistency while maintaining engineering oversight.",
+      "image": "",
+      "image_alt": "",
+      "gallery": [],
+      "cards": [],
+      "items": []
     },
     {
-      "title": "Inspection & quality support",
-      "description": "Assist human review of images, measurements and inspection records to surface anomalies and trends.",
-      "image": ""
-    },
-    {
-      "title": "Engineering knowledge assistants",
-      "description": "Make procedures, standards and product knowledge easier to search and apply consistently.",
-      "image": ""
-    },
-    {
-      "title": "Survey-to-design workflows",
-      "description": "Move structured site or product data into repeatable engineering steps more efficiently.",
-      "image": ""
-    },
-    {
-      "title": "Predictive decision support",
-      "description": "Combine operational data with engineering rules to prioritise maintenance or investigation.",
-      "image": ""
-    },
-    {
-      "title": "Energy & process optimisation",
-      "description": "Use data and modelling to identify inefficient states, recoverable heat and improvement opportunities.",
-      "image": ""
+      "id": "start-with-high-frequency-tasks-where-value-can-",
+      "label": "Start with high-frequency tasks where value can be measured.",
+      "eyebrow": "",
+      "title": "Start with high-frequency tasks where value can be measured.",
+      "text": "Good candidates are repetitive, time-consuming, data-rich and capable of being reviewed by an engineer.",
+      "image": "",
+      "image_alt": "",
+      "gallery": [],
+      "cards": [
+        {
+          "id": "start-with-high-frequency-tasks-where-value-can--card-1",
+          "label": "Technical data & reporting",
+          "kicker": "01",
+          "title": "Technical data & reporting",
+          "text": "Extract, classify and structure engineering information; accelerate draft reports and evidence packs.",
+          "link_label": "",
+          "link_url": "",
+          "image": "",
+          "image_alt": "",
+          "bullets": []
+        },
+        {
+          "id": "start-with-high-frequency-tasks-where-value-can--card-2",
+          "label": "Inspection & quality support",
+          "kicker": "02",
+          "title": "Inspection & quality support",
+          "text": "Assist human review of images, measurements and inspection records to surface anomalies and trends.",
+          "link_label": "",
+          "link_url": "",
+          "image": "",
+          "image_alt": "",
+          "bullets": []
+        },
+        {
+          "id": "start-with-high-frequency-tasks-where-value-can--card-3",
+          "label": "Engineering knowledge assistants",
+          "kicker": "03",
+          "title": "Engineering knowledge assistants",
+          "text": "Make procedures, standards and product knowledge easier to search and apply consistently.",
+          "link_label": "",
+          "link_url": "",
+          "image": "",
+          "image_alt": "",
+          "bullets": []
+        },
+        {
+          "id": "start-with-high-frequency-tasks-where-value-can--card-4",
+          "label": "Survey-to-design workflows",
+          "kicker": "04",
+          "title": "Survey-to-design workflows",
+          "text": "Move structured site or product data into repeatable engineering steps more efficiently.",
+          "link_label": "",
+          "link_url": "",
+          "image": "",
+          "image_alt": "",
+          "bullets": []
+        },
+        {
+          "id": "start-with-high-frequency-tasks-where-value-can--card-5",
+          "label": "Predictive decision support",
+          "kicker": "05",
+          "title": "Predictive decision support",
+          "text": "Combine operational data with engineering rules to prioritise maintenance or investigation.",
+          "link_label": "",
+          "link_url": "",
+          "image": "",
+          "image_alt": "",
+          "bullets": []
+        },
+        {
+          "id": "start-with-high-frequency-tasks-where-value-can--card-6",
+          "label": "Energy & process optimisation",
+          "kicker": "06",
+          "title": "Energy & process optimisation",
+          "text": "Use data and modelling to identify inefficient states, recoverable heat and improvement opportunities.",
+          "link_label": "",
+          "link_url": "",
+          "image": "",
+          "image_alt": "",
+          "bullets": []
+        }
+      ],
+      "items": []
     }
-  ],
-  "gallery": []
+  ]
 }
