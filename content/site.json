@@ -15,6 +15,16 @@
       "label": "Home",
       "url": "index.html",
       "is_cta": false
+    },
+    {
+      "label": "About",
+      "url": "about.html",
+      "is_cta": false
+    },
+    {
+      "label": "Services",
+      "url": "services.html",
+      "is_cta": false
     }
   ],
   "footer_links_override": false
