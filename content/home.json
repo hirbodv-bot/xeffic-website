@@ -2,28 +2,19 @@
   "page_label": "Homepage",
   "seo": {
     "title": "Xeffic | Engineering Intelligence, Flood AI & Sustainable Technology",
-    "description": "Xeffic develops practical engineering and AI-driven solutions for industrial efficiency, energy optimisation, advanced simulation, Flood AI, automate documentation and data-driven decision-making.",
-    "og_image": ""
+    "description": "Xeffic develops practical engineering and AI-driven solutions for industrial efficiency, energy optimisation, advanced simulation, Flood AI, automate documentation and data-driven decision-making."
   },
   "sections": [
     {
       "id": "hero",
       "label": "Engineering intelligence for a safer, more efficient future.",
-      "eyebrow": "",
       "title": "Engineering intelligence for a safer, more efficient future.",
       "text": "Xeffic develops practical engineering and AI-driven solutions for industrial efficiency, energy optimisation, advanced simulation, Flood AI, automate documentation and data-driven decision-making.",
       "image": "/media/hero-woman.webp",
       "image_alt": "Engineering professional working with a laptop and looking toward the Xeffic message",
-      "gallery": [],
-      "cards": [],
-      "items": [],
-      "hide_section": false,
-      "background_image": "",
-      "image_position": "center",
-      "button_1_text": "Our Services →",
-      "button_1_url": "services.html",
-      "button_2_text": "Get in Touch",
-      "button_2_url": "contact.html"
+      "gallery": [
+        "/media/03-design-optimisation-prototypes-1.jpg"
+      ]
     },
     {
       "id": "what-we-do",
@@ -31,195 +22,92 @@
       "eyebrow": "WHAT WE DO",
       "title": "Focused engineering capability, built around real-world problems.",
       "text": "We combine first-principles engineering with modern digital tools to help organisations understand risk, improve performance and move from concept to evidence.",
-      "image": "",
-      "image_alt": "",
-      "gallery": [],
       "cards": [
         {
           "id": "what-we-do-card-1",
           "label": "Flood AI",
-          "kicker": "",
           "title": "Flood AI",
           "text": "AI-assisted flood intelligence combining environmental data, sensor information and engineering context for faster risk screening and decision support.",
           "link_label": "Learn more →",
-          "link_url": "services.html#flood-ai",
-          "image": "",
-          "image_alt": "",
-          "bullets": [],
-          "hide_card": false,
-          "background_image": "",
-          "image_position": "center"
+          "link_url": "services.html#flood-ai"
         },
         {
           "id": "what-we-do-card-2",
           "label": "Industrial Energy",
-          "kicker": "",
           "title": "Industrial Energy",
           "text": "Waste-heat recovery, thermal systems, feasibility assessment and performance modelling for energy-intensive industrial processes.",
           "link_label": "Learn more →",
-          "link_url": "services.html#energy",
-          "image": "",
-          "image_alt": "",
-          "bullets": [],
-          "hide_card": false,
-          "background_image": "",
-          "image_position": "center"
+          "link_url": "services.html#energy"
         },
         {
           "id": "what-we-do-card-3",
           "label": "Engineering Simulation",
-          "kicker": "",
           "title": "Engineering Simulation",
           "text": "FEA, CFD, thermal and multidisciplinary analysis to investigate performance, failure modes and design opportunities.",
           "link_label": "Learn more →",
-          "link_url": "services.html#simulation",
-          "image": "",
-          "image_alt": "",
-          "bullets": [],
-          "hide_card": false,
-          "background_image": "",
-          "image_position": "center"
+          "link_url": "services.html#simulation"
         }
-      ],
-      "items": [],
-      "hide_section": false,
-      "background_image": "",
-      "image_position": "center",
-      "button_1_text": "",
-      "button_1_url": "",
-      "button_2_text": "",
-      "button_2_url": ""
+      ]
     },
     {
       "id": "engineering-depth-without-unnecessary-complexity",
       "label": "Engineering depth without unnecessary complexity.",
-      "eyebrow": "",
       "title": "Engineering depth without unnecessary complexity.",
-      "text": "",
-      "image": "",
-      "image_alt": "",
-      "gallery": [],
-      "cards": [],
       "items": [
         {
           "id": "engineering-depth-without-unnecessary-complexity-item-1",
           "title": "01",
-          "text": "Understand the physics before automating the decision.",
-          "image": "",
-          "image_alt": "",
-          "hide_item": false,
-          "image_position": "center"
+          "text": "Understand the physics before automating the decision."
         },
         {
           "id": "engineering-depth-without-unnecessary-complexity-item-2",
           "title": "02",
-          "text": "Use AI where it adds speed, insight or scale—not as decoration.",
-          "image": "",
-          "image_alt": "",
-          "hide_item": false,
-          "image_position": "center"
+          "text": "Use AI where it adds speed, insight or scale—not as decoration."
         },
         {
           "id": "engineering-depth-without-unnecessary-complexity-item-3",
           "title": "03",
-          "text": "Build evidence through modelling, testing and transparent assumptions.",
-          "image": "",
-          "image_alt": "",
-          "hide_item": false,
-          "image_position": "center"
+          "text": "Build evidence through modelling, testing and transparent assumptions."
         },
         {
           "id": "engineering-depth-without-unnecessary-complexity-item-4",
           "title": "04",
-          "text": "Design outputs that can be used by engineers, operators and decision-makers.",
-          "image": "",
-          "image_alt": "",
-          "hide_item": false,
-          "image_position": "center"
+          "text": "Design outputs that can be used by engineers, operators and decision-makers."
         }
-      ],
-      "hide_section": false,
-      "background_image": "",
-      "image_position": "center",
-      "button_1_text": "",
-      "button_1_url": "",
-      "button_2_text": "",
-      "button_2_url": ""
+      ]
     },
     {
       "id": "from-flood-intelligence-to-industrial-heat-recov",
       "label": "From flood intelligence to industrial heat recovery.",
-      "eyebrow": "",
       "title": "From flood intelligence to industrial heat recovery.",
       "text": "Our current focus spans infrastructure risk, sustainable industrial systems and engineering product development.",
-      "image": "",
-      "image_alt": "",
-      "gallery": [],
-      "cards": [],
       "items": [
         {
           "id": "from-flood-intelligence-to-industrial-heat-recov-item-1",
           "title": "Flood detection & forecasting workflows",
-          "text": "AI",
-          "image": "",
-          "image_alt": "",
-          "hide_item": false,
-          "image_position": "center"
+          "text": "AI"
         },
         {
           "id": "from-flood-intelligence-to-industrial-heat-recov-item-2",
           "title": "Industrial waste-heat recovery concepts",
-          "text": "THERMAL",
-          "image": "",
-          "image_alt": "",
-          "hide_item": false,
-          "image_position": "center"
+          "text": "THERMAL"
         },
         {
           "id": "from-flood-intelligence-to-industrial-heat-recov-item-3",
           "title": "FEA / CFD / multiphysics analysis",
-          "text": "CAE",
-          "image": "",
-          "image_alt": "",
-          "hide_item": false,
-          "image_position": "center"
+          "text": "CAE"
         },
         {
           "id": "from-flood-intelligence-to-industrial-heat-recov-item-4",
           "title": "Applied research and technical validation",
-          "text": "R&D",
-          "image": "",
-          "image_alt": "",
-          "hide_item": false,
-          "image_position": "center"
+          "text": "R&D"
         }
-      ],
-      "hide_section": false,
-      "background_image": "",
-      "image_position": "center",
-      "button_1_text": "",
-      "button_1_url": "",
-      "button_2_text": "",
-      "button_2_url": ""
+      ]
     },
     {
       "id": "cta",
       "label": "Have an engineering challenge that needs a sharper approach?",
-      "eyebrow": "",
-      "title": "Have an engineering challenge that needs a sharper approach?",
-      "text": "",
-      "image": "",
-      "image_alt": "",
-      "gallery": [],
-      "cards": [],
-      "items": [],
-      "hide_section": false,
-      "background_image": "",
-      "image_position": "center",
-      "button_1_text": "Contact Xeffic",
-      "button_1_url": "contact.html",
-      "button_2_text": "",
-      "button_2_url": ""
+      "title": "Have an engineering challenge that needs a sharper approach?"
     }
   ]
 }
