@@ -281,11 +281,9 @@ content:
       - name: id
         label: Card ID
         type: string
-        readonly: true
       - name: label
         label: Card name
         type: string
-        readonly: true
       - name: hide_card
         label: Hide this card
         type: boolean
@@ -512,11 +510,9 @@ content:
       - name: id
         label: Card ID
         type: string
-        readonly: true
       - name: label
         label: Card name
         type: string
-        readonly: true
       - name: hide_card
         label: Hide this card
         type: boolean
@@ -743,11 +739,9 @@ content:
       - name: id
         label: Card ID
         type: string
-        readonly: true
       - name: label
         label: Card name
         type: string
-        readonly: true
       - name: hide_card
         label: Hide this card
         type: boolean
@@ -974,11 +968,9 @@ content:
       - name: id
         label: Card ID
         type: string
-        readonly: true
       - name: label
         label: Card name
         type: string
-        readonly: true
       - name: hide_card
         label: Hide this card
         type: boolean
@@ -1205,11 +1197,9 @@ content:
       - name: id
         label: Card ID
         type: string
-        readonly: true
       - name: label
         label: Card name
         type: string
-        readonly: true
       - name: hide_card
         label: Hide this card
         type: boolean
@@ -1436,11 +1426,9 @@ content:
       - name: id
         label: Card ID
         type: string
-        readonly: true
       - name: label
         label: Card name
         type: string
-        readonly: true
       - name: hide_card
         label: Hide this card
         type: boolean
@@ -1667,11 +1655,9 @@ content:
       - name: id
         label: Card ID
         type: string
-        readonly: true
       - name: label
         label: Card name
         type: string
-        readonly: true
       - name: hide_card
         label: Hide this card
         type: boolean
@@ -1898,11 +1884,9 @@ content:
       - name: id
         label: Card ID
         type: string
-        readonly: true
       - name: label
         label: Card name
         type: string
-        readonly: true
       - name: hide_card
         label: Hide this card
         type: boolean
@@ -2129,11 +2113,9 @@ content:
       - name: id
         label: Card ID
         type: string
-        readonly: true
       - name: label
         label: Card name
         type: string
-        readonly: true
       - name: hide_card
         label: Hide this card
         type: boolean
@@ -2360,11 +2342,9 @@ content:
       - name: id
         label: Card ID
         type: string
-        readonly: true
       - name: label
         label: Card name
         type: string
-        readonly: true
       - name: hide_card
         label: Hide this card
         type: boolean
