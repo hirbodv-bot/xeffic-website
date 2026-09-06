@@ -1,1389 +1,2461 @@
 media:
-  - name: images
-    label: Website images
-    input: media
-    output: /media
-    rename: safe
-    categories: [image]
-
+- name: images
+  label: Website images / media library
+  input: media
+  output: /media
+  rename: safe
+  categories:
+  - image
 content:
-  - name: site
-    label: Site settings
-    type: file
-    path: content/site.json
-    format: json
+- name: site
+  label: Site settings, logo, menu & colours
+  type: file
+  path: content/site.json
+  format: json
+  fields:
+  - name: email
+    label: Main contact email
+    type: string
+  - name: secondary_email
+    label: Second contact email — optional
+    type: string
+  - name: website_url
+    label: Website address
+    type: string
+  - name: linkedin_url
+    label: LinkedIn URL
+    type: string
+  - name: footer_text
+    label: Footer description
+    type: text
+  - name: footer_bottom_left
+    label: Footer bottom-left text — optional
+    type: string
+  - name: footer_bottom_right
+    label: Footer bottom-right text — optional
+    type: string
+  - name: logo_light
+    label: Header logo — upload or replace
+    type: image
+    options:
+      media: images
+      extensions:
+      - jpg
+      - jpeg
+      - png
+      - webp
+      - gif
+      - svg
+      rename: safe
+  - name: logo_dark
+    label: Footer logo — upload or replace
+    type: image
+    options:
+      media: images
+      extensions:
+      - jpg
+      - jpeg
+      - png
+      - webp
+      - gif
+      - svg
+      rename: safe
+  - name: favicon
+    label: Browser icon / favicon
+    type: image
+    options:
+      media: images
+      extensions:
+      - jpg
+      - jpeg
+      - png
+      - webp
+      - gif
+      - svg
+      rename: safe
+  - name: navigation_override
+    label: Use custom navigation below
+    type: boolean
+  - name: navigation
+    label: Custom navigation links
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{label}'
     fields:
-      - name: email
-        label: Contact email
+    - name: label
+      label: Menu text
+      type: string
+    - name: url
+      label: Link
+      type: string
+    - name: is_cta
+      label: Show as CTA button
+      type: boolean
+  - name: footer_links_override
+    label: Use custom footer columns below
+    type: boolean
+  - name: footer_columns
+    label: Custom footer columns
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{title}'
+    fields:
+    - name: title
+      label: Column heading
+      type: string
+    - name: links
+      label: Links
+      type: object
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{label}'
+      fields:
+      - name: label
+        label: Link text
         type: string
-      - name: linkedin_url
-        label: LinkedIn URL
+      - name: url
+        label: Link
         type: string
-      - name: footer_text
-        label: Footer description
+  - name: theme
+    label: Theme colours — advanced / optional
+    type: object
+    fields:
+    - name: brand_color
+      label: Primary brand colour (hex)
+      type: string
+    - name: brand_secondary
+      label: Second brand colour (hex)
+      type: string
+    - name: accent_color
+      label: Accent colour (hex)
+      type: string
+    - name: background_color
+      label: Page background (hex)
+      type: string
+    - name: surface_color
+      label: Card / surface colour (hex)
+      type: string
+    - name: text_color
+      label: Main text colour (hex)
+      type: string
+    - name: muted_text_color
+      label: Secondary text colour (hex)
+      type: string
+    - name: dark_color
+      label: Dark section colour (hex)
+      type: string
+- name: home
+  label: Homepage — text, buttons & images
+  type: file
+  path: content/home.json
+  format: json
+  fields:
+  - name: page_label
+    label: Page name
+    type: string
+    readonly: true
+  - name: seo
+    label: SEO / browser / social sharing
+    type: object
+    fields:
+    - name: title
+      label: Browser / SEO title
+      type: string
+    - name: description
+      label: SEO description
+      type: text
+    - name: og_image
+      label: Social sharing image (LinkedIn / WhatsApp)
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+  - name: sections
+    label: Page sections — edit text, buttons and images
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{label}'
+    fields:
+    - name: id
+      label: Section ID
+      type: string
+      readonly: true
+    - name: label
+      label: Section name
+      type: string
+      readonly: true
+    - name: hide_section
+      label: Hide this section
+      type: boolean
+    - name: eyebrow
+      label: Small heading / label
+      type: string
+    - name: title
+      label: Main heading
+      type: string
+    - name: text
+      label: Main text
+      type: text
+    - name: image
+      label: Section image — upload or replace
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+    - name: image_alt
+      label: Image description (SEO / accessibility)
+      type: string
+    - name: image_position
+      label: Image position (e.g. center, top, left)
+      type: string
+    - name: background_image
+      label: Section background image — optional
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+    - name: button_1_text
+      label: Primary button text
+      type: string
+    - name: button_1_url
+      label: Primary button link
+      type: string
+    - name: button_2_text
+      label: Second button text
+      type: string
+    - name: button_2_url
+      label: Second button link
+      type: string
+    - name: gallery
+      label: Extra images / gallery — add multiple
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+        multiple:
+          max: 30
+        unique: true
+    - name: cards
+      label: Cards in this section
+      type: object
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{label}'
+      fields:
+      - name: id
+        label: Card ID
+        type: string
+        readonly: true
+      - name: label
+        label: Card name
+        type: string
+        readonly: true
+      - name: hide_card
+        label: Hide this card
+        type: boolean
+      - name: kicker
+        label: Small label
+        type: string
+      - name: title
+        label: Card heading
+        type: string
+      - name: text
+        label: Card text
         type: text
-      - name: logo_light
-        label: Header logo
+      - name: link_label
+        label: Link / button text
+        type: string
+      - name: link_url
+        label: Link URL
+        type: string
+      - name: image
+        label: Card image — upload or replace
         type: image
         options:
           media: images
-      - name: logo_dark
-        label: Footer logo
+          extensions:
+          - jpg
+          - jpeg
+          - png
+          - webp
+          - gif
+          - svg
+          rename: safe
+      - name: image_alt
+        label: Card image description
+        type: string
+      - name: image_position
+        label: Card image position
+        type: string
+      - name: background_image
+        label: Card background image — optional
         type: image
         options:
           media: images
-      - name: favicon
-        label: Browser icon
+          extensions:
+          - jpg
+          - jpeg
+          - png
+          - webp
+          - gif
+          - svg
+          rename: safe
+      - name: bullets
+        label: Bullet points
+        type: string
+        list: true
+    - name: items
+      label: Other items / steps / metrics
+      type: object
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{title}'
+      fields:
+      - name: id
+        label: Item ID
+        type: string
+        readonly: true
+      - name: hide_item
+        label: Hide this item
+        type: boolean
+      - name: title
+        label: Item heading / label
+        type: string
+      - name: text
+        label: Item text
+        type: text
+      - name: image
+        label: Item image — upload or replace
         type: image
         options:
           media: images
-  - name: home
-    label: "Homepage"
-    type: file
-    path: content/home.json
-    format: json
+          extensions:
+          - jpg
+          - jpeg
+          - png
+          - webp
+          - gif
+          - svg
+          rename: safe
+      - name: image_alt
+        label: Item image description
+        type: string
+      - name: image_position
+        label: Item image position
+        type: string
+- name: about
+  label: About page — text & images
+  type: file
+  path: content/about.json
+  format: json
+  fields:
+  - name: page_label
+    label: Page name
+    type: string
+    readonly: true
+  - name: seo
+    label: SEO / browser / social sharing
+    type: object
     fields:
-      - name: page_label
-        label: Page name
+    - name: title
+      label: Browser / SEO title
+      type: string
+    - name: description
+      label: SEO description
+      type: text
+    - name: og_image
+      label: Social sharing image (LinkedIn / WhatsApp)
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+  - name: sections
+    label: Page sections — edit text, buttons and images
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{label}'
+    fields:
+    - name: id
+      label: Section ID
+      type: string
+      readonly: true
+    - name: label
+      label: Section name
+      type: string
+      readonly: true
+    - name: hide_section
+      label: Hide this section
+      type: boolean
+    - name: eyebrow
+      label: Small heading / label
+      type: string
+    - name: title
+      label: Main heading
+      type: string
+    - name: text
+      label: Main text
+      type: text
+    - name: image
+      label: Section image — upload or replace
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+    - name: image_alt
+      label: Image description (SEO / accessibility)
+      type: string
+    - name: image_position
+      label: Image position (e.g. center, top, left)
+      type: string
+    - name: background_image
+      label: Section background image — optional
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+    - name: button_1_text
+      label: Primary button text
+      type: string
+    - name: button_1_url
+      label: Primary button link
+      type: string
+    - name: button_2_text
+      label: Second button text
+      type: string
+    - name: button_2_url
+      label: Second button link
+      type: string
+    - name: gallery
+      label: Extra images / gallery — add multiple
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+        multiple:
+          max: 30
+        unique: true
+    - name: cards
+      label: Cards in this section
+      type: object
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{label}'
+      fields:
+      - name: id
+        label: Card ID
         type: string
         readonly: true
-      - name: seo
-        label: Search / browser settings
-        type: object
-        fields:
-          - name: title
-            label: Browser title
-            type: string
-          - name: description
-            label: Meta description
-            type: text
-      - name: sections
-        label: Page sections
-        type: object
-        list:
-          collapsible:
-            collapsed: true
-            summary: "{label}"
-        fields:
-          - name: id
-            label: Section ID
-            type: string
-            readonly: true
-          - name: label
-            label: Section name
-            type: string
-            readonly: true
-          - name: eyebrow
-            label: Small heading / label
-            type: string
-          - name: title
-            label: Main heading
-            type: string
-          - name: text
-            label: Intro text
-            type: text
-          - name: image
-            label: Main section image (optional)
-            type: image
-            options:
-              media: images
-              extensions: [jpg, jpeg, png, webp, gif, svg]
-              rename: safe
-          - name: image_alt
-            label: Image description (alt text)
-            type: string
-          - name: gallery
-            label: Extra images / gallery (optional)
-            type: image
-            options:
-              media: images
-              multiple:
-                max: 20
-              unique: true
-              extensions: [jpg, jpeg, png, webp, gif]
-              rename: safe
-          - name: cards
-            label: Cards / service blocks
-            type: object
-            list:
-              collapsible:
-                collapsed: true
-                summary: "{label}"
-            fields:
-              - name: id
-                type: string
-                readonly: true
-              - name: label
-                type: string
-                readonly: true
-              - name: kicker
-                label: Small label
-                type: string
-              - name: title
-                label: Card heading
-                type: string
-              - name: text
-                label: Card text
-                type: text
-              - name: link_label
-                label: Link text
-                type: string
-              - name: link_url
-                label: Link URL
-                type: string
-              - name: image
-                label: Card image (optional)
-                type: image
-                options:
-                  media: images
-                  extensions: [jpg, jpeg, png, webp, gif]
-                  rename: safe
-              - name: image_alt
-                label: Card image description
-                type: string
-              - name: bullets
-                label: Bullet points
-                type: string
-                list: true
-          - name: items
-            label: Other repeated items
-            type: object
-            list:
-              collapsible:
-                collapsed: true
-                summary: "{title}"
-            fields:
-              - name: id
-                type: string
-                readonly: true
-              - name: title
-                label: Item label
-                type: string
-              - name: text
-                label: Item text
-                type: text
-              - name: image
-                label: Item image (optional)
-                type: image
-                options:
-                  media: images
-                  extensions: [jpg, jpeg, png, webp, gif]
-                  rename: safe
-              - name: image_alt
-                label: Item image description
-                type: string
-  - name: about
-    label: "About page"
-    type: file
-    path: content/about.json
-    format: json
-    fields:
-      - name: page_label
-        label: Page name
+      - name: label
+        label: Card name
         type: string
         readonly: true
-      - name: seo
-        label: Search / browser settings
-        type: object
-        fields:
-          - name: title
-            label: Browser title
-            type: string
-          - name: description
-            label: Meta description
-            type: text
-      - name: sections
-        label: Page sections
-        type: object
-        list:
-          collapsible:
-            collapsed: true
-            summary: "{label}"
-        fields:
-          - name: id
-            label: Section ID
-            type: string
-            readonly: true
-          - name: label
-            label: Section name
-            type: string
-            readonly: true
-          - name: eyebrow
-            label: Small heading / label
-            type: string
-          - name: title
-            label: Main heading
-            type: string
-          - name: text
-            label: Intro text
-            type: text
-          - name: image
-            label: Main section image (optional)
-            type: image
-            options:
-              media: images
-              extensions: [jpg, jpeg, png, webp, gif, svg]
-              rename: safe
-          - name: image_alt
-            label: Image description (alt text)
-            type: string
-          - name: gallery
-            label: Extra images / gallery (optional)
-            type: image
-            options:
-              media: images
-              multiple:
-                max: 20
-              unique: true
-              extensions: [jpg, jpeg, png, webp, gif]
-              rename: safe
-          - name: cards
-            label: Cards / service blocks
-            type: object
-            list:
-              collapsible:
-                collapsed: true
-                summary: "{label}"
-            fields:
-              - name: id
-                type: string
-                readonly: true
-              - name: label
-                type: string
-                readonly: true
-              - name: kicker
-                label: Small label
-                type: string
-              - name: title
-                label: Card heading
-                type: string
-              - name: text
-                label: Card text
-                type: text
-              - name: link_label
-                label: Link text
-                type: string
-              - name: link_url
-                label: Link URL
-                type: string
-              - name: image
-                label: Card image (optional)
-                type: image
-                options:
-                  media: images
-                  extensions: [jpg, jpeg, png, webp, gif]
-                  rename: safe
-              - name: image_alt
-                label: Card image description
-                type: string
-              - name: bullets
-                label: Bullet points
-                type: string
-                list: true
-          - name: items
-            label: Other repeated items
-            type: object
-            list:
-              collapsible:
-                collapsed: true
-                summary: "{title}"
-            fields:
-              - name: id
-                type: string
-                readonly: true
-              - name: title
-                label: Item label
-                type: string
-              - name: text
-                label: Item text
-                type: text
-              - name: image
-                label: Item image (optional)
-                type: image
-                options:
-                  media: images
-                  extensions: [jpg, jpeg, png, webp, gif]
-                  rename: safe
-              - name: image_alt
-                label: Item image description
-                type: string
-  - name: services
-    label: "Services page"
-    type: file
-    path: content/services.json
-    format: json
-    fields:
-      - name: page_label
-        label: Page name
+      - name: hide_card
+        label: Hide this card
+        type: boolean
+      - name: kicker
+        label: Small label
+        type: string
+      - name: title
+        label: Card heading
+        type: string
+      - name: text
+        label: Card text
+        type: text
+      - name: link_label
+        label: Link / button text
+        type: string
+      - name: link_url
+        label: Link URL
+        type: string
+      - name: image
+        label: Card image — upload or replace
+        type: image
+        options:
+          media: images
+          extensions:
+          - jpg
+          - jpeg
+          - png
+          - webp
+          - gif
+          - svg
+          rename: safe
+      - name: image_alt
+        label: Card image description
+        type: string
+      - name: image_position
+        label: Card image position
+        type: string
+      - name: background_image
+        label: Card background image — optional
+        type: image
+        options:
+          media: images
+          extensions:
+          - jpg
+          - jpeg
+          - png
+          - webp
+          - gif
+          - svg
+          rename: safe
+      - name: bullets
+        label: Bullet points
+        type: string
+        list: true
+    - name: items
+      label: Other items / steps / metrics
+      type: object
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{title}'
+      fields:
+      - name: id
+        label: Item ID
         type: string
         readonly: true
-      - name: seo
-        label: Search / browser settings
-        type: object
-        fields:
-          - name: title
-            label: Browser title
-            type: string
-          - name: description
-            label: Meta description
-            type: text
-      - name: sections
-        label: Page sections
-        type: object
-        list:
-          collapsible:
-            collapsed: true
-            summary: "{label}"
-        fields:
-          - name: id
-            label: Section ID
-            type: string
-            readonly: true
-          - name: label
-            label: Section name
-            type: string
-            readonly: true
-          - name: eyebrow
-            label: Small heading / label
-            type: string
-          - name: title
-            label: Main heading
-            type: string
-          - name: text
-            label: Intro text
-            type: text
-          - name: image
-            label: Main section image (optional)
-            type: image
-            options:
-              media: images
-              extensions: [jpg, jpeg, png, webp, gif, svg]
-              rename: safe
-          - name: image_alt
-            label: Image description (alt text)
-            type: string
-          - name: gallery
-            label: Extra images / gallery (optional)
-            type: image
-            options:
-              media: images
-              multiple:
-                max: 20
-              unique: true
-              extensions: [jpg, jpeg, png, webp, gif]
-              rename: safe
-          - name: cards
-            label: Cards / service blocks
-            type: object
-            list:
-              collapsible:
-                collapsed: true
-                summary: "{label}"
-            fields:
-              - name: id
-                type: string
-                readonly: true
-              - name: label
-                type: string
-                readonly: true
-              - name: kicker
-                label: Small label
-                type: string
-              - name: title
-                label: Card heading
-                type: string
-              - name: text
-                label: Card text
-                type: text
-              - name: link_label
-                label: Link text
-                type: string
-              - name: link_url
-                label: Link URL
-                type: string
-              - name: image
-                label: Card image (optional)
-                type: image
-                options:
-                  media: images
-                  extensions: [jpg, jpeg, png, webp, gif]
-                  rename: safe
-              - name: image_alt
-                label: Card image description
-                type: string
-              - name: bullets
-                label: Bullet points
-                type: string
-                list: true
-          - name: items
-            label: Other repeated items
-            type: object
-            list:
-              collapsible:
-                collapsed: true
-                summary: "{title}"
-            fields:
-              - name: id
-                type: string
-                readonly: true
-              - name: title
-                label: Item label
-                type: string
-              - name: text
-                label: Item text
-                type: text
-              - name: image
-                label: Item image (optional)
-                type: image
-                options:
-                  media: images
-                  extensions: [jpg, jpeg, png, webp, gif]
-                  rename: safe
-              - name: image_alt
-                label: Item image description
-                type: string
-  - name: projects
-    label: "Projects page"
-    type: file
-    path: content/projects.json
-    format: json
+      - name: hide_item
+        label: Hide this item
+        type: boolean
+      - name: title
+        label: Item heading / label
+        type: string
+      - name: text
+        label: Item text
+        type: text
+      - name: image
+        label: Item image — upload or replace
+        type: image
+        options:
+          media: images
+          extensions:
+          - jpg
+          - jpeg
+          - png
+          - webp
+          - gif
+          - svg
+          rename: safe
+      - name: image_alt
+        label: Item image description
+        type: string
+      - name: image_position
+        label: Item image position
+        type: string
+- name: services
+  label: Services page — text & images
+  type: file
+  path: content/services.json
+  format: json
+  fields:
+  - name: page_label
+    label: Page name
+    type: string
+    readonly: true
+  - name: seo
+    label: SEO / browser / social sharing
+    type: object
     fields:
-      - name: page_label
-        label: Page name
+    - name: title
+      label: Browser / SEO title
+      type: string
+    - name: description
+      label: SEO description
+      type: text
+    - name: og_image
+      label: Social sharing image (LinkedIn / WhatsApp)
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+  - name: sections
+    label: Page sections — edit text, buttons and images
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{label}'
+    fields:
+    - name: id
+      label: Section ID
+      type: string
+      readonly: true
+    - name: label
+      label: Section name
+      type: string
+      readonly: true
+    - name: hide_section
+      label: Hide this section
+      type: boolean
+    - name: eyebrow
+      label: Small heading / label
+      type: string
+    - name: title
+      label: Main heading
+      type: string
+    - name: text
+      label: Main text
+      type: text
+    - name: image
+      label: Section image — upload or replace
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+    - name: image_alt
+      label: Image description (SEO / accessibility)
+      type: string
+    - name: image_position
+      label: Image position (e.g. center, top, left)
+      type: string
+    - name: background_image
+      label: Section background image — optional
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+    - name: button_1_text
+      label: Primary button text
+      type: string
+    - name: button_1_url
+      label: Primary button link
+      type: string
+    - name: button_2_text
+      label: Second button text
+      type: string
+    - name: button_2_url
+      label: Second button link
+      type: string
+    - name: gallery
+      label: Extra images / gallery — add multiple
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+        multiple:
+          max: 30
+        unique: true
+    - name: cards
+      label: Cards in this section
+      type: object
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{label}'
+      fields:
+      - name: id
+        label: Card ID
         type: string
         readonly: true
-      - name: seo
-        label: Search / browser settings
-        type: object
-        fields:
-          - name: title
-            label: Browser title
-            type: string
-          - name: description
-            label: Meta description
-            type: text
-      - name: sections
-        label: Page sections
-        type: object
-        list:
-          collapsible:
-            collapsed: true
-            summary: "{label}"
-        fields:
-          - name: id
-            label: Section ID
-            type: string
-            readonly: true
-          - name: label
-            label: Section name
-            type: string
-            readonly: true
-          - name: eyebrow
-            label: Small heading / label
-            type: string
-          - name: title
-            label: Main heading
-            type: string
-          - name: text
-            label: Intro text
-            type: text
-          - name: image
-            label: Main section image (optional)
-            type: image
-            options:
-              media: images
-              extensions: [jpg, jpeg, png, webp, gif, svg]
-              rename: safe
-          - name: image_alt
-            label: Image description (alt text)
-            type: string
-          - name: gallery
-            label: Extra images / gallery (optional)
-            type: image
-            options:
-              media: images
-              multiple:
-                max: 20
-              unique: true
-              extensions: [jpg, jpeg, png, webp, gif]
-              rename: safe
-          - name: cards
-            label: Cards / service blocks
-            type: object
-            list:
-              collapsible:
-                collapsed: true
-                summary: "{label}"
-            fields:
-              - name: id
-                type: string
-                readonly: true
-              - name: label
-                type: string
-                readonly: true
-              - name: kicker
-                label: Small label
-                type: string
-              - name: title
-                label: Card heading
-                type: string
-              - name: text
-                label: Card text
-                type: text
-              - name: link_label
-                label: Link text
-                type: string
-              - name: link_url
-                label: Link URL
-                type: string
-              - name: image
-                label: Card image (optional)
-                type: image
-                options:
-                  media: images
-                  extensions: [jpg, jpeg, png, webp, gif]
-                  rename: safe
-              - name: image_alt
-                label: Card image description
-                type: string
-              - name: bullets
-                label: Bullet points
-                type: string
-                list: true
-          - name: items
-            label: Other repeated items
-            type: object
-            list:
-              collapsible:
-                collapsed: true
-                summary: "{title}"
-            fields:
-              - name: id
-                type: string
-                readonly: true
-              - name: title
-                label: Item label
-                type: string
-              - name: text
-                label: Item text
-                type: text
-              - name: image
-                label: Item image (optional)
-                type: image
-                options:
-                  media: images
-                  extensions: [jpg, jpeg, png, webp, gif]
-                  rename: safe
-              - name: image_alt
-                label: Item image description
-                type: string
-  - name: research
-    label: "R&D page"
-    type: file
-    path: content/research.json
-    format: json
-    fields:
-      - name: page_label
-        label: Page name
+      - name: label
+        label: Card name
         type: string
         readonly: true
-      - name: seo
-        label: Search / browser settings
-        type: object
-        fields:
-          - name: title
-            label: Browser title
-            type: string
-          - name: description
-            label: Meta description
-            type: text
-      - name: sections
-        label: Page sections
-        type: object
-        list:
-          collapsible:
-            collapsed: true
-            summary: "{label}"
-        fields:
-          - name: id
-            label: Section ID
-            type: string
-            readonly: true
-          - name: label
-            label: Section name
-            type: string
-            readonly: true
-          - name: eyebrow
-            label: Small heading / label
-            type: string
-          - name: title
-            label: Main heading
-            type: string
-          - name: text
-            label: Intro text
-            type: text
-          - name: image
-            label: Main section image (optional)
-            type: image
-            options:
-              media: images
-              extensions: [jpg, jpeg, png, webp, gif, svg]
-              rename: safe
-          - name: image_alt
-            label: Image description (alt text)
-            type: string
-          - name: gallery
-            label: Extra images / gallery (optional)
-            type: image
-            options:
-              media: images
-              multiple:
-                max: 20
-              unique: true
-              extensions: [jpg, jpeg, png, webp, gif]
-              rename: safe
-          - name: cards
-            label: Cards / service blocks
-            type: object
-            list:
-              collapsible:
-                collapsed: true
-                summary: "{label}"
-            fields:
-              - name: id
-                type: string
-                readonly: true
-              - name: label
-                type: string
-                readonly: true
-              - name: kicker
-                label: Small label
-                type: string
-              - name: title
-                label: Card heading
-                type: string
-              - name: text
-                label: Card text
-                type: text
-              - name: link_label
-                label: Link text
-                type: string
-              - name: link_url
-                label: Link URL
-                type: string
-              - name: image
-                label: Card image (optional)
-                type: image
-                options:
-                  media: images
-                  extensions: [jpg, jpeg, png, webp, gif]
-                  rename: safe
-              - name: image_alt
-                label: Card image description
-                type: string
-              - name: bullets
-                label: Bullet points
-                type: string
-                list: true
-          - name: items
-            label: Other repeated items
-            type: object
-            list:
-              collapsible:
-                collapsed: true
-                summary: "{title}"
-            fields:
-              - name: id
-                type: string
-                readonly: true
-              - name: title
-                label: Item label
-                type: string
-              - name: text
-                label: Item text
-                type: text
-              - name: image
-                label: Item image (optional)
-                type: image
-                options:
-                  media: images
-                  extensions: [jpg, jpeg, png, webp, gif]
-                  rename: safe
-              - name: image_alt
-                label: Item image description
-                type: string
-  - name: insights
-    label: "Insights page"
-    type: file
-    path: content/insights.json
-    format: json
-    fields:
-      - name: page_label
-        label: Page name
+      - name: hide_card
+        label: Hide this card
+        type: boolean
+      - name: kicker
+        label: Small label
+        type: string
+      - name: title
+        label: Card heading
+        type: string
+      - name: text
+        label: Card text
+        type: text
+      - name: link_label
+        label: Link / button text
+        type: string
+      - name: link_url
+        label: Link URL
+        type: string
+      - name: image
+        label: Card image — upload or replace
+        type: image
+        options:
+          media: images
+          extensions:
+          - jpg
+          - jpeg
+          - png
+          - webp
+          - gif
+          - svg
+          rename: safe
+      - name: image_alt
+        label: Card image description
+        type: string
+      - name: image_position
+        label: Card image position
+        type: string
+      - name: background_image
+        label: Card background image — optional
+        type: image
+        options:
+          media: images
+          extensions:
+          - jpg
+          - jpeg
+          - png
+          - webp
+          - gif
+          - svg
+          rename: safe
+      - name: bullets
+        label: Bullet points
+        type: string
+        list: true
+    - name: items
+      label: Other items / steps / metrics
+      type: object
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{title}'
+      fields:
+      - name: id
+        label: Item ID
         type: string
         readonly: true
-      - name: seo
-        label: Search / browser settings
-        type: object
-        fields:
-          - name: title
-            label: Browser title
-            type: string
-          - name: description
-            label: Meta description
-            type: text
-      - name: sections
-        label: Page sections
-        type: object
-        list:
-          collapsible:
-            collapsed: true
-            summary: "{label}"
-        fields:
-          - name: id
-            label: Section ID
-            type: string
-            readonly: true
-          - name: label
-            label: Section name
-            type: string
-            readonly: true
-          - name: eyebrow
-            label: Small heading / label
-            type: string
-          - name: title
-            label: Main heading
-            type: string
-          - name: text
-            label: Intro text
-            type: text
-          - name: image
-            label: Main section image (optional)
-            type: image
-            options:
-              media: images
-              extensions: [jpg, jpeg, png, webp, gif, svg]
-              rename: safe
-          - name: image_alt
-            label: Image description (alt text)
-            type: string
-          - name: gallery
-            label: Extra images / gallery (optional)
-            type: image
-            options:
-              media: images
-              multiple:
-                max: 20
-              unique: true
-              extensions: [jpg, jpeg, png, webp, gif]
-              rename: safe
-          - name: cards
-            label: Cards / service blocks
-            type: object
-            list:
-              collapsible:
-                collapsed: true
-                summary: "{label}"
-            fields:
-              - name: id
-                type: string
-                readonly: true
-              - name: label
-                type: string
-                readonly: true
-              - name: kicker
-                label: Small label
-                type: string
-              - name: title
-                label: Card heading
-                type: string
-              - name: text
-                label: Card text
-                type: text
-              - name: link_label
-                label: Link text
-                type: string
-              - name: link_url
-                label: Link URL
-                type: string
-              - name: image
-                label: Card image (optional)
-                type: image
-                options:
-                  media: images
-                  extensions: [jpg, jpeg, png, webp, gif]
-                  rename: safe
-              - name: image_alt
-                label: Card image description
-                type: string
-              - name: bullets
-                label: Bullet points
-                type: string
-                list: true
-          - name: items
-            label: Other repeated items
-            type: object
-            list:
-              collapsible:
-                collapsed: true
-                summary: "{title}"
-            fields:
-              - name: id
-                type: string
-                readonly: true
-              - name: title
-                label: Item label
-                type: string
-              - name: text
-                label: Item text
-                type: text
-              - name: image
-                label: Item image (optional)
-                type: image
-                options:
-                  media: images
-                  extensions: [jpg, jpeg, png, webp, gif]
-                  rename: safe
-              - name: image_alt
-                label: Item image description
-                type: string
-  - name: contact
-    label: "Contact page"
-    type: file
-    path: content/contact.json
-    format: json
+      - name: hide_item
+        label: Hide this item
+        type: boolean
+      - name: title
+        label: Item heading / label
+        type: string
+      - name: text
+        label: Item text
+        type: text
+      - name: image
+        label: Item image — upload or replace
+        type: image
+        options:
+          media: images
+          extensions:
+          - jpg
+          - jpeg
+          - png
+          - webp
+          - gif
+          - svg
+          rename: safe
+      - name: image_alt
+        label: Item image description
+        type: string
+      - name: image_position
+        label: Item image position
+        type: string
+- name: projects
+  label: Projects page — text & images
+  type: file
+  path: content/projects.json
+  format: json
+  fields:
+  - name: page_label
+    label: Page name
+    type: string
+    readonly: true
+  - name: seo
+    label: SEO / browser / social sharing
+    type: object
     fields:
-      - name: page_label
-        label: Page name
+    - name: title
+      label: Browser / SEO title
+      type: string
+    - name: description
+      label: SEO description
+      type: text
+    - name: og_image
+      label: Social sharing image (LinkedIn / WhatsApp)
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+  - name: sections
+    label: Page sections — edit text, buttons and images
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{label}'
+    fields:
+    - name: id
+      label: Section ID
+      type: string
+      readonly: true
+    - name: label
+      label: Section name
+      type: string
+      readonly: true
+    - name: hide_section
+      label: Hide this section
+      type: boolean
+    - name: eyebrow
+      label: Small heading / label
+      type: string
+    - name: title
+      label: Main heading
+      type: string
+    - name: text
+      label: Main text
+      type: text
+    - name: image
+      label: Section image — upload or replace
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+    - name: image_alt
+      label: Image description (SEO / accessibility)
+      type: string
+    - name: image_position
+      label: Image position (e.g. center, top, left)
+      type: string
+    - name: background_image
+      label: Section background image — optional
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+    - name: button_1_text
+      label: Primary button text
+      type: string
+    - name: button_1_url
+      label: Primary button link
+      type: string
+    - name: button_2_text
+      label: Second button text
+      type: string
+    - name: button_2_url
+      label: Second button link
+      type: string
+    - name: gallery
+      label: Extra images / gallery — add multiple
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+        multiple:
+          max: 30
+        unique: true
+    - name: cards
+      label: Cards in this section
+      type: object
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{label}'
+      fields:
+      - name: id
+        label: Card ID
         type: string
         readonly: true
-      - name: seo
-        label: Search / browser settings
-        type: object
-        fields:
-          - name: title
-            label: Browser title
-            type: string
-          - name: description
-            label: Meta description
-            type: text
-      - name: sections
-        label: Page sections
-        type: object
-        list:
-          collapsible:
-            collapsed: true
-            summary: "{label}"
-        fields:
-          - name: id
-            label: Section ID
-            type: string
-            readonly: true
-          - name: label
-            label: Section name
-            type: string
-            readonly: true
-          - name: eyebrow
-            label: Small heading / label
-            type: string
-          - name: title
-            label: Main heading
-            type: string
-          - name: text
-            label: Intro text
-            type: text
-          - name: image
-            label: Main section image (optional)
-            type: image
-            options:
-              media: images
-              extensions: [jpg, jpeg, png, webp, gif, svg]
-              rename: safe
-          - name: image_alt
-            label: Image description (alt text)
-            type: string
-          - name: gallery
-            label: Extra images / gallery (optional)
-            type: image
-            options:
-              media: images
-              multiple:
-                max: 20
-              unique: true
-              extensions: [jpg, jpeg, png, webp, gif]
-              rename: safe
-          - name: cards
-            label: Cards / service blocks
-            type: object
-            list:
-              collapsible:
-                collapsed: true
-                summary: "{label}"
-            fields:
-              - name: id
-                type: string
-                readonly: true
-              - name: label
-                type: string
-                readonly: true
-              - name: kicker
-                label: Small label
-                type: string
-              - name: title
-                label: Card heading
-                type: string
-              - name: text
-                label: Card text
-                type: text
-              - name: link_label
-                label: Link text
-                type: string
-              - name: link_url
-                label: Link URL
-                type: string
-              - name: image
-                label: Card image (optional)
-                type: image
-                options:
-                  media: images
-                  extensions: [jpg, jpeg, png, webp, gif]
-                  rename: safe
-              - name: image_alt
-                label: Card image description
-                type: string
-              - name: bullets
-                label: Bullet points
-                type: string
-                list: true
-          - name: items
-            label: Other repeated items
-            type: object
-            list:
-              collapsible:
-                collapsed: true
-                summary: "{title}"
-            fields:
-              - name: id
-                type: string
-                readonly: true
-              - name: title
-                label: Item label
-                type: string
-              - name: text
-                label: Item text
-                type: text
-              - name: image
-                label: Item image (optional)
-                type: image
-                options:
-                  media: images
-                  extensions: [jpg, jpeg, png, webp, gif]
-                  rename: safe
-              - name: image_alt
-                label: Item image description
-                type: string
-  - name: manufacturing_ai
-    label: "Manufacturing AI page"
-    type: file
-    path: content/manufacturing-ai.json
-    format: json
-    fields:
-      - name: page_label
-        label: Page name
+      - name: label
+        label: Card name
         type: string
         readonly: true
-      - name: seo
-        label: Search / browser settings
-        type: object
-        fields:
-          - name: title
-            label: Browser title
-            type: string
-          - name: description
-            label: Meta description
-            type: text
-      - name: sections
-        label: Page sections
-        type: object
-        list:
-          collapsible:
-            collapsed: true
-            summary: "{label}"
-        fields:
-          - name: id
-            label: Section ID
-            type: string
-            readonly: true
-          - name: label
-            label: Section name
-            type: string
-            readonly: true
-          - name: eyebrow
-            label: Small heading / label
-            type: string
-          - name: title
-            label: Main heading
-            type: string
-          - name: text
-            label: Intro text
-            type: text
-          - name: image
-            label: Main section image (optional)
-            type: image
-            options:
-              media: images
-              extensions: [jpg, jpeg, png, webp, gif, svg]
-              rename: safe
-          - name: image_alt
-            label: Image description (alt text)
-            type: string
-          - name: gallery
-            label: Extra images / gallery (optional)
-            type: image
-            options:
-              media: images
-              multiple:
-                max: 20
-              unique: true
-              extensions: [jpg, jpeg, png, webp, gif]
-              rename: safe
-          - name: cards
-            label: Cards / service blocks
-            type: object
-            list:
-              collapsible:
-                collapsed: true
-                summary: "{label}"
-            fields:
-              - name: id
-                type: string
-                readonly: true
-              - name: label
-                type: string
-                readonly: true
-              - name: kicker
-                label: Small label
-                type: string
-              - name: title
-                label: Card heading
-                type: string
-              - name: text
-                label: Card text
-                type: text
-              - name: link_label
-                label: Link text
-                type: string
-              - name: link_url
-                label: Link URL
-                type: string
-              - name: image
-                label: Card image (optional)
-                type: image
-                options:
-                  media: images
-                  extensions: [jpg, jpeg, png, webp, gif]
-                  rename: safe
-              - name: image_alt
-                label: Card image description
-                type: string
-              - name: bullets
-                label: Bullet points
-                type: string
-                list: true
-          - name: items
-            label: Other repeated items
-            type: object
-            list:
-              collapsible:
-                collapsed: true
-                summary: "{title}"
-            fields:
-              - name: id
-                type: string
-                readonly: true
-              - name: title
-                label: Item label
-                type: string
-              - name: text
-                label: Item text
-                type: text
-              - name: image
-                label: Item image (optional)
-                type: image
-                options:
-                  media: images
-                  extensions: [jpg, jpeg, png, webp, gif]
-                  rename: safe
-              - name: image_alt
-                label: Item image description
-                type: string
-  - name: flood_ai
-    label: "Flood AI page"
-    type: file
-    path: content/flood-ai.json
-    format: json
-    fields:
-      - name: page_label
-        label: Page name
+      - name: hide_card
+        label: Hide this card
+        type: boolean
+      - name: kicker
+        label: Small label
+        type: string
+      - name: title
+        label: Card heading
+        type: string
+      - name: text
+        label: Card text
+        type: text
+      - name: link_label
+        label: Link / button text
+        type: string
+      - name: link_url
+        label: Link URL
+        type: string
+      - name: image
+        label: Card image — upload or replace
+        type: image
+        options:
+          media: images
+          extensions:
+          - jpg
+          - jpeg
+          - png
+          - webp
+          - gif
+          - svg
+          rename: safe
+      - name: image_alt
+        label: Card image description
+        type: string
+      - name: image_position
+        label: Card image position
+        type: string
+      - name: background_image
+        label: Card background image — optional
+        type: image
+        options:
+          media: images
+          extensions:
+          - jpg
+          - jpeg
+          - png
+          - webp
+          - gif
+          - svg
+          rename: safe
+      - name: bullets
+        label: Bullet points
+        type: string
+        list: true
+    - name: items
+      label: Other items / steps / metrics
+      type: object
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{title}'
+      fields:
+      - name: id
+        label: Item ID
         type: string
         readonly: true
-      - name: seo
-        label: Search / browser settings
-        type: object
-        fields:
-          - name: title
-            label: Browser title
-            type: string
-          - name: description
-            label: Meta description
-            type: text
-      - name: sections
-        label: Page sections
-        type: object
-        list:
-          collapsible:
-            collapsed: true
-            summary: "{label}"
-        fields:
-          - name: id
-            label: Section ID
-            type: string
-            readonly: true
-          - name: label
-            label: Section name
-            type: string
-            readonly: true
-          - name: eyebrow
-            label: Small heading / label
-            type: string
-          - name: title
-            label: Main heading
-            type: string
-          - name: text
-            label: Intro text
-            type: text
-          - name: image
-            label: Main section image (optional)
-            type: image
-            options:
-              media: images
-              extensions: [jpg, jpeg, png, webp, gif, svg]
-              rename: safe
-          - name: image_alt
-            label: Image description (alt text)
-            type: string
-          - name: gallery
-            label: Extra images / gallery (optional)
-            type: image
-            options:
-              media: images
-              multiple:
-                max: 20
-              unique: true
-              extensions: [jpg, jpeg, png, webp, gif]
-              rename: safe
-          - name: cards
-            label: Cards / service blocks
-            type: object
-            list:
-              collapsible:
-                collapsed: true
-                summary: "{label}"
-            fields:
-              - name: id
-                type: string
-                readonly: true
-              - name: label
-                type: string
-                readonly: true
-              - name: kicker
-                label: Small label
-                type: string
-              - name: title
-                label: Card heading
-                type: string
-              - name: text
-                label: Card text
-                type: text
-              - name: link_label
-                label: Link text
-                type: string
-              - name: link_url
-                label: Link URL
-                type: string
-              - name: image
-                label: Card image (optional)
-                type: image
-                options:
-                  media: images
-                  extensions: [jpg, jpeg, png, webp, gif]
-                  rename: safe
-              - name: image_alt
-                label: Card image description
-                type: string
-              - name: bullets
-                label: Bullet points
-                type: string
-                list: true
-          - name: items
-            label: Other repeated items
-            type: object
-            list:
-              collapsible:
-                collapsed: true
-                summary: "{title}"
-            fields:
-              - name: id
-                type: string
-                readonly: true
-              - name: title
-                label: Item label
-                type: string
-              - name: text
-                label: Item text
-                type: text
-              - name: image
-                label: Item image (optional)
-                type: image
-                options:
-                  media: images
-                  extensions: [jpg, jpeg, png, webp, gif]
-                  rename: safe
-              - name: image_alt
-                label: Item image description
-                type: string
-  - name: privacy
-    label: "Privacy page"
-    type: file
-    path: content/privacy.json
-    format: json
+      - name: hide_item
+        label: Hide this item
+        type: boolean
+      - name: title
+        label: Item heading / label
+        type: string
+      - name: text
+        label: Item text
+        type: text
+      - name: image
+        label: Item image — upload or replace
+        type: image
+        options:
+          media: images
+          extensions:
+          - jpg
+          - jpeg
+          - png
+          - webp
+          - gif
+          - svg
+          rename: safe
+      - name: image_alt
+        label: Item image description
+        type: string
+      - name: image_position
+        label: Item image position
+        type: string
+- name: research
+  label: R&D page — text & images
+  type: file
+  path: content/research.json
+  format: json
+  fields:
+  - name: page_label
+    label: Page name
+    type: string
+    readonly: true
+  - name: seo
+    label: SEO / browser / social sharing
+    type: object
     fields:
-      - name: page_label
-        label: Page name
+    - name: title
+      label: Browser / SEO title
+      type: string
+    - name: description
+      label: SEO description
+      type: text
+    - name: og_image
+      label: Social sharing image (LinkedIn / WhatsApp)
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+  - name: sections
+    label: Page sections — edit text, buttons and images
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{label}'
+    fields:
+    - name: id
+      label: Section ID
+      type: string
+      readonly: true
+    - name: label
+      label: Section name
+      type: string
+      readonly: true
+    - name: hide_section
+      label: Hide this section
+      type: boolean
+    - name: eyebrow
+      label: Small heading / label
+      type: string
+    - name: title
+      label: Main heading
+      type: string
+    - name: text
+      label: Main text
+      type: text
+    - name: image
+      label: Section image — upload or replace
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+    - name: image_alt
+      label: Image description (SEO / accessibility)
+      type: string
+    - name: image_position
+      label: Image position (e.g. center, top, left)
+      type: string
+    - name: background_image
+      label: Section background image — optional
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+    - name: button_1_text
+      label: Primary button text
+      type: string
+    - name: button_1_url
+      label: Primary button link
+      type: string
+    - name: button_2_text
+      label: Second button text
+      type: string
+    - name: button_2_url
+      label: Second button link
+      type: string
+    - name: gallery
+      label: Extra images / gallery — add multiple
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+        multiple:
+          max: 30
+        unique: true
+    - name: cards
+      label: Cards in this section
+      type: object
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{label}'
+      fields:
+      - name: id
+        label: Card ID
         type: string
         readonly: true
-      - name: seo
-        label: Search / browser settings
-        type: object
-        fields:
-          - name: title
-            label: Browser title
-            type: string
-          - name: description
-            label: Meta description
-            type: text
-      - name: sections
-        label: Page sections
-        type: object
-        list:
-          collapsible:
-            collapsed: true
-            summary: "{label}"
-        fields:
-          - name: id
-            label: Section ID
-            type: string
-            readonly: true
-          - name: label
-            label: Section name
-            type: string
-            readonly: true
-          - name: eyebrow
-            label: Small heading / label
-            type: string
-          - name: title
-            label: Main heading
-            type: string
-          - name: text
-            label: Intro text
-            type: text
-          - name: image
-            label: Main section image (optional)
-            type: image
-            options:
-              media: images
-              extensions: [jpg, jpeg, png, webp, gif, svg]
-              rename: safe
-          - name: image_alt
-            label: Image description (alt text)
-            type: string
-          - name: gallery
-            label: Extra images / gallery (optional)
-            type: image
-            options:
-              media: images
-              multiple:
-                max: 20
-              unique: true
-              extensions: [jpg, jpeg, png, webp, gif]
-              rename: safe
-          - name: cards
-            label: Cards / service blocks
-            type: object
-            list:
-              collapsible:
-                collapsed: true
-                summary: "{label}"
-            fields:
-              - name: id
-                type: string
-                readonly: true
-              - name: label
-                type: string
-                readonly: true
-              - name: kicker
-                label: Small label
-                type: string
-              - name: title
-                label: Card heading
-                type: string
-              - name: text
-                label: Card text
-                type: text
-              - name: link_label
-                label: Link text
-                type: string
-              - name: link_url
-                label: Link URL
-                type: string
-              - name: image
-                label: Card image (optional)
-                type: image
-                options:
-                  media: images
-                  extensions: [jpg, jpeg, png, webp, gif]
-                  rename: safe
-              - name: image_alt
-                label: Card image description
-                type: string
-              - name: bullets
-                label: Bullet points
-                type: string
-                list: true
-          - name: items
-            label: Other repeated items
-            type: object
-            list:
-              collapsible:
-                collapsed: true
-                summary: "{title}"
-            fields:
-              - name: id
-                type: string
-                readonly: true
-              - name: title
-                label: Item label
-                type: string
-              - name: text
-                label: Item text
-                type: text
-              - name: image
-                label: Item image (optional)
-                type: image
-                options:
-                  media: images
-                  extensions: [jpg, jpeg, png, webp, gif]
-                  rename: safe
-              - name: image_alt
-                label: Item image description
-                type: string
+      - name: label
+        label: Card name
+        type: string
+        readonly: true
+      - name: hide_card
+        label: Hide this card
+        type: boolean
+      - name: kicker
+        label: Small label
+        type: string
+      - name: title
+        label: Card heading
+        type: string
+      - name: text
+        label: Card text
+        type: text
+      - name: link_label
+        label: Link / button text
+        type: string
+      - name: link_url
+        label: Link URL
+        type: string
+      - name: image
+        label: Card image — upload or replace
+        type: image
+        options:
+          media: images
+          extensions:
+          - jpg
+          - jpeg
+          - png
+          - webp
+          - gif
+          - svg
+          rename: safe
+      - name: image_alt
+        label: Card image description
+        type: string
+      - name: image_position
+        label: Card image position
+        type: string
+      - name: background_image
+        label: Card background image — optional
+        type: image
+        options:
+          media: images
+          extensions:
+          - jpg
+          - jpeg
+          - png
+          - webp
+          - gif
+          - svg
+          rename: safe
+      - name: bullets
+        label: Bullet points
+        type: string
+        list: true
+    - name: items
+      label: Other items / steps / metrics
+      type: object
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{title}'
+      fields:
+      - name: id
+        label: Item ID
+        type: string
+        readonly: true
+      - name: hide_item
+        label: Hide this item
+        type: boolean
+      - name: title
+        label: Item heading / label
+        type: string
+      - name: text
+        label: Item text
+        type: text
+      - name: image
+        label: Item image — upload or replace
+        type: image
+        options:
+          media: images
+          extensions:
+          - jpg
+          - jpeg
+          - png
+          - webp
+          - gif
+          - svg
+          rename: safe
+      - name: image_alt
+        label: Item image description
+        type: string
+      - name: image_position
+        label: Item image position
+        type: string
+- name: insights
+  label: Insights page — text & images
+  type: file
+  path: content/insights.json
+  format: json
+  fields:
+  - name: page_label
+    label: Page name
+    type: string
+    readonly: true
+  - name: seo
+    label: SEO / browser / social sharing
+    type: object
+    fields:
+    - name: title
+      label: Browser / SEO title
+      type: string
+    - name: description
+      label: SEO description
+      type: text
+    - name: og_image
+      label: Social sharing image (LinkedIn / WhatsApp)
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+  - name: sections
+    label: Page sections — edit text, buttons and images
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{label}'
+    fields:
+    - name: id
+      label: Section ID
+      type: string
+      readonly: true
+    - name: label
+      label: Section name
+      type: string
+      readonly: true
+    - name: hide_section
+      label: Hide this section
+      type: boolean
+    - name: eyebrow
+      label: Small heading / label
+      type: string
+    - name: title
+      label: Main heading
+      type: string
+    - name: text
+      label: Main text
+      type: text
+    - name: image
+      label: Section image — upload or replace
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+    - name: image_alt
+      label: Image description (SEO / accessibility)
+      type: string
+    - name: image_position
+      label: Image position (e.g. center, top, left)
+      type: string
+    - name: background_image
+      label: Section background image — optional
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+    - name: button_1_text
+      label: Primary button text
+      type: string
+    - name: button_1_url
+      label: Primary button link
+      type: string
+    - name: button_2_text
+      label: Second button text
+      type: string
+    - name: button_2_url
+      label: Second button link
+      type: string
+    - name: gallery
+      label: Extra images / gallery — add multiple
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+        multiple:
+          max: 30
+        unique: true
+    - name: cards
+      label: Cards in this section
+      type: object
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{label}'
+      fields:
+      - name: id
+        label: Card ID
+        type: string
+        readonly: true
+      - name: label
+        label: Card name
+        type: string
+        readonly: true
+      - name: hide_card
+        label: Hide this card
+        type: boolean
+      - name: kicker
+        label: Small label
+        type: string
+      - name: title
+        label: Card heading
+        type: string
+      - name: text
+        label: Card text
+        type: text
+      - name: link_label
+        label: Link / button text
+        type: string
+      - name: link_url
+        label: Link URL
+        type: string
+      - name: image
+        label: Card image — upload or replace
+        type: image
+        options:
+          media: images
+          extensions:
+          - jpg
+          - jpeg
+          - png
+          - webp
+          - gif
+          - svg
+          rename: safe
+      - name: image_alt
+        label: Card image description
+        type: string
+      - name: image_position
+        label: Card image position
+        type: string
+      - name: background_image
+        label: Card background image — optional
+        type: image
+        options:
+          media: images
+          extensions:
+          - jpg
+          - jpeg
+          - png
+          - webp
+          - gif
+          - svg
+          rename: safe
+      - name: bullets
+        label: Bullet points
+        type: string
+        list: true
+    - name: items
+      label: Other items / steps / metrics
+      type: object
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{title}'
+      fields:
+      - name: id
+        label: Item ID
+        type: string
+        readonly: true
+      - name: hide_item
+        label: Hide this item
+        type: boolean
+      - name: title
+        label: Item heading / label
+        type: string
+      - name: text
+        label: Item text
+        type: text
+      - name: image
+        label: Item image — upload or replace
+        type: image
+        options:
+          media: images
+          extensions:
+          - jpg
+          - jpeg
+          - png
+          - webp
+          - gif
+          - svg
+          rename: safe
+      - name: image_alt
+        label: Item image description
+        type: string
+      - name: image_position
+        label: Item image position
+        type: string
+- name: contact
+  label: Contact page — text & images
+  type: file
+  path: content/contact.json
+  format: json
+  fields:
+  - name: page_label
+    label: Page name
+    type: string
+    readonly: true
+  - name: seo
+    label: SEO / browser / social sharing
+    type: object
+    fields:
+    - name: title
+      label: Browser / SEO title
+      type: string
+    - name: description
+      label: SEO description
+      type: text
+    - name: og_image
+      label: Social sharing image (LinkedIn / WhatsApp)
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+  - name: sections
+    label: Page sections — edit text, buttons and images
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{label}'
+    fields:
+    - name: id
+      label: Section ID
+      type: string
+      readonly: true
+    - name: label
+      label: Section name
+      type: string
+      readonly: true
+    - name: hide_section
+      label: Hide this section
+      type: boolean
+    - name: eyebrow
+      label: Small heading / label
+      type: string
+    - name: title
+      label: Main heading
+      type: string
+    - name: text
+      label: Main text
+      type: text
+    - name: image
+      label: Section image — upload or replace
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+    - name: image_alt
+      label: Image description (SEO / accessibility)
+      type: string
+    - name: image_position
+      label: Image position (e.g. center, top, left)
+      type: string
+    - name: background_image
+      label: Section background image — optional
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+    - name: button_1_text
+      label: Primary button text
+      type: string
+    - name: button_1_url
+      label: Primary button link
+      type: string
+    - name: button_2_text
+      label: Second button text
+      type: string
+    - name: button_2_url
+      label: Second button link
+      type: string
+    - name: gallery
+      label: Extra images / gallery — add multiple
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+        multiple:
+          max: 30
+        unique: true
+    - name: cards
+      label: Cards in this section
+      type: object
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{label}'
+      fields:
+      - name: id
+        label: Card ID
+        type: string
+        readonly: true
+      - name: label
+        label: Card name
+        type: string
+        readonly: true
+      - name: hide_card
+        label: Hide this card
+        type: boolean
+      - name: kicker
+        label: Small label
+        type: string
+      - name: title
+        label: Card heading
+        type: string
+      - name: text
+        label: Card text
+        type: text
+      - name: link_label
+        label: Link / button text
+        type: string
+      - name: link_url
+        label: Link URL
+        type: string
+      - name: image
+        label: Card image — upload or replace
+        type: image
+        options:
+          media: images
+          extensions:
+          - jpg
+          - jpeg
+          - png
+          - webp
+          - gif
+          - svg
+          rename: safe
+      - name: image_alt
+        label: Card image description
+        type: string
+      - name: image_position
+        label: Card image position
+        type: string
+      - name: background_image
+        label: Card background image — optional
+        type: image
+        options:
+          media: images
+          extensions:
+          - jpg
+          - jpeg
+          - png
+          - webp
+          - gif
+          - svg
+          rename: safe
+      - name: bullets
+        label: Bullet points
+        type: string
+        list: true
+    - name: items
+      label: Other items / steps / metrics
+      type: object
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{title}'
+      fields:
+      - name: id
+        label: Item ID
+        type: string
+        readonly: true
+      - name: hide_item
+        label: Hide this item
+        type: boolean
+      - name: title
+        label: Item heading / label
+        type: string
+      - name: text
+        label: Item text
+        type: text
+      - name: image
+        label: Item image — upload or replace
+        type: image
+        options:
+          media: images
+          extensions:
+          - jpg
+          - jpeg
+          - png
+          - webp
+          - gif
+          - svg
+          rename: safe
+      - name: image_alt
+        label: Item image description
+        type: string
+      - name: image_position
+        label: Item image position
+        type: string
+- name: manufacturing_ai
+  label: Manufacturing AI — text & images
+  type: file
+  path: content/manufacturing-ai.json
+  format: json
+  fields:
+  - name: page_label
+    label: Page name
+    type: string
+    readonly: true
+  - name: seo
+    label: SEO / browser / social sharing
+    type: object
+    fields:
+    - name: title
+      label: Browser / SEO title
+      type: string
+    - name: description
+      label: SEO description
+      type: text
+    - name: og_image
+      label: Social sharing image (LinkedIn / WhatsApp)
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+  - name: sections
+    label: Page sections — edit text, buttons and images
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{label}'
+    fields:
+    - name: id
+      label: Section ID
+      type: string
+      readonly: true
+    - name: label
+      label: Section name
+      type: string
+      readonly: true
+    - name: hide_section
+      label: Hide this section
+      type: boolean
+    - name: eyebrow
+      label: Small heading / label
+      type: string
+    - name: title
+      label: Main heading
+      type: string
+    - name: text
+      label: Main text
+      type: text
+    - name: image
+      label: Section image — upload or replace
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+    - name: image_alt
+      label: Image description (SEO / accessibility)
+      type: string
+    - name: image_position
+      label: Image position (e.g. center, top, left)
+      type: string
+    - name: background_image
+      label: Section background image — optional
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+    - name: button_1_text
+      label: Primary button text
+      type: string
+    - name: button_1_url
+      label: Primary button link
+      type: string
+    - name: button_2_text
+      label: Second button text
+      type: string
+    - name: button_2_url
+      label: Second button link
+      type: string
+    - name: gallery
+      label: Extra images / gallery — add multiple
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+        multiple:
+          max: 30
+        unique: true
+    - name: cards
+      label: Cards in this section
+      type: object
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{label}'
+      fields:
+      - name: id
+        label: Card ID
+        type: string
+        readonly: true
+      - name: label
+        label: Card name
+        type: string
+        readonly: true
+      - name: hide_card
+        label: Hide this card
+        type: boolean
+      - name: kicker
+        label: Small label
+        type: string
+      - name: title
+        label: Card heading
+        type: string
+      - name: text
+        label: Card text
+        type: text
+      - name: link_label
+        label: Link / button text
+        type: string
+      - name: link_url
+        label: Link URL
+        type: string
+      - name: image
+        label: Card image — upload or replace
+        type: image
+        options:
+          media: images
+          extensions:
+          - jpg
+          - jpeg
+          - png
+          - webp
+          - gif
+          - svg
+          rename: safe
+      - name: image_alt
+        label: Card image description
+        type: string
+      - name: image_position
+        label: Card image position
+        type: string
+      - name: background_image
+        label: Card background image — optional
+        type: image
+        options:
+          media: images
+          extensions:
+          - jpg
+          - jpeg
+          - png
+          - webp
+          - gif
+          - svg
+          rename: safe
+      - name: bullets
+        label: Bullet points
+        type: string
+        list: true
+    - name: items
+      label: Other items / steps / metrics
+      type: object
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{title}'
+      fields:
+      - name: id
+        label: Item ID
+        type: string
+        readonly: true
+      - name: hide_item
+        label: Hide this item
+        type: boolean
+      - name: title
+        label: Item heading / label
+        type: string
+      - name: text
+        label: Item text
+        type: text
+      - name: image
+        label: Item image — upload or replace
+        type: image
+        options:
+          media: images
+          extensions:
+          - jpg
+          - jpeg
+          - png
+          - webp
+          - gif
+          - svg
+          rename: safe
+      - name: image_alt
+        label: Item image description
+        type: string
+      - name: image_position
+        label: Item image position
+        type: string
+- name: flood_ai
+  label: Flood AI — text & images
+  type: file
+  path: content/flood-ai.json
+  format: json
+  fields:
+  - name: page_label
+    label: Page name
+    type: string
+    readonly: true
+  - name: seo
+    label: SEO / browser / social sharing
+    type: object
+    fields:
+    - name: title
+      label: Browser / SEO title
+      type: string
+    - name: description
+      label: SEO description
+      type: text
+    - name: og_image
+      label: Social sharing image (LinkedIn / WhatsApp)
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+  - name: sections
+    label: Page sections — edit text, buttons and images
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{label}'
+    fields:
+    - name: id
+      label: Section ID
+      type: string
+      readonly: true
+    - name: label
+      label: Section name
+      type: string
+      readonly: true
+    - name: hide_section
+      label: Hide this section
+      type: boolean
+    - name: eyebrow
+      label: Small heading / label
+      type: string
+    - name: title
+      label: Main heading
+      type: string
+    - name: text
+      label: Main text
+      type: text
+    - name: image
+      label: Section image — upload or replace
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+    - name: image_alt
+      label: Image description (SEO / accessibility)
+      type: string
+    - name: image_position
+      label: Image position (e.g. center, top, left)
+      type: string
+    - name: background_image
+      label: Section background image — optional
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+    - name: button_1_text
+      label: Primary button text
+      type: string
+    - name: button_1_url
+      label: Primary button link
+      type: string
+    - name: button_2_text
+      label: Second button text
+      type: string
+    - name: button_2_url
+      label: Second button link
+      type: string
+    - name: gallery
+      label: Extra images / gallery — add multiple
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+        multiple:
+          max: 30
+        unique: true
+    - name: cards
+      label: Cards in this section
+      type: object
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{label}'
+      fields:
+      - name: id
+        label: Card ID
+        type: string
+        readonly: true
+      - name: label
+        label: Card name
+        type: string
+        readonly: true
+      - name: hide_card
+        label: Hide this card
+        type: boolean
+      - name: kicker
+        label: Small label
+        type: string
+      - name: title
+        label: Card heading
+        type: string
+      - name: text
+        label: Card text
+        type: text
+      - name: link_label
+        label: Link / button text
+        type: string
+      - name: link_url
+        label: Link URL
+        type: string
+      - name: image
+        label: Card image — upload or replace
+        type: image
+        options:
+          media: images
+          extensions:
+          - jpg
+          - jpeg
+          - png
+          - webp
+          - gif
+          - svg
+          rename: safe
+      - name: image_alt
+        label: Card image description
+        type: string
+      - name: image_position
+        label: Card image position
+        type: string
+      - name: background_image
+        label: Card background image — optional
+        type: image
+        options:
+          media: images
+          extensions:
+          - jpg
+          - jpeg
+          - png
+          - webp
+          - gif
+          - svg
+          rename: safe
+      - name: bullets
+        label: Bullet points
+        type: string
+        list: true
+    - name: items
+      label: Other items / steps / metrics
+      type: object
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{title}'
+      fields:
+      - name: id
+        label: Item ID
+        type: string
+        readonly: true
+      - name: hide_item
+        label: Hide this item
+        type: boolean
+      - name: title
+        label: Item heading / label
+        type: string
+      - name: text
+        label: Item text
+        type: text
+      - name: image
+        label: Item image — upload or replace
+        type: image
+        options:
+          media: images
+          extensions:
+          - jpg
+          - jpeg
+          - png
+          - webp
+          - gif
+          - svg
+          rename: safe
+      - name: image_alt
+        label: Item image description
+        type: string
+      - name: image_position
+        label: Item image position
+        type: string
+- name: privacy
+  label: Privacy page
+  type: file
+  path: content/privacy.json
+  format: json
+  fields:
+  - name: page_label
+    label: Page name
+    type: string
+    readonly: true
+  - name: seo
+    label: SEO / browser / social sharing
+    type: object
+    fields:
+    - name: title
+      label: Browser / SEO title
+      type: string
+    - name: description
+      label: SEO description
+      type: text
+    - name: og_image
+      label: Social sharing image (LinkedIn / WhatsApp)
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+  - name: sections
+    label: Page sections — edit text, buttons and images
+    type: object
+    list:
+      collapsible:
+        collapsed: true
+        summary: '{label}'
+    fields:
+    - name: id
+      label: Section ID
+      type: string
+      readonly: true
+    - name: label
+      label: Section name
+      type: string
+      readonly: true
+    - name: hide_section
+      label: Hide this section
+      type: boolean
+    - name: eyebrow
+      label: Small heading / label
+      type: string
+    - name: title
+      label: Main heading
+      type: string
+    - name: text
+      label: Main text
+      type: text
+    - name: image
+      label: Section image — upload or replace
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+    - name: image_alt
+      label: Image description (SEO / accessibility)
+      type: string
+    - name: image_position
+      label: Image position (e.g. center, top, left)
+      type: string
+    - name: background_image
+      label: Section background image — optional
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+    - name: button_1_text
+      label: Primary button text
+      type: string
+    - name: button_1_url
+      label: Primary button link
+      type: string
+    - name: button_2_text
+      label: Second button text
+      type: string
+    - name: button_2_url
+      label: Second button link
+      type: string
+    - name: gallery
+      label: Extra images / gallery — add multiple
+      type: image
+      options:
+        media: images
+        extensions:
+        - jpg
+        - jpeg
+        - png
+        - webp
+        - gif
+        - svg
+        rename: safe
+        multiple:
+          max: 30
+        unique: true
+    - name: cards
+      label: Cards in this section
+      type: object
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{label}'
+      fields:
+      - name: id
+        label: Card ID
+        type: string
+        readonly: true
+      - name: label
+        label: Card name
+        type: string
+        readonly: true
+      - name: hide_card
+        label: Hide this card
+        type: boolean
+      - name: kicker
+        label: Small label
+        type: string
+      - name: title
+        label: Card heading
+        type: string
+      - name: text
+        label: Card text
+        type: text
+      - name: link_label
+        label: Link / button text
+        type: string
+      - name: link_url
+        label: Link URL
+        type: string
+      - name: image
+        label: Card image — upload or replace
+        type: image
+        options:
+          media: images
+          extensions:
+          - jpg
+          - jpeg
+          - png
+          - webp
+          - gif
+          - svg
+          rename: safe
+      - name: image_alt
+        label: Card image description
+        type: string
+      - name: image_position
+        label: Card image position
+        type: string
+      - name: background_image
+        label: Card background image — optional
+        type: image
+        options:
+          media: images
+          extensions:
+          - jpg
+          - jpeg
+          - png
+          - webp
+          - gif
+          - svg
+          rename: safe
+      - name: bullets
+        label: Bullet points
+        type: string
+        list: true
+    - name: items
+      label: Other items / steps / metrics
+      type: object
+      list:
+        collapsible:
+          collapsed: true
+          summary: '{title}'
+      fields:
+      - name: id
+        label: Item ID
+        type: string
+        readonly: true
+      - name: hide_item
+        label: Hide this item
+        type: boolean
+      - name: title
+        label: Item heading / label
+        type: string
+      - name: text
+        label: Item text
+        type: text
+      - name: image
+        label: Item image — upload or replace
+        type: image
+        options:
+          media: images
+          extensions:
+          - jpg
+          - jpeg
+          - png
+          - webp
+          - gif
+          - svg
+          rename: safe
+      - name: image_alt
+        label: Item image description
+        type: string
+      - name: image_position
+        label: Item image position
+        type: string
