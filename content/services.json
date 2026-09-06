@@ -39,8 +39,6 @@
           "kicker": "FLOOD AI",
           "title": "Flood intelligence and AI-assisted risk workflows",
           "text": "We develop decision-support concepts that bring together environmental data, engineering knowledge and AI methods to improve the speed and consistency of flood-risk screening.",
-          "image": "/media/02-flood-extent-classification-1.png",
-          "background_image": "/media/03-terrain-catchment-model-1.jpg",
           "bullets": [
             "Flood detection and event screening workflows",
             "Satellite, rainfall, terrain and sensor-data integration concepts",
