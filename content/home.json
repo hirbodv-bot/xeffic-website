@@ -42,15 +42,6 @@
           "link_url": "services.html#energy"
         },
         {
-          "id": "what-we-do-card-1",
-          "label": "Flood AI",
-          "hide_card": false,
-          "title": "Flood AI",
-          "text": "AI-assisted flood intelligence combining environmental data, sensor information and engineering context for faster risk screening and decision support.",
-          "link_label": "Learn more →",
-          "link_url": "services.html#flood-ai"
-        },
-        {
           "id": "what-we-do-card-3",
           "label": "Engineering Simulation",
           "hide_card": false,
@@ -58,6 +49,15 @@
           "text": "FEA, CFD, thermal and multidisciplinary analysis to investigate performance, failure modes and design opportunities.",
           "link_label": "Learn more →",
           "link_url": "services.html#simulation"
+        },
+        {
+          "id": "what-we-do-card-1",
+          "label": "Flood AI",
+          "hide_card": false,
+          "title": "Flood AI",
+          "text": "AI-assisted flood intelligence combining environmental data, sensor information and engineering context for faster risk screening and decision support.",
+          "link_label": "Learn more →",
+          "link_url": "services.html#flood-ai"
         }
       ]
     },
