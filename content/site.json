@@ -4,5 +4,13 @@
   "footer_text": "Engineering intelligence for safer infrastructure, efficient industry and better decisions.",
   "logo_light": "/media/xeffic-logo-light.png",
   "logo_dark": "/media/xeffic-logo-dark.png",
-  "favicon": "/media/favicon.png"
+  "favicon": "/media/favicon.png",
+  "navigation_override": false,
+  "navigation": [
+    {
+      "label": "Flood",
+      "is_cta": false
+    }
+  ],
+  "footer_links_override": false
 }
