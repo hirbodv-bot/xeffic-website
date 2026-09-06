@@ -25,6 +25,26 @@
       "label": "Services",
       "url": "services.html",
       "is_cta": false
+    },
+    {
+      "label": "Projects",
+      "url": "projects.html",
+      "is_cta": false
+    },
+    {
+      "label": "R&D",
+      "url": "research.html",
+      "is_cta": false
+    },
+    {
+      "label": "Insights",
+      "url": "insights.html",
+      "is_cta": false
+    },
+    {
+      "label": "Contact",
+      "url": "contact.html",
+      "is_cta": false
     }
   ],
   "footer_links_override": false
