@@ -5,7 +5,7 @@
   "logo_light": "/media/xeffic-logo-light.png",
   "logo_dark": "/media/xeffic-logo-dark.png",
   "favicon": "/media/favicon.png",
-  "navigation_override": false,
+  "navigation_override": true,
   "navigation": [
     {
       "label": "Flood",
