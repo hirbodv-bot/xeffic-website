@@ -8,6 +8,7 @@
     {
       "id": "hero",
       "label": "Engineering services designed for difficult, high-value problems.",
+      "hide_section": false,
       "eyebrow": "SERVICES",
       "title": "Engineering services designed for difficult, high-value problems.",
       "text": "From flood intelligence and energy systems to simulation and R&D support, Xeffic helps turn uncertainty into engineering evidence.",
@@ -22,6 +23,8 @@
     {
       "id": "flood-intelligence-and-ai-assisted-risk-workflow",
       "label": "Flood Intelligence And Ai Assisted Risk Workflow",
+      "hide_section": false,
+      "eyebrow": "Find points with high flood risk ",
       "image": "/media/01-satellite-floodplain.jpg",
       "gallery": [
         "/media/02-flood-extent-classification.png",
@@ -32,9 +35,12 @@
         {
           "id": "flood-ai",
           "label": "Flood intelligence and AI-assisted risk workflows",
+          "hide_card": false,
           "kicker": "FLOOD AI",
           "title": "Flood intelligence and AI-assisted risk workflows",
           "text": "We develop decision-support concepts that bring together environmental data, engineering knowledge and AI methods to improve the speed and consistency of flood-risk screening.",
+          "image": "/media/02-flood-extent-classification-1.png",
+          "background_image": "/media/03-terrain-catchment-model-1.jpg",
           "bullets": [
             "Flood detection and event screening workflows",
             "Satellite, rainfall, terrain and sensor-data integration concepts",
@@ -46,6 +52,7 @@
         {
           "id": "energy",
           "label": "Waste-heat recovery and thermal systems",
+          "hide_card": false,
           "kicker": "INDUSTRIAL ENERGY",
           "title": "Waste-heat recovery and thermal systems",
           "text": "We support industrial organisations in understanding where heat is being lost, how much can realistically be recovered and which system architecture is technically appropriate.",
@@ -60,6 +67,7 @@
         {
           "id": "simulation",
           "label": "FEA, CFD and engineering analysis",
+          "hide_card": false,
           "kicker": "SIMULATION",
           "title": "FEA, CFD and engineering analysis",
           "text": "Simulation is used to explore design limits, failure modes and performance before expensive physical changes are made.",
@@ -74,6 +82,7 @@
         {
           "id": "ai-engineering",
           "label": "AI-enabled engineering workflows",
+          "hide_card": false,
           "kicker": "AI & DIGITAL ENGINEERING",
           "title": "AI-enabled engineering workflows",
           "text": "We identify repeatable technical tasks where AI can reduce manual effort, improve consistency or surface better engineering insight.",
@@ -88,6 +97,7 @@
         {
           "id": "carbon",
           "label": "Carbon capture and low-carbon engineering",
+          "hide_card": false,
           "kicker": "CARBON & SUSTAINABILITY",
           "title": "Carbon capture and low-carbon engineering",
           "text": "Technical feasibility and process-level analysis for carbon reduction, capture, energy integration and sustainable technology concepts.",
@@ -102,6 +112,7 @@
         {
           "id": "rd",
           "label": "Research, testing and technical development",
+          "hide_card": false,
           "kicker": "APPLIED R&D",
           "title": "Research, testing and technical development",
           "text": "For organisations developing new products or technologies, we can support the evidence-building stage between an idea and a defensible engineering proposition.",
@@ -118,6 +129,7 @@
     {
       "id": "cta",
       "label": "Send us the problem, not a predefined solution.",
+      "hide_section": false,
       "title": "Send us the problem, not a predefined solution."
     }
   ]
