@@ -10,7 +10,11 @@
   function applyFooterLinks(site){if(!site.footer_links_override||!Array.isArray(site.footer_columns)||!site.footer_columns.length)return;document.querySelectorAll('footer .footer-grid').forEach(grid=>{const first=grid.firstElementChild;[...grid.children].slice(1).forEach(x=>x.remove());site.footer_columns.forEach(col=>{const d=document.createElement('div');const h=document.createElement('h3');h.textContent=col.title||'';d.appendChild(h);(col.links||[]).forEach(x=>{if(!x.label||!x.url)return;const a=document.createElement('a');a.textContent=x.label;a.href=x.url;d.appendChild(a);});grid.appendChild(d);});});}
   function applySite(site){
     applyTheme(site.theme); applyNavigation(site); applyFooterLinks(site);
-    if(site.email){document.querySelectorAll('a[href^="mailto:"]').forEach((a,i)=>{if(i===0||!site.secondary_email){a.href='mailto:'+site.email;if(norm(a.textContent).includes('@'))a.textContent=site.email;}});}
+    if(site.email){
+      document.body.dataset.contactEmail=site.email;
+      document.querySelectorAll('a[href^="mailto:"]').forEach((a,i)=>{if(i===0||!site.secondary_email){a.href='mailto:'+site.email;if(norm(a.textContent).includes('@'))a.textContent=site.email;}});
+      document.querySelectorAll('script[type="application/ld+json"]').forEach(s=>{try{const j=JSON.parse(s.textContent);if(j&&j['@type']==='Organization'){j.email=site.email;s.textContent=JSON.stringify(j);}}catch(e){}});
+    }
     if(site.secondary_email){const mails=document.querySelectorAll('a[href^="mailto:"]');if(mails[1]){mails[1].href='mailto:'+site.secondary_email;if(norm(mails[1].textContent).includes('@'))mails[1].textContent=site.secondary_email;}}
     if(site.linkedin_url){document.querySelectorAll('a').forEach(a=>{if(norm(a.textContent).toLowerCase()==='linkedin')a.href=site.linkedin_url;});}
     if(site.footer_text){document.querySelectorAll('footer .footer-grid > div:first-child p').forEach(p=>setText(p,site.footer_text));}

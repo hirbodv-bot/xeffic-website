@@ -41,7 +41,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const body = encodeURIComponent(
         `Name: ${name}\nEmail: ${email}\nOrganisation: ${org}\nTopic: ${topic}\n\n${message}`
       );
-      window.location.href = `mailto:hello@xeffic.com?subject=${subject}&body=${body}`;
+      const recipient = (document.body.dataset.contactEmail || 'hello@xeffic.com').trim();
+      window.location.href = `mailto:${encodeURIComponent(recipient)}?subject=${subject}&body=${body}`;
     });
   }
 });
