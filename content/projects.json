@@ -15,10 +15,10 @@
     {
       "id": "ai-assisted-flood-intelligence",
       "label": "Ai Assisted Flood Intelligence",
-      "image": "/media/06-river-sensor-network.png",
       "gallery": [
         "/media/08-ai-flood-forecast-sequence.jpg",
-        "/media/07-urban-infrastructure-risk-2.png"
+        "/media/07-urban-infrastructure-risk-2.png",
+        "/media/03-terrain-catchment-model.jpg"
       ],
       "cards": [
         {
