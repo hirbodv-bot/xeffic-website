@@ -51,20 +51,11 @@
           "link_url": "services.html#simulation"
         },
         {
-          "id": "what-we-do-card-4",
+          "id": "what-we-do-card-3",
           "label": "Flood AI",
           "hide_card": false,
           "title": "Flood AI",
           "text": "AI-assisted flood intelligence combining environmental data, sensor information and engineering context for faster risk screening and decision support.",
-          "link_label": "Learn more →",
-          "link_url": "services.html#flood-ai"
-        },
-        {
-          "id": "what-we-do-card-1",
-          "label": "Engineering & Process Documentation",
-          "hide_card": false,
-          "title": "Engineering & Process Documentation",
-          "text": "Xeffic helps engineering and manufacturing organisations create, organise and improve technical and process documentation. We combine engineering understanding with digital and AI-assisted tools to reduce repetitive documentation work and improve consistency, traceability and usability.",
           "link_label": "Learn more →",
           "link_url": "services.html#flood-ai"
         }
