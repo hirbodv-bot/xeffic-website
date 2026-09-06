@@ -2,7 +2,8 @@
   "page_label": "Homepage",
   "seo": {
     "title": "Xeffic | Engineering Intelligence, Flood AI & Sustainable Technology",
-    "description": "Xeffic develops practical engineering and AI-driven solutions for industrial efficiency, energy optimisation, advanced simulation, Flood AI, automate documentation and data-driven decision-making."
+    "description": "Xeffic develops practical engineering and AI-driven solutions for industrial efficiency, energy optimisation, advanced simulation, Flood AI, automate documentation and data-driven decision-making.",
+    "og_image": "/media/06-river-sensor-network-2.png"
   },
   "sections": [
     {
