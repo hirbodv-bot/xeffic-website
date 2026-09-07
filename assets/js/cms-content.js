@@ -10,6 +10,9 @@
   function applyFooterLinks(site){if(!site.footer_links_override||!Array.isArray(site.footer_columns)||!site.footer_columns.length)return;document.querySelectorAll('footer .footer-grid').forEach(grid=>{const first=grid.firstElementChild;[...grid.children].slice(1).forEach(x=>x.remove());site.footer_columns.forEach(col=>{const d=document.createElement('div');const h=document.createElement('h3');h.textContent=col.title||'';d.appendChild(h);(col.links||[]).forEach(x=>{if(!x.label||!x.url)return;const a=document.createElement('a');a.textContent=x.label;a.href=x.url;d.appendChild(a);});grid.appendChild(d);});});}
   function applySite(site){
     applyTheme(site.theme); applyNavigation(site); applyFooterLinks(site);
+    if(site.form_endpoint) document.body.dataset.formEndpoint=site.form_endpoint.trim();
+    if(site.form_success_message) document.body.dataset.formSuccessMessage=site.form_success_message;
+    if(site.form_error_message) document.body.dataset.formErrorMessage=site.form_error_message;
     if(site.email){
       document.body.dataset.contactEmail=site.email;
       document.querySelectorAll('a[href^="mailto:"]').forEach((a,i)=>{if(i===0||!site.secondary_email){a.href='mailto:'+site.email;if(norm(a.textContent).includes('@'))a.textContent=site.email;}});

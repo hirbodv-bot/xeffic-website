@@ -265,3 +265,11 @@ input:focus,select:focus,textarea:focus{outline:3px solid rgba(91,76,240,.14);bo
 /* Enhanced CMS image support */
 .cms-item-image{display:block;width:100%;max-width:220px;height:140px;object-fit:cover;border-radius:14px;margin-top:12px}
 .cms-card-image{background:var(--surface,#fff)}
+
+/* Direct contact form submission */
+.form-honeypot{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important}
+.form-status{min-height:1.35em;margin:0;font-size:.9rem;font-weight:700}
+.form-status.sending{color:var(--muted)}
+.form-status.success{color:#087a55}
+.form-status.error{color:#b42318}
+.contact-form button[disabled]{opacity:.65;cursor:wait;transform:none}
