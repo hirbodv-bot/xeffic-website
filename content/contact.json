@@ -2,47 +2,25 @@
   "page_label": "Contact page",
   "seo": {
     "title": "Contact Xeffic | Engineering Consultancy & R&D",
-    "description": "Contact Xeffic about Flood AI, industrial energy, engineering simulation, AI workflows, carbon or applied R&D.",
-    "og_image": ""
+    "description": "Contact Xeffic about Flood AI, industrial energy, engineering simulation, AI workflows, carbon or applied R&D."
   },
   "sections": [
     {
       "id": "hero",
       "label": "Tell us the engineering problem.",
+      "hide_section": false,
       "eyebrow": "CONTACT",
       "title": "Tell us the engineering problem.",
       "text": "A short description of the challenge, decision or opportunity is enough to start.",
-      "image": "",
-      "image_alt": "",
-      "gallery": [],
-      "cards": [],
-      "items": [],
-      "hide_section": false,
-      "background_image": "",
-      "image_position": "center",
-      "button_1_text": "",
-      "button_1_url": "",
-      "button_2_text": "",
-      "button_2_url": ""
+      "image_position": "center"
     },
     {
       "id": "start-a-conversation",
       "label": "Start a conversation",
-      "eyebrow": "",
+      "hide_section": true,
       "title": "Start a conversation",
       "text": "For consultancy, research collaboration, technical feasibility or partnership enquiries:",
-      "image": "",
-      "image_alt": "",
-      "gallery": [],
-      "cards": [],
-      "items": [],
-      "hide_section": false,
-      "background_image": "",
-      "image_position": "center",
-      "button_1_text": "",
-      "button_1_url": "",
-      "button_2_text": "",
-      "button_2_url": ""
+      "image_position": "center"
     }
   ]
 }
