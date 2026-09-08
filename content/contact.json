@@ -17,7 +17,7 @@
     {
       "id": "start-a-conversation",
       "label": "Start a conversation",
-      "hide_section": false,
+      "hide_section": true,
       "title": "Start a conversation",
       "text": "For consultancy, research collaboration, technical feasibility or partnership enquiries:",
       "image_position": "center"
