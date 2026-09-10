@@ -136,7 +136,8 @@
       "id": "cta",
       "label": "Send us the problem, not a predefined solution.",
       "hide_section": false,
-      "title": "Send us the problem, not a predefined solution."
+      "title": "Send us the problem, not a predefined solution.",
+      "image": "/media/02-technical-data-triage.png"
     }
   ]
 }
