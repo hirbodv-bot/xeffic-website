@@ -35,6 +35,22 @@
       ],
       "cards": [
         {
+          "id": "ai-engineering",
+          "label": "AI-enabled engineering workflows",
+          "hide_card": false,
+          "kicker": "AI & DIGITAL ENGINEERING",
+          "title": "AI-enabled engineering workflows",
+          "text": "We identify repeatable technical tasks where AI can reduce manual effort, improve consistency or surface better engineering insight.",
+          "image": "/media/01-engineering-knowledge-assistant-2.png",
+          "bullets": [
+            "Engineering knowledge assistants",
+            "Automated technical-data triage",
+            "AI-assisted design and optimisation workflows",
+            "Survey-to-engineering automation concepts",
+            "Decision-support interfaces"
+          ]
+        },
+        {
           "id": "flood-ai",
           "label": "Flood intelligence and AI-assisted risk workflows",
           "hide_card": false,
@@ -80,22 +96,6 @@
             "Thermal and coupled-physics modelling",
             "Load-path and serviceability assessment",
             "Sensitivity and design-space studies"
-          ]
-        },
-        {
-          "id": "ai-engineering",
-          "label": "AI-enabled engineering workflows",
-          "hide_card": false,
-          "kicker": "AI & DIGITAL ENGINEERING",
-          "title": "AI-enabled engineering workflows",
-          "text": "We identify repeatable technical tasks where AI can reduce manual effort, improve consistency or surface better engineering insight.",
-          "image": "/media/01-engineering-knowledge-assistant-2.png",
-          "bullets": [
-            "Engineering knowledge assistants",
-            "Automated technical-data triage",
-            "AI-assisted design and optimisation workflows",
-            "Survey-to-engineering automation concepts",
-            "Decision-support interfaces"
           ]
         },
         {
