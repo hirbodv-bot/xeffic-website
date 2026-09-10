@@ -11,23 +11,14 @@
       "hide_section": false,
       "eyebrow": "SERVICES",
       "title": "Engineering services designed for difficult, high-value problems.",
-      "text": "From flood intelligence and energy systems to simulation and R&D support, Xeffic helps turn uncertainty into engineering evidence.",
-      "image": "/media/01-satellite-floodplain-1.jpg",
-      "gallery": [
-        "/media/01-fea-mounting-bracket.png",
-        "/media/02-cfd-ventilation-duct.png",
-        "/media/01-engineering-knowledge-assistant-1.png",
-        "/media/05-engineering-decision-support.png",
-        "/media/06-mof-adsorbent-filter.png",
-        "/media/04-structural-load-path.jpg"
-      ]
+      "text": "From flood intelligence and energy systems to simulation and R&D support, Xeffic helps turn uncertainty into engineering evidence."
     },
     {
       "id": "flood-intelligence-and-ai-assisted-risk-workflow",
       "label": "Flood Intelligence And Ai Assisted Risk Workflow",
       "hide_section": false,
       "eyebrow": "Find points with high flood risk ",
-      "image": "/media/01-satellite-floodplain.jpg",
+      "image": "/media/01-satellite-floodplain-2.jpg",
       "gallery": [
         "/media/02-flood-extent-classification.png",
         "/media/05-rainfall-runoff-radar.png",
