@@ -58,7 +58,6 @@
           "title": "Waste-heat recovery and thermal systems",
           "text": "We support industrial organisations in understanding where heat is being lost, how much can realistically be recovered and which system architecture is technically appropriate.",
           "image": "/media/02-cfd-ventilation-duct-1.png",
-          "background_image": "/media/03-thermal-heat-exchanger-2.png",
           "bullets": [
             "Waste-heat opportunity assessment",
             "Heat-exchanger and thermal-system concepts",
@@ -74,6 +73,7 @@
           "kicker": "SIMULATION",
           "title": "FEA, CFD and engineering analysis",
           "text": "Simulation is used to explore design limits, failure modes and performance before expensive physical changes are made.",
+          "image": "/media/01-fea-mounting-bracket-1.png",
           "bullets": [
             "Finite element analysis",
             "Computational fluid dynamics",
