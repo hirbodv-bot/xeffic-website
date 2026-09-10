@@ -317,3 +317,12 @@ body[data-cms-page="services"] .cms-service-media .cms-card-image{
   body[data-cms-page="services"] .cms-service-media,
   body[data-cms-page="services"] .cms-service-media .cms-card-image{min-height:220px}
 }
+/* Hide Formspree anti-spam honeypot */
+.form-honeypot {
+  position: absolute !important;
+  left: -10000px !important;
+  width: 1px !important;
+  height: 1px !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
