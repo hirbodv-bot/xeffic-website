@@ -281,9 +281,11 @@ content:
       - name: id
         label: Card ID
         type: string
+        readonly: true
       - name: label
         label: Card name
         type: string
+        readonly: true
       - name: hide_card
         label: Hide this card
         type: boolean
@@ -510,9 +512,11 @@ content:
       - name: id
         label: Card ID
         type: string
+        readonly: true
       - name: label
         label: Card name
         type: string
+        readonly: true
       - name: hide_card
         label: Hide this card
         type: boolean
@@ -739,9 +743,11 @@ content:
       - name: id
         label: Card ID
         type: string
+        readonly: true
       - name: label
         label: Card name
         type: string
+        readonly: true
       - name: hide_card
         label: Hide this card
         type: boolean
@@ -968,9 +974,11 @@ content:
       - name: id
         label: Card ID
         type: string
+        readonly: true
       - name: label
         label: Card name
         type: string
+        readonly: true
       - name: hide_card
         label: Hide this card
         type: boolean
@@ -1197,9 +1205,11 @@ content:
       - name: id
         label: Card ID
         type: string
+        readonly: true
       - name: label
         label: Card name
         type: string
+        readonly: true
       - name: hide_card
         label: Hide this card
         type: boolean
@@ -1426,9 +1436,11 @@ content:
       - name: id
         label: Card ID
         type: string
+        readonly: true
       - name: label
         label: Card name
         type: string
+        readonly: true
       - name: hide_card
         label: Hide this card
         type: boolean
@@ -1556,6 +1568,13 @@ content:
         - gif
         - svg
         rename: safe
+  - name: form_topic_placeholder
+    label: Contact form topic placeholder
+    type: string
+  - name: form_topics
+    label: Contact form topics — drag to reorder, add or remove
+    type: string
+    list: true
   - name: sections
     label: Page sections — edit text, buttons and images
     type: object
@@ -1655,9 +1674,11 @@ content:
       - name: id
         label: Card ID
         type: string
+        readonly: true
       - name: label
         label: Card name
         type: string
+        readonly: true
       - name: hide_card
         label: Hide this card
         type: boolean
@@ -1884,9 +1905,11 @@ content:
       - name: id
         label: Card ID
         type: string
+        readonly: true
       - name: label
         label: Card name
         type: string
+        readonly: true
       - name: hide_card
         label: Hide this card
         type: boolean
@@ -2113,9 +2136,11 @@ content:
       - name: id
         label: Card ID
         type: string
+        readonly: true
       - name: label
         label: Card name
         type: string
+        readonly: true
       - name: hide_card
         label: Hide this card
         type: boolean
@@ -2342,9 +2367,11 @@ content:
       - name: id
         label: Card ID
         type: string
+        readonly: true
       - name: label
         label: Card name
         type: string
+        readonly: true
       - name: hide_card
         label: Hide this card
         type: boolean
