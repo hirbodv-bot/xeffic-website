@@ -10,8 +10,10 @@
       "label": "Engineering services designed for difficult, high-value problems.",
       "hide_section": false,
       "eyebrow": "SERVICES",
-      "title": "Engineering services designed for difficult, high-value problems.",
-      "text": "From flood intelligence and energy systems to simulation and R&D support, Xeffic helps turn uncertainty into engineering evidence."
+      "title": "Engineering intelligence for complex industrial challenges.",
+      "text": "Xeffic combines engineering expertise with AI, simulation and data-driven methods to improve technical workflows, optimise industrial systems and support better engineering decisions.",
+      "image": "/media/02-technical-data-triage.jpg",
+      "image_alt": "Engineering monitoring and data-analysis dashboard supporting AI-enabled industrial decision-making."
     },
     {
       "id": "flood-intelligence-and-ai-assisted-risk-workflow",
