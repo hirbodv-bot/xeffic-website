@@ -4,6 +4,9 @@
     "title": "Contact Xeffic | Engineering Consultancy & R&D",
     "description": "Contact Xeffic about Flood AI, industrial energy, engineering simulation, AI workflows, carbon or applied R&D."
   },
+  "form_topics": [
+    "AI"
+  ],
   "sections": [
     {
       "id": "hero",
