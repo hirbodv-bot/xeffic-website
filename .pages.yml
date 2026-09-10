@@ -19,16 +19,6 @@ content:
   - name: secondary_email
     label: Second contact email — optional
     type: string
-  - name: form_endpoint
-    label: Contact form submission URL (Formspree)
-    type: string
-    description: Paste the Formspree endpoint, for example https://formspree.io/f/abcdwxyz
-  - name: form_success_message
-    label: Contact form success message
-    type: string
-  - name: form_error_message
-    label: Contact form error message
-    type: string
   - name: website_url
     label: Website address
     type: string
