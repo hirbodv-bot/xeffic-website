@@ -266,10 +266,54 @@ input:focus,select:focus,textarea:focus{outline:3px solid rgba(91,76,240,.14);bo
 .cms-item-image{display:block;width:100%;max-width:220px;height:140px;object-fit:cover;border-radius:14px;margin-top:12px}
 .cms-card-image{background:var(--surface,#fff)}
 
-/* Direct contact form submission */
-.form-honeypot{position:absolute!important;left:-10000px!important;width:1px!important;height:1px!important;opacity:0!important;pointer-events:none!important}
-.form-status{min-height:1.35em;margin:0;font-size:.9rem;font-weight:700}
-.form-status.sending{color:var(--muted)}
-.form-status.success{color:#087a55}
-.form-status.error{color:#b42318}
-.contact-form button[disabled]{opacity:.65;cursor:wait;transform:none}
+
+/* Services page: keep each CMS image with its own service block.
+   If older content used the section gallery, images are paired with service cards in order. */
+body[data-cms-page="services"] .service-row{
+  grid-template-columns:72px minmax(0,1fr) minmax(300px,400px);
+  grid-template-areas:"number content media";
+  align-items:center;
+  gap:28px;
+}
+body[data-cms-page="services"] .service-row:nth-child(even){
+  grid-template-columns:minmax(300px,400px) 72px minmax(0,1fr);
+  grid-template-areas:"media number content";
+}
+body[data-cms-page="services"] .service-row > .service-number{grid-area:number}
+body[data-cms-page="services"] .service-row > div:nth-of-type(2){grid-area:content}
+body[data-cms-page="services"] .cms-service-media{
+  grid-area:media;
+  align-self:stretch;
+  min-height:260px;
+  overflow:hidden;
+  border-radius:20px;
+  background:#eef3f8;
+  border:1px solid rgba(17,36,57,.10);
+}
+body[data-cms-page="services"] .cms-service-media .cms-card-image{
+  display:block;
+  width:100%;
+  height:100%;
+  min-height:260px;
+  max-height:360px;
+  margin:0;
+  object-fit:cover;
+  border-radius:20px;
+}
+@media(max-width:980px){
+  body[data-cms-page="services"] .service-row,
+  body[data-cms-page="services"] .service-row:nth-child(even){
+    grid-template-columns:72px minmax(0,1fr);
+    grid-template-areas:"number content" "media media";
+  }
+  body[data-cms-page="services"] .cms-service-media{min-height:240px}
+}
+@media(max-width:700px){
+  body[data-cms-page="services"] .service-row,
+  body[data-cms-page="services"] .service-row:nth-child(even){
+    grid-template-columns:1fr;
+    grid-template-areas:"number" "content" "media";
+  }
+  body[data-cms-page="services"] .cms-service-media,
+  body[data-cms-page="services"] .cms-service-media .cms-card-image{min-height:220px}
+}
