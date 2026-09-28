@@ -326,3 +326,5 @@ body[data-cms-page="services"] .cms-service-media .cms-card-image{
   opacity: 0 !important;
   pointer-events: none !important;
 }
+
+.legal p,.legal li{line-height:1.75}.legal ul{padding-left:1.35rem}.legal-table-wrap{overflow-x:auto}.legal table{width:100%;border-collapse:collapse;margin:20px 0}.legal th,.legal td{text-align:left;vertical-align:top;border:1px solid #d8e0e8;padding:12px}.legal th{background:#eef3f8;color:#162435}.legal-note{line-height:1.6}
