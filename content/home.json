@@ -1,17 +1,17 @@
 {
   "page_label": "Homepage",
   "seo": {
-    "title": "Xeffic | Engineering Intelligence, Flood AI & Sustainable Technology",
-    "description": "Xeffic develops practical engineering and AI-driven solutions for industrial efficiency, energy optimisation, advanced simulation, Flood AI, automate documentation and data-driven decision-making.",
+    "title": "Engineering RFQ Review & Manufacturing AI | Xeffic",
+    "description": "Xeffic helps engineering and manufacturing teams review RFQs, drawings and specifications, identify missing or conflicting information, prepare clarifications and accelerate quotation workflows.",
     "og_image": "/media/06-river-sensor-network-2.png"
   },
   "sections": [
     {
       "id": "hero",
-      "label": "Engineering intelligence for a safer, more efficient future.",
+      "label": "Review engineering RFQs, drawings and specifications with greater speed and traceability.",
       "hide_section": false,
-      "title": "Engineering intelligence for a safer, more efficient future.",
-      "text": "Xeffic develops practical engineering and AI-driven solutions for industrial efficiency, energy optimisation, advanced simulation, Flood AI, automate documentation and data-driven decision-making.",
+      "title": "Review engineering RFQs, drawings and specifications with greater speed and traceability.",
+      "text": "Xeffic helps engineering and manufacturing teams structure incoming RFQ packages, extract key requirements, flag missing or conflicting information and prepare clarification points for engineer review.",
       "image": "/media/hero-woman.webp",
       "image_alt": "Engineering professional working with a laptop and looking toward the Xeffic message",
       "gallery": [
@@ -27,20 +27,20 @@
     },
     {
       "id": "what-we-do",
-      "label": "Focused engineering capability, built around real-world problems.",
+      "label": "Engineering intelligence for RFQs, industrial systems and infrastructure.",
       "hide_section": false,
       "eyebrow": "WHAT WE DO",
-      "title": "Focused engineering capability, built around real-world problems.",
-      "text": "We combine first-principles engineering with modern digital tools to help organisations understand risk, improve performance and move from concept to evidence.",
+      "title": "Engineering intelligence for RFQs, industrial systems and infrastructure.",
+      "text": "Start with document-heavy engineering workflows where time, consistency and traceability matter.",
       "cards": [
         {
           "id": "what-we-do-card-1",
-          "label": "Industrial Energy",
+          "label": "RFQ & Drawing Review",
           "hide_card": false,
-          "title": "Industrial Energy",
-          "text": "Waste-heat recovery, thermal systems, feasibility assessment and performance modelling for energy-intensive industrial processes.",
-          "link_label": "Learn more →",
-          "link_url": "services.html#energy"
+          "title": "RFQ & Drawing Review",
+          "text": "Review RFQs, drawings and specifications together; structure requirements, surface discrepancies and prepare clarification points.",
+          "link_label": "Explore RFQ Review →",
+          "link_url": "rfq-review.html"
         },
         {
           "id": "what-we-do-card-2",
