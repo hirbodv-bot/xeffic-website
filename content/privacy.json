@@ -2,7 +2,7 @@
   "page_label": "Privacy page",
   "seo": {
     "title": "Privacy | Xeffic",
-    "description": "Xeffic website privacy information.",
+    "description": "Privacy information for the Xeffic website and RFQ review pilot.",
     "og_image": ""
   },
   "sections": [
@@ -11,7 +11,7 @@
       "label": "Privacy notice",
       "eyebrow": "PRIVACY",
       "title": "Privacy notice",
-      "text": "Starter privacy information for the initial Xeffic website.",
+      "text": "How Xeffic handles personal information across xeffic.com and app.xeffic.com.",
       "image": "",
       "image_alt": "",
       "gallery": [],
@@ -30,7 +30,7 @@
       "label": "Website data",
       "eyebrow": "",
       "title": "Website data",
-      "text": "This starter website does not use a database, user accounts or embedded advertising. The contact form does not transmit information to Xeffic directly; it opens the visitor's own email application.",
+      "text": "For the current notice, use the published privacy.html page. This legacy CMS section no longer controls the legal text.",
       "image": "",
       "image_alt": "",
       "gallery": [],

@@ -48,5 +48,66 @@
       "is_cta": false
     }
   ],
-  "footer_links_override": true
+  "footer_links_override": true,
+  "footer_columns": [
+    {
+      "title": "Explore",
+      "links": [
+        {
+          "label": "Services",
+          "url": "services.html"
+        },
+        {
+          "label": "Projects",
+          "url": "projects.html"
+        },
+        {
+          "label": "R&D",
+          "url": "research.html"
+        },
+        {
+          "label": "Insights",
+          "url": "insights.html"
+        }
+      ]
+    },
+    {
+      "title": "Company",
+      "links": [
+        {
+          "label": "About",
+          "url": "about.html"
+        },
+        {
+          "label": "Contact",
+          "url": "contact.html"
+        },
+        {
+          "label": "Privacy",
+          "url": "privacy.html"
+        },
+        {
+          "label": "Website terms",
+          "url": "terms.html"
+        },
+        {
+          "label": "Pilot terms",
+          "url": "pilot-terms.html"
+        }
+      ]
+    },
+    {
+      "title": "Connect",
+      "links": [
+        {
+          "label": "Email",
+          "url": "mailto:info@xeffic.com"
+        },
+        {
+          "label": "LinkedIn",
+          "url": "https://www.linkedin.com/company/146267292/"
+        }
+      ]
+    }
+  ]
 }
